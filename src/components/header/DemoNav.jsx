@@ -7,16 +7,16 @@ export default function Nav() {
                 <Link to="/DemoLogin">Login</Link>
             </p>
             <p className="nav_menu">
-                <Link to="/DemoButton">Button</Link>
+                <Link to="/KitButton">Button</Link>
             </p>
             <p className="nav_menu">
-                <Link to="/DemoForm">Form</Link>
+                <Link to="/KitForm">Form</Link>
             </p>
             <p className="nav_menu">
-                <Link to="/DemoProfile">Profile</Link>
+                <Link to="/KitProfile">Profile</Link>
             </p>
             <p className="nav_menu">
-                <Link to="/DemoPop">Popup</Link>
+                <Link to="/KitPopup">Popup</Link>
             </p>
         </nav>
     );
