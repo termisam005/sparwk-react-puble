@@ -1,7 +1,7 @@
-import InputCont from "../components/common/InputCont";
+import InputComponent from "../components/common/InputComponent";
 import { Link } from "react-router-dom";
 
-export default function Login() {
+export default function DemoLogin() {
     return (
         <div className="wrap wrap_login">
             <section className="wrap_login">
@@ -22,24 +22,34 @@ export default function Login() {
 
                             <article className="form_group form_logbox">
                                 <div className="log_conts">
-
-                                    <InputCont title="E-mail" class="put_cont" boxclass="putt_box" />
-
-                                    <InputCont title="Password" class="put_cont" boxclass="putt_box did" />
-
+                                    <div className="put_cont">
+                                        <p className="title">E-mail</p>
+                                        <div className="putt_box">
+                                            <InputComponent type="text" class="wr_put" placeholder="admin" />
+                                        </div>
+                                    </div>
+                                    <div className="put_cont">
+                                        <p className="title">Password</p>
+                                        <div className="putt_box did">
+                                            <span className="put_mark">
+                                                <img src="../resources/images/eye_gray.png" alt="see" />
+                                            </span>
+                                            <InputComponent type="password" class="wr_put" placeholder="passwod" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="log_button_conts">
-                                    <div className="button_line">
-                                        <button type="button" className="button on">
-                                            <Link to="/main">Login</Link>
+                                    <div>
+                                        <button type="button" className="button on m-b-20">
+                                            <Link to="/DemoMain">Login</Link>
                                         </button>
-                                        <button type="button" className="button society">
+                                        <button type="button" className="button society m-b-20">
                                             Login in with Google
                                         </button>
-                                        <button type="button" className="button society">
+                                        <button type="button" className="button society m-b-20">
                                             Login in with Facebook
                                         </button>
-                                        <button type="button" className="button society">
+                                        <button type="button" className="button society m-b-20">
                                             Sign in with Apple
                                         </button>
                                     </div>

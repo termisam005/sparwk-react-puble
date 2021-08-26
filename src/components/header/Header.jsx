@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import DemoNav from "./DemoNav";
 import Fixmenu from "./Fixmenu";
 import Grmessage from "./Grmessage";
 import $ from "jquery";
@@ -32,21 +33,11 @@ class Header extends Component {
                 <div className="header_line">
                     <section className="header_left">
                         <h1 className="hd_logo">
-                            <Link to="/main" title="Sparwk">
+                            <Link to="/DemoMain" title="Sparwk">
                                 <img src="../resources/images/logo.png" alt="Sparwk" />
                             </Link>
                         </h1>
-                        <nav className="nav">
-                            <p className="nav_menu">
-                                <Link to="/foryou">For you</Link>
-                            </p>
-                            <p className="nav_menu">
-                                <Link to="/collabo">Collabo</Link>
-                            </p>
-                            <p className="nav_menu">
-                                <Link to="/pitching">Pitching</Link>
-                            </p>
-                        </nav>
+                        <DemoNav />
                     </section>
                     <section className="header_center">
                         <article className="hd_search">

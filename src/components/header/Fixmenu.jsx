@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import $ from "jquery";
 
 class Fixmenu extends Component {
@@ -35,33 +34,6 @@ class Fixmenu extends Component {
             <section className="gr_fixmenu">
                 <p className="btn_menu"></p>
                 <article className="fixmenu_bar">
-                    {/* 페이지이동 */}
-                    <div className="fixmenu">
-                        <img className="icon_fix" src="../resources/images/sv_fix_note.svg" alt="icon note" />
-                        <img className="icon_fix_on" src="../resources/images/sv_fix_note_on.svg" alt="icon note" />
-                        <section className="hidden_menu">
-                            <div className="top">
-                                <h1>Pages</h1>
-                            </div>
-                            <p className="line1"></p>
-                            <div className="menus">
-                                <Link to="/login">Login</Link>
-                            </div>
-                            <p className="line1"></p>
-                            <div className="menus">
-                                <Link to="/signin">Signin</Link>
-                            </div>
-                            <p className="line1"></p>
-                            <div className="menus">
-                                <Link to="/find_id">FindId</Link>
-                            </div>
-                            <p className="line1"></p>
-                            <div className="menus">
-                                <Link to="/find_pw">FindPw</Link>
-                            </div>
-                        </section>
-                    </div>
-                    {/* 페이지이동 End */}
                     <div className="fixmenu">
                         <img className="icon_fix" src="../resources/images/sv_fix_note.svg" alt="icon note" />
                         <img className="icon_fix_on" src="../resources/images/sv_fix_note_on.svg" alt="icon note" />

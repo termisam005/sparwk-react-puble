@@ -1,0 +1,184 @@
+.demo_title{
+    margin: 0px 0px 20px;
+    h1{
+        @include fm_monst;
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+.demo_line{
+    width: 100%;
+    display: flex;
+    padding:20px 0px;
+}
+button.disable{
+    opacity: 0.5 !important;
+    cursor: not-allowed;
+}
+
+.btn_md1{
+    width: 160px;
+    height: 40px;
+    padding: 2px 8px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #0f1948, #19255e);
+    box-shadow: -2px -2px 3px rgba(119, 119, 255, 0.4),3px 3px 7px 0 rgba(0, 0, 0, 0.4);
+    &:hover,&.on{
+        box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.5), 
+        inset -2px -2px 4px rgba(119, 119, 255, 0.5);
+        color: #ff994a;
+    }
+}
+
+.btn_md1_on{
+    width: 160px;
+    height: 40px;
+    padding: 2px 8px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #ff994a, #ff4f19);
+    box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.4);
+    &:hover,&.on{
+        background: linear-gradient(to bottom, #f53b02, #ff994a);
+        color: #fff;
+    }
+}
+
+.btn_md1_trans{
+    width: 160px;
+    height: 40px;
+    padding: 2px 8px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    &:hover,&.on{
+        border: 1px solid #ff994a;
+        color: #ff994a;
+    }
+}
+
+.btn_md1_box{
+    width: 160px;
+    height: 40px;
+    padding: 2px 8px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    background: #0f173d;
+    &:hover,&.on{
+        border: 1px solid #ff994a;
+        color: #ff994a;
+    }
+}
+
+.btn_md1_boxvl{
+    width: 160px;
+    height: 40px;
+    padding: 2px 8px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    background: #0f173d;
+    &:hover,&.on{
+        border: 1px solid #778eff;
+        color: #fff;
+    }
+}
+
+.btn_md1_norm{
+    width: 160px;
+    height: 40px;
+    padding: 2px 8px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #16225c, #1b2970);
+    box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.4);
+    &:hover,&.on{
+        color: #fff;
+    }
+}
+
+.btn_lg1{
+    width: 342px;
+    height: 48px;
+    padding: 3px 12px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #0f1948, #19255e);
+    box-shadow: -2px -2px 3px rgba(119, 119, 255, 0.4),3px 3px 7px 0 rgba(0, 0, 0, 0.4);
+    &:hover,&.on{
+        box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.5), 
+        inset -2px -2px 4px rgba(119, 119, 255, 0.5);
+        color: #ff994a;
+    }
+}
+
+.btn_lg1_on{
+    width: 342px;
+    height: 48px;
+    padding: 3px 12px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #ff994a, #ff4f19);
+    box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.4);
+    &:hover,&.on{
+        background: linear-gradient(to bottom, #f53b02, #ff994a);
+        color: #fff;
+    }
+}
+
+.btn_sm1{
+    min-width: 76px;
+    height: 32px;
+    padding:1px 12px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #16225c, #1b2970);
+    box-shadow: -1px -1px 2px rgba(119, 119, 255, 0.4),2px 2px 4px 0 rgba(0, 0, 0, 0.4);
+    &:hover,&.on{
+        box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.5), 
+        inset -2px -2px 4px rgba(119, 119, 255, 0.5);
+        color: #ff994a;
+    }
+}
+
+.btn_sm1_trans{
+    min-width: 76px;
+    height: 32px;
+    padding:1px 12px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background:transparent;
+    &:hover,&.on{
+        border: 1px solid #ff994a;
+        color: #ff994a;
+    }
+}
+
+.btn_sm1_on{
+    min-width: 76px;
+    height: 32px;
+    padding:1px 12px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #ff994a, #ff4f19);
+    box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.4);
+    &:hover,&.on{
+        background: linear-gradient(to bottom, #f53b02, #ff994a);
+        color: #fff;
+    }
+}

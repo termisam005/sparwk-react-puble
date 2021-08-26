@@ -1,16 +1,18 @@
+import ImgComponent from "../common/ImgComponent";
+
 export default function Aside() {
     return (
         <aside className="the_aside">
             <div className="prof_zone">
-                <dl className="prof_dl">
-                    <dt>
+                <div className="prof_wrap">
+                    <div className="prof_shadow120">
                         <p className="prof_c120">
                             <span className="line_over"></span>
-                            <img src="../resources/images/thumb_ex1.jpg" alt="personal photo" />
+                            <ImgComponent src="../resources/images/thumb_ex1.jpg" />
                         </p>
-                    </dt>
-                    <dd>Jin Suk Choi</dd>
-                </dl>
+                    </div>
+                    <p className="prof_name_big">Jin Suk Choi</p>
+                </div>
             </div>
             <p className="line1">
                 <span className="cenbar">
@@ -28,7 +30,7 @@ export default function Aside() {
             <div className="calen_zone">
                 <a className="view_go">
                     <span>View more</span>
-                    <img src="../resources/images/sv_arr_view.svg" alt="view" />
+                    <ImgComponent src="../resources/images/sv_arr_view.svg" />
                 </a>
                 <section className="the_calendar">
                     <article className="calendar_top">
@@ -43,10 +45,10 @@ export default function Aside() {
                             <h1 className="title">December 2021</h1>
                             <div className="contact">
                                 <span className="rlbt">
-                                    <img src="../resources/images/sv_arr_left_mini.svg" alt="arrow" />
+                                    <ImgComponent src="../resources/images/sv_arr_left_mini.svg" />
                                 </span>
                                 <span className="rlbt">
-                                    <img src="../resources/images/sv_arr_right_mini.svg" alt="arrow" />
+                                    <ImgComponent src="../resources/images/sv_arr_right_mini.svg" />
                                 </span>
                             </div>
                         </div>
@@ -113,7 +115,7 @@ export default function Aside() {
                         <div className="calen_end">
                             <a className="view_go">
                                 <span>View more</span>
-                                <img src="../resources/images/sv_arr_view.svg" alt="view" />
+                                <ImgComponent src="../resources/images/sv_arr_view.svg" />
                             </a>
                         </div>
                     </article>

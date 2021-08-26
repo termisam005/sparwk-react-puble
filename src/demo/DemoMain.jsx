@@ -6,7 +6,7 @@ import Aside from "../components/layout/Aside";
 import Feed from "../components/layout/Feed";
 import Project from "../components/layout/Project";
 import Task from "../components/layout/Task";
-import ButtonComponent from "../components/common/ButtonComponent";
+import ButtonAction from "../components/common/ButtonAction";
 
 export default function Main() {
     return (
@@ -21,8 +21,8 @@ export default function Main() {
                         <Project />
                         <Feed />
                         <div className="cont50">
-                            <ButtonComponent>Cancel</ButtonComponent>
-                            <ButtonComponent>Confirm</ButtonComponent>
+                            <ButtonAction>Cancel</ButtonAction>
+                            <ButtonAction>Confirm</ButtonAction>
                         </div>
                     </main>
                 </div>

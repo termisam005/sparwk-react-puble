@@ -1,3 +1,5 @@
+import ImgComponent from "../common/ImgComponent";
+
 export default function Feed() {
     return (
         <article className="contain">
@@ -5,7 +7,7 @@ export default function Feed() {
                 <div className="cttop_left">
                     <h1 className="top_title">Feed</h1>
                     <a className="go_detail">
-                        <img src="../resources/images/sv_drop.svg" alt="go detail" />
+                        <ImgComponent src="../resources/images/sv_drop.svg" />
                     </a>
                 </div>
             </section>
@@ -15,7 +17,7 @@ export default function Feed() {
                     <div className="feed_top">
                         <p className="prof_c50">
                             <span className="line_over"></span>
-                            <img src="../resources/images/thumb_ex1.jpg" alt="photo" />
+                            <ImgComponent src="../resources/images/thumb_ex1.jpg" />
                         </p>
                         <div className="write_zone">
                             <input type="text" className="wirte_put"
@@ -26,19 +28,19 @@ export default function Feed() {
                     <div className="feed_conts">
                         <div className="comp_line">
                             <p className="the_comp">
-                                <img src="../resources/images/sv_photo_wh.svg" alt="icon photo" />
+                                <ImgComponent src="../resources/images/sv_photo_wh.svg" />
                                 <span className="word">
                                     Photo/Video
                                 </span>
                             </p>
                             <p className="the_comp">
-                                <img src="../resources/images/sv_calendar_wh.svg" alt="icon calendar" />
+                                <ImgComponent src="../resources/images/sv_calendar_wh.svg" />
                                 <span className="word">
                                     important event
                                 </span>
                             </p>
                             <p className="the_comp">
-                                <img src="../resources/images/sv_navi_wh.svg" alt="icon navi" />
+                                <ImgComponent src="../resources/images/sv_navi_wh.svg" />
                                 <span className="word">
                                     Check-in
                                 </span>
