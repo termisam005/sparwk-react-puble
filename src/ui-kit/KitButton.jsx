@@ -1,5 +1,7 @@
 import React from "react";
+import ImgComponent from "../components/common/ImgComponent";
 import ButtonComponent from "../components/common/ButtonComponent";
+import ButtonWith from "../components/common/ButtonWith";
 
 export default function DemoButton() {
     return (
@@ -19,39 +21,39 @@ export default function DemoButton() {
                         <ButtonComponent class="btn_md1 disable" txt="Button" />
                     </div>
                     <div className="p-20">
-                        <ButtonComponent class="btn_md1_on" txt="Button" />
+                        <ButtonComponent class="btn_md1 cor" txt="Button" />
                         <p className="p-10"></p>
-                        <ButtonComponent class="btn_md1_on on" txt="Button" />
+                        <ButtonComponent class="btn_md1 cor on" txt="Button" />
                         <p className="p-10"></p>
-                        <ButtonComponent class="btn_md1_on disable" txt="Button" />
+                        <ButtonComponent class="btn_md1 cor disable" txt="Button" />
                     </div>
                     <div className="p-20">
-                        <ButtonComponent class="btn_md1_trans" txt="Button" />
+                        <ButtonComponent class="btn_md1 trans" txt="Button" />
                         <p className="p-10"></p>
-                        <ButtonComponent class="btn_md1_trans on" txt="Button" />
+                        <ButtonComponent class="btn_md1 trans on" txt="Button" />
                         <p className="p-10"></p>
-                        <ButtonComponent class="btn_md1_trans disable" txt="Button" />
+                        <ButtonComponent class="btn_md1 trans disable" txt="Button" />
                     </div>
                     <div className="p-20">
-                        <ButtonComponent class="btn_md1_box" txt="Button" />
+                        <ButtonComponent class="btn_md1 box" txt="Button" />
                         <p className="p-10"></p>
-                        <ButtonComponent class="btn_md1_box on" txt="Button" />
+                        <ButtonComponent class="btn_md1 box on" txt="Button" />
                         <p className="p-10"></p>
-                        <ButtonComponent class="btn_md1_box disable" txt="Button" />
+                        <ButtonComponent class="btn_md1 box disable" txt="Button" />
                     </div>
                     <div className="p-20">
-                        <ButtonComponent class="btn_md1_boxvl" txt="Button" />
+                        <ButtonComponent class="btn_md1 boxvl" txt="Button" />
                         <p className="p-10"></p>
-                        <ButtonComponent class="btn_md1_boxvl on" txt="Button" />
+                        <ButtonComponent class="btn_md1 boxvl on" txt="Button" />
                         <p className="p-10"></p>
-                        <ButtonComponent class="btn_md1_boxvl disable" txt="Button" />
+                        <ButtonComponent class="btn_md1 boxvl disable" txt="Button" />
                     </div>
                     <div className="p-20">
-                        <ButtonComponent class="btn_md1_norm" txt="Button" />
+                        <ButtonComponent class="btn_md1 norm" txt="Button" />
                         <p className="p-10"></p>
-                        <ButtonComponent class="btn_md1_norm on" txt="Button" />
+                        <ButtonComponent class="btn_md1 norm on" txt="Button" />
                         <p className="p-10"></p>
-                        <ButtonComponent class="btn_md1_norm disable" txt="Button" />
+                        <ButtonComponent class="btn_md1 norm disable" txt="Button" />
                     </div>
                 </section>
 
@@ -60,7 +62,7 @@ export default function DemoButton() {
                         <ButtonComponent class="btn_lg1" txt="Create a new account" />
                     </div>
                     <div className="p-20">
-                        <ButtonComponent class="btn_lg1_on" txt="Login" />
+                        <ButtonComponent class="btn_lg1 cor" txt="Login" />
                     </div>
                 </section>
 
@@ -69,18 +71,164 @@ export default function DemoButton() {
                         <ButtonComponent class="btn_sm1" txt="Invite" />
                     </div>
                     <div className="p-20">
-                        <ButtonComponent class="btn_sm1_trans" txt="Invite" />
+                        <ButtonComponent class="btn_sm1 trans" txt="Invite" />
                     </div>
                     <div className="p-20">
-                        <ButtonComponent class="btn_sm1_on" txt="Invite" />
+                        <ButtonComponent class="btn_sm1 cor" txt="Invite" />
                     </div>
                 </section>
 
                 <section className="demo_line">
                     <div className="p-20">
-
+                        <ButtonComponent class="btn_md2" txt="Button" />
+                        <p className="p-10"></p>
+                        <ButtonComponent class="btn_md2 on" txt="Button" />
+                    </div>
+                    <div className="p-20">
+                        <ButtonComponent class="btn_md2 cor" txt="Button" />
+                        <p className="p-10"></p>
+                        <ButtonComponent class="btn_md2 cor on" txt="Button" />
+                    </div>
+                    <div className="p-20">
+                        <ButtonComponent class="btn_md3" txt="Button" />
+                        <p className="p-10"></p>
+                        <ButtonComponent class="btn_md3 on" txt="Button" />
+                    </div>
+                    <div className="p-20">
+                        <ButtonComponent class="btn_md3 cor" txt="Button" />
+                        <p className="p-10"></p>
+                        <ButtonComponent class="btn_md3 cor on" txt="Button" />
                     </div>
                 </section>
+
+                <section className="demo_line">
+                    <div className="p-20">
+                        <ButtonWith class="btn_sm1 with" spant="Review reset" imgclass="sv2020" src="../resources/images/sv_reload.svg" />
+                    </div>
+                    <div className="p-20">
+                        <ButtonWith class="btn_sm1 with norm" spant="Download" imgclass="sv2020" src="../resources/images/sv_down_wh.svg" />
+                    </div>
+                    <div className="p-20">
+                        <ButtonWith class="btn_c60 cor" src="../resources/images/mu_disp_wh.png" />
+                    </div>
+                </section>
+
+                <section className="demo_line">
+                    <div className="comp_line p-l-20">
+                        <p className="the_comp">
+                            <ImgComponent class="sv2424" src="../resources/images/sv_photo_wh.svg" />
+                            <span className="word">Photo/Video</span>
+                        </p>
+                        <p className="the_comp">
+                            <ImgComponent class="sv2424" src="../resources/images/sv_calendar_wh.svg" />
+                            <span className="word">important event</span>
+                        </p>
+                        <p className="the_comp">
+                            <ImgComponent class="sv2424" src="../resources/images/sv_navi_wh.svg" />
+                            <span className="word">Check-in</span>
+                        </p>
+                        <p className="the_comp">
+                            <ImgComponent class="sv2424" src="../resources/images/sv_share_wh.svg" />
+                            <span className="word">Share</span>
+                        </p>
+                        <p className="the_comp">
+                            <ImgComponent class="sv2424" src="../resources/images/sv_mail_wh.svg" />
+                            <span className="word">Send</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section className="demo_line">
+                    <div className="p-20">
+                        <ButtonWith class="btn_society" spant="Login in with Google" src="../resources/images/so_facebook.png" />
+                    </div>
+                    <div className="p-20">
+                        <ButtonWith class="btn_society" spant="Login in with Facebook" src="../resources/images/so_google.png" />
+                    </div>
+                    <div className="p-20">
+                        <ButtonWith class="btn_society" spant="Sign in with Apple" src="../resources/images/so_apple.png" />
+                    </div>
+                </section>
+
+                <section className="demo_line">
+                    <div className="p-20">
+                        <button className="btsq bt36">
+                            <img className="bticon" src="../resources/images/sv_arr36_down_wh.svg" alt="images" />
+                            <img className="bticon_on" src="../resources/images/sv_arr36_down_cor.svg" alt="images" />
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btsq bt36">
+                            <img className="bticon" src="../resources/images/sv_arr36_up_wh.svg" alt="images" />
+                            <img className="bticon_on" src="../resources/images/sv_arr36_up_cor.svg" alt="images" />
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btsq bt36 norm">
+                            <img src="../resources/images/sv_arr36_down_wh.svg" alt="images" />
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btsq bt36 norm">
+                            <img src="../resources/images/sv_arr36_up_wh.svg" alt="images" />
+                        </button>
+                    </div>
+                </section>
+
+                <section className="demo_line">
+                    <section className="self_line">
+                        <div className="self_bar on">Select A</div>
+                        <div className="self_bar">Select B</div>
+                        <div className="self_bar">Select C</div>
+                    </section>
+                </section>
+
+                <section className="demo_line">
+                    <section className="nation_line">
+                        <article className="nation_bar">
+                            <p className="call">Chicago</p>
+                            <div className="time">
+                                <span className="when">10:24</span>
+                                <span>PM</span>
+                                <span className="tc">(UTC-5)</span>
+                            </div>
+                        </article>
+                        <article className="nation_bar on">
+                            <p className="call">Chicago</p>
+                            <div className="time">
+                                <span className="when">10:24</span>
+                                <span>PM</span>
+                                <span className="tc">(UTC-5)</span>
+                            </div>
+                        </article>
+                        <article className="nation_bar">
+                            <p className="call">Chicago</p>
+                            <div className="time">
+                                <span className="when">10:24</span>
+                                <span>PM</span>
+                                <span className="tc">(UTC-5)</span>
+                            </div>
+                        </article>
+                        <article className="nation_bar">
+                            <p className="call">Chicago</p>
+                            <div className="time">
+                                <span className="when">10:24</span>
+                                <span>PM</span>
+                                <span className="tc">(UTC-5)</span>
+                            </div>
+                        </article>
+                        <article className="nation_bar">
+                            <p className="call">Chicago</p>
+                            <div className="time">
+                                <span className="when">10:24</span>
+                                <span>PM</span>
+                                <span className="tc">(UTC-5)</span>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+
+                <section className="demo_line"></section>
 
             </div>
         </div>

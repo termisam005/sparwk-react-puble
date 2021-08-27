@@ -435,44 +435,6 @@ header{
     margin: 0 auto;
     padding: 58px 0px 30px;
 }
-.blue_line{
-    width: 100%;
-    padding: 8px;
-    background: #182566;
-    background: linear-gradient(179deg, #182566 20%, #111a48 79%);
-    box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
-    @include dflx_ac_jbet;
-}
-.nation_bar{
-    width: 19.5%;
-    height: 40px;
-    padding: 4px 12px 0px;
-    cursor: pointer;
-    @include dflx_ac_jbet;
-    @include box1;
-    .call{
-        @include fsm14;
-    }
-    .time{
-        @include fsl12;
-        @include dflx_ae;
-        span{
-            font: inherit;
-            padding: 0px 0px 0px 3px;
-            &.when{
-                line-height: 1.1;
-                padding: 0px 4px 0px 3px;
-                @include fsb20;
-            }
-        }
-    }
-}
-.nation_bar.on{
-    .call,.time{
-        color: #ff994a;
-    }
-}
 .contents{
     width: 100%;
     margin: 30px 0px 0px;
@@ -848,23 +810,6 @@ header{
 .comp_line{
     width: 100%;
     @include dflx_ac;
-}
-.the_comp{
-    padding: 0px 40px 0px 0px;
-    cursor: pointer;
-    &:last-child{
-        padding: 0px;
-    }
-    @include dflx_ac;
-    img{
-        width: 24px;
-        height: 24px;
-        margin: 0px 7px 0px 0px;
-    }
-    .word{
-        @include fsr14;
-        line-height: 1.5;
-    }
 }
 
 .gr_message{
