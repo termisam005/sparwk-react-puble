@@ -8,7 +8,7 @@ export default function Grmessage() {
                 <div className="mess_top_line">
                     <h1 className="top_title">Message</h1>
                     <p className="pen">
-                        <ImgComponent src="../resources/images/sv_note_pen.svg" />
+                        <img src="../resources/images/sv_note_pen.svg" alt="memo" />
                     </p>
                 </div>
             </article>
@@ -21,7 +21,7 @@ export default function Grmessage() {
                             <dt>
                                 <span className="coming"></span>
                                 <p className="prof_c40">
-                                    <ImgComponent src="../resources/images/prof_none.png" />
+                                    <img src="../resources/images/prof_none.png" alt="none profile" />
                                 </p>
                             </dt>
                             <dd>
@@ -43,7 +43,7 @@ export default function Grmessage() {
                         <dl className="message_dl">
                             <dt>
                                 <p className="prof_c40">
-                                    <ImgComponent src="../resources/images/prof_ex1.png" />
+                                    <img src="../resources/images/prof_ex1.png" alt="profile" />
                                 </p>
                             </dt>
                             <dd>
@@ -65,7 +65,7 @@ export default function Grmessage() {
                         <dl className="message_dl">
                             <dt>
                                 <p className="prof_c40">
-                                    <ImgComponent src="../resources/images/prof_ex2.png" />
+                                    <img src="../resources/images/prof_ex2.png" alt="profile" />
                                 </p>
                             </dt>
                             <dd>

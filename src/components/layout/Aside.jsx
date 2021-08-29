@@ -45,10 +45,10 @@ export default function Aside() {
                             <h1 className="title">December 2021</h1>
                             <div className="contact">
                                 <span className="rlbt">
-                                    <ImgComponent src="../resources/images/sv_arr_left_mini.svg" />
+                                    <ImgComponent src="../resources/images/sv_arr20_left_wh.svg" />
                                 </span>
                                 <span className="rlbt">
-                                    <ImgComponent src="../resources/images/sv_arr_right_mini.svg" />
+                                    <ImgComponent src="../resources/images/sv_arr20_right_wh.svg" />
                                 </span>
                             </div>
                         </div>

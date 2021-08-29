@@ -156,8 +156,7 @@ export default function DemoButton() {
                             <img className="bticon" src="../resources/images/sv_arr36_down_wh.svg" alt="images" />
                             <img className="bticon_on" src="../resources/images/sv_arr36_down_cor.svg" alt="images" />
                         </button>
-                    </div>
-                    <div className="p-20">
+                        <p className="p-10"></p>
                         <button className="btsq bt36">
                             <img className="bticon" src="../resources/images/sv_arr36_up_wh.svg" alt="images" />
                             <img className="bticon_on" src="../resources/images/sv_arr36_up_cor.svg" alt="images" />
@@ -167,20 +166,72 @@ export default function DemoButton() {
                         <button className="btsq bt36 norm">
                             <img src="../resources/images/sv_arr36_down_wh.svg" alt="images" />
                         </button>
-                    </div>
-                    <div className="p-20">
+                        <p className="p-10"></p>
                         <button className="btsq bt36 norm">
                             <img src="../resources/images/sv_arr36_up_wh.svg" alt="images" />
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btsq bt20">
+                            <img className="bticon" src="../resources/images/sv_arr20_left_wh.svg" alt="images" />
+                            <img className="bticon_on" src="../resources/images/sv_arr20_left_cor.svg" alt="images" />
+                        </button>
+                        <p className="p-10"></p>
+                        <button className="btsq bt20">
+                            <img className="bticon" src="../resources/images/sv_arr20_right_wh.svg" alt="images" />
+                            <img className="bticon_on" src="../resources/images/sv_arr20_right_cor.svg" alt="images" />
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btsq bt20 norm">
+                            <img src="../resources/images/sv_arr20_down_wh.svg" alt="images" />
+                        </button>
+                        <p className="p-10"></p>
+                        <button className="btsq bt20 norm">
+                            <img src="../resources/images/sv_arr20_minus_wh.svg" alt="images" />
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btsq bt16">
+                            <img className="bticon" src="../resources/images/sv_arr16_down_wh.svg" alt="images" />
+                            <img className="bticon_on" src="../resources/images/sv_arr16_down_cor.svg" alt="images" />
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btn_c32">
+                            <img src="../resources/images/sv_playprev_cor.svg" alt="images" />
+                        </button>
+                        <p className="p-10"></p>
+                        <button className="btn_c32 on">
+                            <img src="../resources/images/sv_playprev_cor.svg" alt="images" />
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btn_c32">
+                            <img src="../resources/images/sv_playnext_cor.svg" alt="images" />
+                        </button>
+                        <p className="p-10"></p>
+                        <button className="btn_c32 on">
+                            <img src="../resources/images/sv_playnext_cor.svg" alt="images" />
                         </button>
                     </div>
                 </section>
 
                 <section className="demo_line">
-                    <section className="self_line">
-                        <div className="self_bar on">Select A</div>
-                        <div className="self_bar">Select B</div>
-                        <div className="self_bar">Select C</div>
-                    </section>
+                    <div className="p-20">
+                        <section className="self_line">
+                            <div className="self_bar on">Select A</div>
+                            <div className="self_bar">Select B</div>
+                            <div className="self_bar">Select C</div>
+                        </section>
+                    </div>
+                    <div className="p-20">
+                        <div className="dpflx p-5">
+                            <ButtonComponent class="btn_tab114 on" txt="Man" />
+                            <ButtonComponent class="btn_tab114" txt="Woman" />
+                            <ButtonComponent class="btn_tab114" txt="Private" />
+                        </div>
+                    </div>
                 </section>
 
                 <section className="demo_line">

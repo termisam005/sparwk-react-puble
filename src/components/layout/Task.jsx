@@ -1,4 +1,4 @@
-import $ from "jquery";
+//import $ from "jquery";
 export default function Task() {
 
     return (
@@ -26,10 +26,10 @@ export default function Task() {
 
                     <div className="contact">
                         <span className="rlbt">
-                            <img src="../resources/images/sv_arr_left_mini.svg" alt="arrow" />
+                            <img src="../resources/images/sv_arr20_left_wh.svg" alt="arrow" />
                         </span>
                         <span className="rlbt">
-                            <img src="../resources/images/sv_arr_right_mini.svg" alt="arrow" />
+                            <img src="../resources/images/sv_arr20_right_wh.svg" alt="arrow" />
                         </span>
                     </div>
                 </article>

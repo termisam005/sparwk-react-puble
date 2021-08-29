@@ -86,6 +86,9 @@ textarea::-webkit-input-placeholder{color:#bbb;}
 textarea::-moz-placeholder{color:#bbb;}
 textarea:-ms-input-placeholder {/* Internet Explorer 10-11 */color:#bbb;}
 textarea::-ms-input-placeholder {/* Microsoft Edge */color:#bbb;}
+
+.dpblock{display: block;}
+.dpflx{display: flex;}
 /*reset End*/
 
 
@@ -368,6 +371,7 @@ header{
     height: 60px;
     margin: 0px 0px 10px;
     position: relative;
+    cursor: pointer;
     @include dflx_ac_jcent;
     @include box1;
     img{
