@@ -6,7 +6,7 @@ export default function Aside() {
             <div className="prof_zone">
                 <div className="prof_wrap">
                     <div className="prof_shadow120">
-                        <p className="prof_c120">
+                        <p className="prof c120">
                             <span className="line_over"></span>
                             <ImgComponent src="../resources/images/thumb_ex1.jpg" />
                         </p>
@@ -44,12 +44,14 @@ export default function Aside() {
                         <div className="canlen_month">
                             <h1 className="title">December 2021</h1>
                             <div className="contact">
-                                <span className="rlbt">
-                                    <ImgComponent src="../resources/images/sv_arr20_left_wh.svg" />
-                                </span>
-                                <span className="rlbt">
-                                    <ImgComponent src="../resources/images/sv_arr20_right_wh.svg" />
-                                </span>
+                                <button className="btsq bt20">
+                                    <img className="bticon" src="../resources/images/sv_arr20_left_wh.svg" alt="images" />
+                                    <img className="bticon_on" src="../resources/images/sv_arr20_left_cor.svg" alt="images" />
+                                </button>
+                                <button className="btsq bt20">
+                                    <img className="bticon" src="../resources/images/sv_arr20_right_wh.svg" alt="images" />
+                                    <img className="bticon_on" src="../resources/images/sv_arr20_right_cor.svg" alt="images" />
+                                </button>
                             </div>
                         </div>
                         <table className="calen_table">

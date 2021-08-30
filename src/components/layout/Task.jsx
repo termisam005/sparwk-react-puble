@@ -25,12 +25,14 @@ export default function Task() {
                     </div>
 
                     <div className="contact">
-                        <span className="rlbt">
-                            <img src="../resources/images/sv_arr20_left_wh.svg" alt="arrow" />
-                        </span>
-                        <span className="rlbt">
-                            <img src="../resources/images/sv_arr20_right_wh.svg" alt="arrow" />
-                        </span>
+                        <button className="btsq bt20">
+                            <img className="bticon" src="../resources/images/sv_arr20_left_wh.svg" alt="images" />
+                            <img className="bticon_on" src="../resources/images/sv_arr20_left_cor.svg" alt="images" />
+                        </button>
+                        <button className="btsq bt20">
+                            <img className="bticon" src="../resources/images/sv_arr20_right_wh.svg" alt="images" />
+                            <img className="bticon_on" src="../resources/images/sv_arr20_right_cor.svg" alt="images" />
+                        </button>
                     </div>
                 </article>
                 <article className="card_line">

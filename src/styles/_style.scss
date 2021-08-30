@@ -74,18 +74,18 @@ input{outline:none; border:none; font-family: 'Roboto', sans-serif; color: #fff;
 appearance: none;}
 button{outline:none; border:none; cursor: pointer; font-family: 'Roboto', sans-serif; color: #fff;}
 
-input[type=text]::-webkit-input-placeholder{color:#777;}
-input[type=text]::-moz-placeholder{color:#777;}
-input[type=text]:-ms-input-placeholder {/* Internet Explorer 10-11 */color:#777;}
-input[type=text]::-ms-input-placeholder {/* Microsoft Edge */color:#777;}
-input[type=password]::-webkit-input-placeholder{color:#555;}
-input[type=password]::-moz-placeholder{color:#a3a3a3;}
-input[type=password]:-ms-input-placeholder {/* Internet Explorer 10-11 */color:#a3a3a3;}
-input[type=password]::-ms-input-placeholder {/* Microsoft Edge */color:#a3a3a3;}
-textarea::-webkit-input-placeholder{color:#bbb;}
-textarea::-moz-placeholder{color:#bbb;}
-textarea:-ms-input-placeholder {/* Internet Explorer 10-11 */color:#bbb;}
-textarea::-ms-input-placeholder {/* Microsoft Edge */color:#bbb;}
+input[type=text]::-webkit-input-placeholder{color: rgba(255, 255, 255, 0.5);}
+input[type=text]::-moz-placeholder{color: rgba(255, 255, 255, 0.5);}
+input[type=text]:-ms-input-placeholder {/* Internet Explorer 10-11 */color: rgba(255, 255, 255, 0.5);}
+input[type=text]::-ms-input-placeholder {/* Microsoft Edge */ color: rgba(255, 255, 255, 0.5);}
+input[type=password]::-webkit-input-placeholder{color: rgba(255, 255, 255, 0.5);}
+input[type=password]::-moz-placeholder{color: rgba(255, 255, 255, 0.5);}
+input[type=password]:-ms-input-placeholder {/* Internet Explorer 10-11 */color: rgba(255, 255, 255, 0.5);}
+input[type=password]::-ms-input-placeholder {/* Microsoft Edge */color: rgba(255, 255, 255, 0.5);}
+textarea::-webkit-input-placeholder{color: rgba(255, 255, 255, 0.6);}
+textarea::-moz-placeholder{color: rgba(255, 255, 255, 0.6);}
+textarea:-ms-input-placeholder {/* Internet Explorer 10-11 */color: rgba(255, 255, 255, 0.6);}
+textarea::-ms-input-placeholder {/* Microsoft Edge */color: rgba(255, 255, 255, 0.6);}
 
 .dpblock{display: block;}
 .dpflx{display: flex;}
@@ -455,50 +455,13 @@ header{
     padding: 30px 20px;
     text-align: center;
 }
-// .prof_dl{
-//     width: 100%;
-//     flex-direction: column;
-//     @include dflx_ac;
-//     dt{
-//         width: 120px;
-//         height: 120px;
-//         border-radius: 100%;
-//         position: relative;
-//         @include shadow1;
-//     }
-//     dd{
-//         margin: 15px 0px;
-//         @include fm_monst;
-//         @include fsm20;
-//     }
-// }
 .prof_wrap{
     width: 100%;
     flex-direction: column;
+    position: relative;
     @include dflx_ac;
     .prof_name_big{
         margin: 15px 0px;
-    }
-}
-.prof_shadow120{
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    position: relative;
-    @include shadow1;
-}
-.prof_c120{
-    width: 120px;
-    height: 120px;
-    position: relative;
-    background-color: #0f173d;
-    border-radius: 100%;
-    overflow: hidden;
-    .line_over{
-        @include overlay_bd4;
-    }
-    img{
-        @include ab_trans_center;
     }
 }
 .prof_name_big{
@@ -700,6 +663,9 @@ header{
     padding: 0px 0px 10px 0px;
     @include dflx_ac;
     .rlbt{
+        margin: 0px 0px 0px 10px;
+    }
+    .btsq{
         margin: 0px 0px 0px 10px;
     }
 }
@@ -1027,45 +993,6 @@ header{
     width: 100%;
     margin: 0px 0px 30px;
 }
-.put_cont{
-    width: 100%;
-    margin: 0px 0px 25px;
-    .title{
-        font-size: 14px;
-        font-weight: 500;
-        padding: 0px 0px 5px 2px;
-    }
-}
-.putt_box{
-    width: 100%;
-    position: relative;
-}
-.put_mark{
-    position: absolute;
-    right:0px;
-    top:0px;
-    width: 50px;
-    height: 100%;
-    display: none;
-    text-align: center;
-    padding: 13px 0px 5px;
-}
-.putt_box.did .put_mark{
-    display: block;
-}
-.wr_put{
-    width: 100%;
-    height: 48px;
-    background: #0c1333;
-    padding: 5px 20px 3px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 15px;
-}
-.putt_box.did .wr_put{
-    padding: 5px 50px 3px 20px;
-}
-
 .line_cont{
     padding: 20px 0px;
     text-align: center;

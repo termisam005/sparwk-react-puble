@@ -1,5 +1,7 @@
-import InputComponent from "../components/common/InputComponent";
 import { Link } from "react-router-dom";
+import InputComponent from "../components/common/InputComponent";
+import ButtonComponent from "../components/common/ButtonComponent";
+import ButtonWith from "../components/common/ButtonWith";
 
 export default function DemoLogin() {
     return (
@@ -22,46 +24,44 @@ export default function DemoLogin() {
 
                             <article className="form_group form_logbox">
                                 <div className="log_conts">
-                                    <div className="put_cont">
-                                        <p className="title">E-mail</p>
+                                    <div className="put_cont m-b-25">
+                                        <p className="put_title">E-mail</p>
                                         <div className="putt_box">
-                                            <InputComponent type="text" class="wr_put" placeholder="admin" />
+                                            <InputComponent type="text" class="wrput" placeholder="admin" />
                                         </div>
                                     </div>
                                     <div className="put_cont">
-                                        <p className="title">Password</p>
-                                        <div className="putt_box did">
+                                        <p className="put_title">Password</p>
+                                        <div className="putt_box see">
                                             <span className="put_mark">
                                                 <img src="../resources/images/eye_gray.png" alt="see" />
                                             </span>
-                                            <InputComponent type="password" class="wr_put" placeholder="passwod" />
+                                            <InputComponent type="password" class="wrput" placeholder="passwod" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="log_button_conts">
-                                    <div>
-                                        <button type="button" className="button on m-b-20">
+                                    <div className="m-b-15">
+                                        <button type="submit" className="btn_lg1 cor">
                                             <Link to="/DemoMain">Login</Link>
                                         </button>
-                                        <button type="button" className="button society m-b-20">
-                                            Login in with Google
-                                        </button>
-                                        <button type="button" className="button society m-b-20">
-                                            Login in with Facebook
-                                        </button>
-                                        <button type="button" className="button society m-b-20">
-                                            Sign in with Apple
-                                        </button>
                                     </div>
-                                    <div className="line_cont">
-                                        <span className="word">Don’t have an account?</span>
-                                        <p className="line1"></p>
+                                    <div className="m-b-15">
+                                        <ButtonWith class="btn_society" spant="Login in with Google" src="../resources/images/so_facebook.png" />
                                     </div>
-                                    <div className="button_line">
-                                        <button type="button" className="button">
-                                            Create a new account
-                                        </button>
+                                    <div className="m-b-15">
+                                        <ButtonWith class="btn_society" spant="Login in with Facebook" src="../resources/images/so_google.png" />
                                     </div>
+                                    <div className="m-b-15">
+                                        <ButtonWith class="btn_society" spant="Sign in with Apple" src="../resources/images/so_apple.png" />
+                                    </div>
+                                </div>
+                                <div className="line_cont">
+                                    <span className="word">Don’t have an account?</span>
+                                    <p className="line1"></p>
+                                </div>
+                                <div className="button_line">
+                                    <ButtonComponent class="btn_lg1" txt="Create a new account" />
                                 </div>
                             </article>
 
@@ -70,6 +70,6 @@ export default function DemoLogin() {
                 </article>
 
             </section>
-        </div>
+        </div >
     );
 }
