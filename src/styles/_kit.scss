@@ -216,6 +216,10 @@ button.disable{
         color: #ff994a;
     }
 }
+.btn_md3.none{
+    background: transparent;
+    box-shadow: none;
+}
 
 .btn_md3.cor{
     background: linear-gradient(to bottom, #ff994a, #ff4f19);
@@ -645,11 +649,8 @@ button.disable{
     display: block;
 }
 
-
 //Profile
-.prof_shadow120{
-    width: 120px;
-    height: 120px;
+.prof_shadow{
     border-radius: 100%;
     position: relative;
     @include shadow1;
@@ -662,6 +663,24 @@ button.disable{
     cursor: pointer;
     @include dflx_ac_jcent;
     .line_over{
+        @include overlay_bd2;
+    }
+    &.none{
+        border: 2px solid #778eff;
+        .line_over{
+            display: none;
+        }
+    }
+    &.in{
+        img{
+            width: 100%;
+        }
+    }
+}
+.prof.c120{
+    width: 120px;
+    height: 120px;
+    .line_over{
         @include overlay_bd4;
     }
     &.none{
@@ -670,37 +689,34 @@ button.disable{
             display: none;
         }
     }
-    img{
-        max-width: 100%;
-    }
 }
-.prof.c120{
-    width: 120px;
-    height: 120px;
+.prof.c108{
+    width: 108px;
+    height: 108px;
+    @include shadow2;
 }
-.prof.c32{
-    width: 32px;
-    height: 32px;
-    &.none{
-        border: 2px solid #778eff;
-    }
+.prof.c60{
+    width: 60px;
+    height: 60px;
+    @include shadow2;
 }
 .prof.c40{
     width: 40px;
     height: 40px;
-    &.none{
-        border: 2px solid #778eff;
-    }
 }
 .prof.c50{
     width: 50px;
     height: 50px;
-    &.none{
-        border: 2px solid #778eff;
-    }
+}
+.prof.c32{
+    width: 32px;
+    height: 32px;
 }
 .prof.norm{
     background: #273a98;
+    .line_over{
+        display: none;
+    }
 }
 .prof.norm.line{
     border: 2px solid #54e392;
@@ -716,4 +732,120 @@ button.disable{
     background-color: #54e392;
     border-radius: 100%;
     z-index: 20;
+}
+
+
+//Popup
+.pop_body{
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.4);
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    background:#16225c;
+    background: linear-gradient(to bottom, #16225c, #182566);
+    &.pop_dial{
+        width: 480px;
+    }
+}
+.pop_top{
+    width: 100%;
+    padding: 16px 16px 13px;
+    display: flex;
+}
+.ptop_txt{
+    display: flex;
+    align-items: center;
+    flex:1;
+    .word{
+        padding: 3px 0px 0px;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 2px 0px 0px;
+    }
+}
+.soc_mark{
+    width:24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 0px 8px 0px 0px;
+    @include dflx_ac_jcent;
+}
+.ptop_x{
+    width: 24px;
+    height: 24px;
+    background: url('../resources/images/close_wh.png') no-repeat center center;
+    cursor: pointer;
+}
+.pop_conts{
+    width: 100%;
+    padding: 13px 16px 16px;
+}
+.pop_cent{
+    text-align: center;
+    padding: 24px 0px 18px;
+}
+.line1{
+    margin: 0px;
+    position: relative;
+    @include line1;
+}
+.line2{
+    margin: 0px;
+    @include line2;
+}
+.pop_bottom{
+    width: 100%;
+    padding: 2px 16px 14px;
+    @include dflx_ac_jbet;
+}
+.pop_foot{
+    width: 100%;
+    padding: 14px 16px 15px;
+    @include dflx_ac_jbet;
+}
+.pop_conts_dial{
+    width: 100%;
+    padding: 24px 24px 18px;
+}
+.natdial_dl{
+    width: 100%;
+    @include dflx_ac_jbet;
+    dt{
+        width: calc(100% - 254px);
+        padding: 0px 16px 0px 0px;
+    }
+    dd{
+        width: 254px;
+        .wrput{
+            width: 100%;
+        }
+    }
+}
+.dial_selbox{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 5px 8px;
+    @include dflx_ac_jbet;
+    .nation{
+        @include dflx_ac;
+        img{
+            margin: 0px 8px 0px 0px;
+        }
+        .word{
+            padding: 2px 0px 0px 0px;
+        }
+    }
+    .sort{
+        img{
+            width: 9px;
+            height: 19px;
+        }
+    }
 }

@@ -112,9 +112,9 @@ class Header extends Component {
                                 </p>
                             </div>
                             <div className="hcircle">
-                                <p className="circle_p prof_c32">
+                                <p className="circle_p prof in c32">
                                     <span className="line_over"></span>
-                                    <img src="../resources/images/thumb_ex1.jpg" alt="profile photo" />
+                                    <img src="../resources/images/thumb_ex1.jpg" alt="profile_photo" />
                                 </p>
                                 <section className="hidd_zone">
                                     <div className="hidd_dark"></div>

@@ -7,6 +7,7 @@ import KitButton from "./ui-kit/KitButton";
 import KitForm from "./ui-kit/KitForm";
 import KitProfile from "./ui-kit/KitProfile";
 import KitPopup from "./ui-kit/KitPopup";
+import KitEx from "./ui-kit/KitEx";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="/KitProfile" exact component={KitProfile} />
 
         <Route path="/KitPopup" exact component={KitPopup} />
+
+        <Route path="/KitEx" exact component={KitEx} />
       </Switch>
     </BrowserRouter>
   );

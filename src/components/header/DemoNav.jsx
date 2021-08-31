@@ -18,6 +18,9 @@ export default function Nav() {
             <p className="nav_menu">
                 <Link to="/KitPopup">Popup</Link>
             </p>
+            <p className="nav_menu">
+                <Link to="/KitEx">Ex</Link>
+            </p>
         </nav>
     );
 }

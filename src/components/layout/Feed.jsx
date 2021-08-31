@@ -15,9 +15,9 @@ export default function Feed() {
             <section className="contain_body">
                 <article className="the_feed">
                     <div className="feed_top">
-                        <p className="prof_c50">
+                        <p className="prof in c50">
                             <span className="line_over"></span>
-                            <ImgComponent src="../resources/images/thumb_ex1.jpg" />
+                            <img src="../resources/images/thumb_ex1.jpg" alt="profile_photo" />
                         </p>
                         <div className="write_zone">
                             <input type="text" className="wirte_put"

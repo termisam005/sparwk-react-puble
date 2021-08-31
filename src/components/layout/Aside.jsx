@@ -5,7 +5,7 @@ export default function Aside() {
         <aside className="the_aside">
             <div className="prof_zone">
                 <div className="prof_wrap">
-                    <div className="prof_shadow120">
+                    <div className="prof_shadow">
                         <p className="prof c120">
                             <span className="line_over"></span>
                             <ImgComponent src="../resources/images/thumb_ex1.jpg" />

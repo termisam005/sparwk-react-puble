@@ -19,6 +19,7 @@ $fs18:28px;
 @mixin tar {text-align: right !important;}
 @mixin dpblock{display: block !important;}
 @mixin dpinblock{display: inline-block !important;}
+@mixin dpinline{display: inline !important;}
 @mixin dpflx{display: flex !important;}
 @mixin fleft{float:left !important;}
 @mixin fright{float:right !important;}
@@ -155,7 +156,7 @@ $fs18:28px;
     width: 100%;
     height: 2px;
     background-color: #000;
-    border-bottom: 1px solid rgba(125, 150, 244, 0.4)
+    border-bottom: 1px solid rgba(125, 150, 244, 0.45)
 }
 @mixin line2 {
     width: 100%;
@@ -194,7 +195,10 @@ $fs18:28px;
     background-color: #16225c;
 }
 @mixin shadow1{
-    box-shadow: -5px -5px 13px 4px rgb(62 81 173 / 77%), 3px 3px 14px 2px rgb(0 0 0 / 73%);
+    box-shadow: -5px -5px 13px 4px rgb(62, 81, 173, 0.7), 3px 3px 14px 2px rgb(0, 0, 0, 0.7);
+}
+@mixin shadow2{
+    box-shadow: -3px -3px 6px 4px rgb(62, 81, 173, 0.7), 2px 2px 8px 1px rgb(0, 0, 0, 0.7);
 }
 @mixin sbt1 {
     display: flex;
