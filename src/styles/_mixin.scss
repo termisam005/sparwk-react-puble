@@ -208,7 +208,7 @@ $fs18:28px;
     border-radius: 5px;
     box-shadow: -1px -1px 3px rgb(119, 119, 255, 0.5), 1px 1px 3px 0 rgba(0, 0, 0, 0.6);
     background: linear-gradient(136deg, #14205a, #1e3088);
-    &.on{
+    &:hover,&.on{
         box-shadow: inset 1px 1px 5px 0 rgba(0, 0, 0), 
         inset -1px -1px 3px rgba(119, 119, 255, 0.7);
     }

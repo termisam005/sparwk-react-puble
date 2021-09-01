@@ -131,10 +131,12 @@ export default function KitProfile() {
                         </p>
                     </div>
                     <div className="p-30 m-r-30">
-                        <p className="prof in c50">
-                            <span className="line_over"></span>
-                            <img src="../resources/images/thumb_ex1.jpg" alt="profile_photo" />
-                        </p>
+                        <div className="prof_wrap">
+                            <p className="prof in c50">
+                                <span className="line_over"></span>
+                                <img src="../resources/images/thumb_ex1.jpg" alt="profile_photo" />
+                            </p>
+                        </div>
                     </div>
                     <div className="p-30 m-r-30">
                         <div className="prof_wrap">
