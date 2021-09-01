@@ -1,18 +1,13 @@
 import ImgComponent from "../common/ImgComponent";
+import ProfComponent from "../common/ProfComponent";
 
 export default function Aside() {
     return (
         <aside className="the_aside">
             <div className="prof_zone">
-                <div className="prof_wrap">
-                    <div className="prof_shadow">
-                        <p className="prof c120">
-                            <span className="line_over"></span>
-                            <ImgComponent src="../resources/images/thumb_ex1.jpg" />
-                        </p>
-                    </div>
-                    <p className="prof_name_big">Jin Suk Choi</p>
-                </div>
+                <ProfComponent wrap_class="prof_wrap" prof_class="prof in c120 prof_shadow"
+                    line_class="line_over" src="../resources/images/thumb_ex1.jpg" />
+                <p className="prof_name_big">Jin Suk Choi</p>
             </div>
             <p className="line1">
                 <span className="cenbar">

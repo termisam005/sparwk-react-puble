@@ -1,14 +1,29 @@
-import React from "react";
+import { useState } from "react";
 import ButtonComponent from "../components/common/ButtonComponent";
 import InputComponent from "../components/common/InputComponent";
+import PopComponent from "../components/common/PopComponent";
 
 export default function DemoPop() {
+    const [popUps, setpopUps] = useState(false);
+
+    const openPop = () => {
+        setpopUps(true);
+    }
+    const closePop = () => {
+        setpopUps(false);
+    }
+
     return (
         <div className="wrap_grad">
             <div className="container">
 
                 <section className="demo_title">
                     <h1>Popup</h1>
+                </section>
+
+                <section className="demo_line">
+                    <ButtonComponent onClick={openPop} class="btn_sm1 cor" txt="Popup" />
+                    <PopComponent open={popUps} close={closePop} pop_cent={"Popup open test"} />
                 </section>
 
                 <section className="dpflx">

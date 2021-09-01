@@ -446,8 +446,6 @@ header{
     width: 100%;
     padding: 30px 20px;
     text-align: center;
-}
-.prof_wrap{
     .prof_name_big{
         margin: 15px 0px;
     }
@@ -682,6 +680,12 @@ header{
     dd{
         @include fsl12;
     }
+}
+.tab_content{
+    display: none;
+}
+.tab_content.on{
+    display: block;
 }
 .drop_box{
     width: 100%;

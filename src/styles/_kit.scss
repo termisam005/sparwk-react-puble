@@ -648,7 +648,6 @@ button.disable{
 //Profile
 .prof_shadow{
     border-radius: 100%;
-    position: relative;
     @include shadow1;
 }
 .prof_wrap{
@@ -683,7 +682,7 @@ button.disable{
     width: 120px;
     height: 120px;
     .line_over{
-        @include overlay_bd4;
+        border: 4px solid #fff;
     }
     &.none{
         border: 4px solid #778eff;
@@ -737,6 +736,22 @@ button.disable{
 }
 
 //Popup
+.pop_contents{
+    display: none;
+}
+.pop_contents.active{
+    display: block;
+}
+.pop_bg{
+    position: fixed;
+    left:0px;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 .pop_body{
     width: 400px;
     border-radius: 5px;
@@ -747,6 +762,13 @@ button.disable{
     &.pop_dial{
         width: 480px;
     }
+}
+.pop_ab_cent{
+    position: fixed;
+    left:50%;
+    top:45%;
+    transform: translate(-50%, -40%);
+    z-index: 200;
 }
 .pop_top{
     width: 100%;
@@ -791,6 +813,7 @@ button.disable{
 .pop_cent{
     text-align: center;
     padding: 24px 0px 22px;
+    font-size: 14px;
 }
 .line1{
     margin: 0px;
@@ -912,7 +935,8 @@ button.disable{
 }
 .message_box{
     padding:12px 12px 11px;
-    &.on{
+    cursor: pointer;
+    &:hover,&.on{
         background-color: #182566;
     }
 }
@@ -948,11 +972,10 @@ button.disable{
         @include fsm14;
         @include txt_ellip;
         flex:1;
-        padding: 0px 5px 0px 0px;
+        padding: 0px 7px 0px 0px;
     }
     .time{
         font-size: 12px;
-        opacity: 0.3;
     }
 }
 .mess_tip
