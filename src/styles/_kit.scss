@@ -651,7 +651,7 @@ button.disable{
     @include shadow1;
 }
 .prof_wrap{
-    width: 100%;
+    //width: 100%;
     flex-direction: column;
     position: relative;
     @include dflx_ac;
@@ -686,9 +686,6 @@ button.disable{
     }
     &.none{
         border: 4px solid #778eff;
-        .line_over{
-            display: none;
-        }
     }
 }
 .prof.c108{
@@ -722,7 +719,7 @@ button.disable{
 .prof.norm.line{
     border: 2px solid #54e392;
 }
-.prof_wrap .coming{
+.prof_wrap .comming{
     position: absolute;
     display: inline-block;
     right: 1px;
