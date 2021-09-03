@@ -1,0 +1,13 @@
+
+-- 부가설명은 여기에 적겠습니다. --
+
+화면 확인시 설치필요 : npm i react-router / npm i jquery --save
+
+<ui-kit 폴더>
+- DemoLogin, DemoMain 페이지는 우선 참고용 입니다.
+- Kit~ 으로 이름된 페이지는 재사용을 위한 ui 모음입니다.
+
+<pages 폴더>
+- 로그인부터 사용자 디자인 퍼블리싱 하게되면 생성 예정.
+
+ 

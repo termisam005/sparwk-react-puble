@@ -1,5 +1,6 @@
 import React from "react";
 import ImgComponent from "../components/common/ImgComponent";
+import ProfComponent from "../components/common/ProfComponent";
 
 export default function KitEx() {
     return (
@@ -33,10 +34,8 @@ export default function KitEx() {
                                             <div className="message_box">
                                                 <dl className="message_dl">
                                                     <dt>
-                                                        <span className="coming"></span>
-                                                        <p className="prof_c40">
-                                                            <img src="../resources/images/prof_none.png" alt="none profile" />
-                                                        </p>
+                                                        <ProfComponent wrap_class="prof_wrap" comming_class="comming" prof_class="prof norm c40"
+                                                            imgclass="m-t-12" src="../resources/images/prof_none_40.png" />
                                                     </dt>
                                                     <dd>
                                                         <div className="mess_who">
@@ -58,13 +57,8 @@ export default function KitEx() {
                                             <div className="message_box on">
                                                 <dl className="message_dl">
                                                     <dt>
-                                                        <div className="prof_wrap">
-                                                            <span className="coming"></span>
-                                                            <p className="prof in norm c40">
-                                                                <span className="line_over"></span>
-                                                                <img src="../resources/images/thumb_ex1.jpg" alt="profile_photo" />
-                                                            </p>
-                                                        </div>
+                                                        <ProfComponent wrap_class="prof_wrap" comming_class="comming" prof_class="prof in norm c40"
+                                                            line_class="line_over" src="../resources/images/thumb_ex1.jpg" />
                                                     </dt>
                                                     <dd>
                                                         <div className="mess_who">
@@ -82,9 +76,8 @@ export default function KitEx() {
                                             <div className="message_box">
                                                 <dl className="message_dl">
                                                     <dt>
-                                                        <p className="prof_c40">
-                                                            <img src="../resources/images/prof_ex1.png" alt="profile" />
-                                                        </p>
+                                                        <ProfComponent wrap_class="prof_wrap" comming_class="comming dis" prof_class="prof in norm c40"
+                                                            line_class="line_over" src="../resources/images/prof_ex1.png" />
                                                     </dt>
                                                     <dd>
                                                         <div className="mess_who">
@@ -102,9 +95,8 @@ export default function KitEx() {
                                             <div className="message_box">
                                                 <dl className="message_dl">
                                                     <dt>
-                                                        <p className="prof_c40">
-                                                            <img src="../resources/images/prof_ex1.png" alt="profile" />
-                                                        </p>
+                                                        <ProfComponent wrap_class="prof_wrap" prof_class="prof in norm c40"
+                                                            line_class="line_over" src="../resources/images/prof_ex1.png" />
                                                     </dt>
                                                     <dd>
                                                         <div className="mess_who">
@@ -126,9 +118,8 @@ export default function KitEx() {
                                             <div className="message_box">
                                                 <dl className="message_dl">
                                                     <dt>
-                                                        <p className="prof_c40">
-                                                            <img src="../resources/images/prof_ex2.png" alt="profile" />
-                                                        </p>
+                                                        <ProfComponent wrap_class="prof_wrap" prof_class="prof in norm c40"
+                                                            line_class="line_over" src="../resources/images/prof_ex2.png" />
                                                     </dt>
                                                     <dd>
                                                         <div className="mess_who">
@@ -169,10 +160,8 @@ export default function KitEx() {
                                             <div className="message_box">
                                                 <dl className="message_dl">
                                                     <dt>
-                                                        <span className="coming"></span>
-                                                        <p className="prof_c40">
-                                                            <img src="../resources/images/prof_none.png" alt="none profile" />
-                                                        </p>
+                                                        <ProfComponent wrap_class="prof_wrap" comming_class="comming" prof_class="prof norm c40"
+                                                            imgclass="m-t-12" src="../resources/images/prof_none_40.png" />
                                                     </dt>
                                                     <dd>
                                                         <div className="mess_who">
@@ -193,10 +182,8 @@ export default function KitEx() {
                                             <div className="message_box">
                                                 <dl className="message_dl">
                                                     <dt>
-                                                        <span className="coming"></span>
-                                                        <p className="prof_c40">
-                                                            <img src="../resources/images/prof_none.png" alt="none profile" />
-                                                        </p>
+                                                        <ProfComponent wrap_class="prof_wrap" comming_class="comming" prof_class="prof norm c40"
+                                                            imgclass="m-t-12" src="../resources/images/prof_none_40.png" />
                                                     </dt>
                                                     <dd>
                                                         <div className="mess_who">

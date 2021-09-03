@@ -730,6 +730,9 @@ button.disable{
     background-color: #54e392;
     border-radius: 100%;
     z-index: 20;
+    &.dis{
+        background-color: #7f7f7f;
+    }
 }
 
 //Popup
@@ -928,6 +931,7 @@ button.disable{
 }
 .message_team{
     @include box1;
+    background: linear-gradient(180deg, #141e52, #16225c);
     border-radius: 5px
 }
 .message_box{
