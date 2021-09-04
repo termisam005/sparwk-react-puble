@@ -1,4 +1,5 @@
 import ImgComponent from "../common/ImgComponent";
+import ProfComponent from "../common/ProfComponent";
 
 export default function Feed() {
     return (
@@ -15,10 +16,8 @@ export default function Feed() {
             <section className="contain_body">
                 <article className="the_feed">
                     <div className="feed_top">
-                        <p className="prof in c50">
-                            <span className="line_over"></span>
-                            <img src="../resources/images/thumb_ex1.jpg" alt="profile_photo" />
-                        </p>
+                        <ProfComponent wrap_class="prof_wrap" prof_class="prof in c50"
+                            line_class="line_over" src="../resources/images/thumb_ex1.jpg" />
                         <div className="write_zone">
                             <input type="text" className="wirte_put"
                                 placeholder="Do you have a story you would like to share?" />

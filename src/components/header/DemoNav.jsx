@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Nav() {
+export default function DemoNav() {
     return (
         <nav className="nav">
             <p className="nav_menu">

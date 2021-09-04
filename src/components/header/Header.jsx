@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import DemoNav from "./DemoNav";
 import Fixmenu from "./Fixmenu";
 import Grmessage from "./Grmessage";
+import ProfComponent from "../common/ProfComponent";
 import $ from "jquery";
 
 class Header extends Component {
@@ -112,10 +113,10 @@ class Header extends Component {
                                 </p>
                             </div>
                             <div className="hcircle">
-                                <p className="circle_p prof in c32">
-                                    <span className="line_over"></span>
-                                    <img src="../resources/images/thumb_ex1.jpg" alt="profile_photo" />
-                                </p>
+                                <div className="circle_p">
+                                    <ProfComponent wrap_class="prof_wrap" prof_class="prof in c32"
+                                        line_class="line_over" src="../resources/images/thumb_ex1.jpg" />
+                                </div>
                                 <section className="hidd_zone">
                                     <div className="hidd_dark"></div>
                                     <article className="hidd_box">

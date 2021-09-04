@@ -12,7 +12,7 @@ export default function KitForm() {
                 </section>
 
                 <section className="dpflx">
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title">Label</p>
                             <div className="putt_box">
@@ -20,7 +20,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title inner">Label</p>
                             <div className="putt_box">
@@ -28,7 +28,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title">Label</p>
                             <div className="putt_box">
@@ -39,7 +39,7 @@ export default function KitForm() {
                 </section>
 
                 <section className="dpflx">
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title">Label</p>
                             <div className="putt_box error">
@@ -51,7 +51,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title inner">Label</p>
                             <div className="putt_box error">
@@ -63,7 +63,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title">Label</p>
                             <div className="putt_box error">
@@ -78,7 +78,7 @@ export default function KitForm() {
                 </section>
 
                 <section className="dpflx">
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title">Label</p>
                             <div className="putt_box see">
@@ -89,7 +89,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title inner">Label</p>
                             <div className="putt_box see">
@@ -100,7 +100,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title">Label</p>
                             <div className="putt_box see">
@@ -114,7 +114,7 @@ export default function KitForm() {
                 </section>
 
                 <section className="dpflx">
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <div className="putt_box">
                                 <InputComponent type="text" class="wrput" placeholder="text" />
@@ -125,7 +125,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <div className="putt_box">
                                 <InputComponent type="text" class="wrput rad" placeholder="text" />
@@ -136,7 +136,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <div className="putt_box">
                                 <InputComponent type="text" class="wrput trans" placeholder="Text" />
@@ -150,7 +150,7 @@ export default function KitForm() {
                 </section>
 
                 <section className="dpflx">
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <div className="putt_box time">
                                 <span className="put_timer">3:00</span>
@@ -158,7 +158,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <div className="putt_box time">
                                 <span className="put_timer">3:00</span>
@@ -166,7 +166,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <div className="putt_box time">
                                 <span className="put_timer">3:00</span>
@@ -177,7 +177,7 @@ export default function KitForm() {
                 </section>
 
                 <section className="dpflx">
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <div className="putt_box">
                                 <InputComponent type="text" class="wrput" placeholder="text" />
@@ -188,7 +188,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <div className="putt_box">
                                 <InputComponent type="text" class="wrput rad" placeholder="text" />
@@ -199,7 +199,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <div className="putt_box">
                                 <InputComponent type="text" class="wrput trans" placeholder="Text" />
@@ -213,7 +213,7 @@ export default function KitForm() {
                 </section>
 
                 <section className="dpflx">
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title">
                                 <span>Label</span>
@@ -230,7 +230,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title">
                                 <span>Label</span>
@@ -247,7 +247,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title">
                                 <span>Label</span>
@@ -267,7 +267,7 @@ export default function KitForm() {
                 </section>
 
                 <section className="dpflx">
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title">Label</p>
                             <div className="putt_box">
@@ -275,7 +275,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title inner">Label</p>
                             <div className="putt_box">
@@ -283,7 +283,7 @@ export default function KitForm() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 w350">
                         <div className="put_cont">
                             <p className="put_title">Label</p>
                             <div className="putt_box">
@@ -297,7 +297,7 @@ export default function KitForm() {
                     <section className="m-t-30">
                         <h1 className="demo_mini_title">Checkbox</h1>
                         <div className="dpflx">
-                            <div className="p-20">
+                            <div className="p-20 w350">
                                 <div className="check_line">
                                     <p className="checkbox">
                                         <img src="../resources/images/sv_check_cor.svg" alt="check" />
@@ -310,7 +310,7 @@ export default function KitForm() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="p-20">
+                            <div className="p-20 w350">
                                 <div className="check_line">
                                     <p className="checkbox wh">
                                         <img src="../resources/images/sv_check_wh.svg" alt="check" />
@@ -331,7 +331,7 @@ export default function KitForm() {
                     <section className="m-l-100 m-t-30">
                         <h1 className="demo_mini_title">Radio Buttons</h1>
                         <div className="dpflx">
-                            <div className="p-20">
+                            <div className="p-20 w350">
                                 <div className="check_line">
                                     <p className="checkbox circ">
                                         <span className="circle"></span>
@@ -346,7 +346,7 @@ export default function KitForm() {
                                     <span className="check_word">Select B</span>
                                 </div>
                             </div>
-                            <div className="p-20">
+                            <div className="p-20 w350">
                                 <div className="check_line">
                                     <p className="checkbox circ_norm">
                                         <span className="circle"></span>

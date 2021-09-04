@@ -90,6 +90,9 @@ $fs18:28px;
     align-items: center;
     justify-content: flex-end;
 }
+@mixin flx_wrap {
+    flex-wrap: wrap;
+}
 
 //font
 @mixin fm_monst {
