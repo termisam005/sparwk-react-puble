@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { BrowserRouter, BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "./App.scss";
 import DemoLogin from "./ui-kit/DemoLogin";
