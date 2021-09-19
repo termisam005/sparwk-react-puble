@@ -1,8 +1,7 @@
 import { Link, useHistory } from "react-router-dom";
 import { useState } from "react";
 import InputComponent from "../../components/common/InputComponent";
-import ButtonWith from "../../components/common/ButtonWith";
-//import Switch from "../../components/common/Switch";
+import HeaderTrans from "../../components/header/HeaderTrans";
 
 export default function Login2() {
     const history = useHistory();
@@ -10,10 +9,10 @@ export default function Login2() {
         history.goBack();
     };
 
-    const [checked, setChecked] = useState(true);
-
     return (
         <div className="wrap_login">
+
+            <HeaderTrans logo_class="logo_none" src="../resources/images/logo.png" />
 
             <article className="zone_log">
                 <section className="log_text">
@@ -41,11 +40,11 @@ export default function Login2() {
                                     <div className="putt_box">
                                         <InputComponent type="password" class="wrput" placeholder="Password" />
                                         <div className="put_mess p-t-15">
-                                            <div>
-                                                <Switch isOn={checked} handleToggle={() => setChecked(!checked)}
-                                                    colorOne="#999" colorTwo="#fff" />
+                                            <div className="switch_zone">
+                                                <Switch />
+                                                <span>Stay signed in</span>
                                             </div>
-                                            <Link to="">
+                                            <Link to="/ResetPw">
                                                 <span className="sp_viol">
                                                     Reset Your Password
                                                 </span>
@@ -56,7 +55,7 @@ export default function Login2() {
                             </div>
                             <div className="log_button_conts">
                                 <div className="m-b-12">
-                                    <Link to="">
+                                    <Link to="/Login3">
                                         <button type="submit" className="btn_lg1 cor">
                                             Continue
                                         </button>
@@ -65,7 +64,7 @@ export default function Login2() {
                             </div>
                         </article>
                         <div className="go_different">
-                            <Link to="">
+                            <Link to="/Login1">
                                 <span>
                                     Sign in to a different account
                                 </span>
@@ -80,22 +79,19 @@ export default function Login2() {
     )
 }
 
-const Switch = ({ isOn, handleToggle, colorOne, colorTwo }) => {
+const Switch = () => {
+    const [checked, setChecked] = useState(false);
+    const toggleSwitch = () => {
+        setChecked(!checked);
+    }
+
     return (
-        <div className="swith_room">
-            <input
-                onChange={handleToggle}
-                className="switch-checkbox"
-                id={`switch`}
-                type="checkbox"
-            />
-            <label
-                style={{ background: isOn ? colorOne : colorTwo }}
-                className="switch-label"
-                htmlFor={`switch`}
-            >
-                <span className={`switch-button`} />
+        <div onClick={toggleSwitch} className={checked ? "swith_room on" : "swith_room"}>
+            <input className="switch-checkbox" type="checkbox" />
+            <label className="switch-label">
+                <span className="switch-button" />
             </label>
         </div>
     );
 };
+

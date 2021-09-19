@@ -1,6 +1,7 @@
 import React from "react";
 import ImgComponent from "../components/common/ImgComponent";
 import InputComponent from "../components/common/InputComponent";
+import SearchComponent from "../components/common/SearchComponent";
 
 export default function KitForm() {
     return (
@@ -360,6 +361,24 @@ export default function KitForm() {
                                     </p>
                                     <span className="check_word">Select B</span>
                                 </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div className="dpflx">
+                    <section className="m-t-30">
+                        <h1 className="demo_mini_title">Search</h1>
+                        <div className="dpflx">
+                            <div className="p-20">
+                                <article className="hd_search">
+                                    <button type="button" className="btn_srch"></button>
+                                    <input type="text" className="hd_input" placeholder="Search" />
+                                </article>
+                            </div>
+                            <div className="p-20">
+                                <SearchComponent srch_class="hd_search roles_search" btn_type="button"
+                                    btn_class="btn_srch" input_class="hd_input" placeholder="Music Label, Creator, Artist name" />
                             </div>
                         </div>
                     </section>

@@ -2,6 +2,7 @@ import React from "react";
 import ImgComponent from "../components/common/ImgComponent";
 import ButtonComponent from "../components/common/ButtonComponent";
 import ButtonWith from "../components/common/ButtonWith";
+import BtnSelect from "../components/common/BtnSelect";
 
 export default function DemoButton() {
     return (
@@ -230,6 +231,17 @@ export default function DemoButton() {
                             <ButtonComponent class="btn_tab114 on" txt="Man" />
                             <ButtonComponent class="btn_tab114" txt="Woman" />
                             <ButtonComponent class="btn_tab114" txt="Private" />
+                        </div>
+                    </div>
+                </section>
+
+                <section className="demo_line">
+                    <div className="p-20 w-60">
+                        <div className="dflx_ac_jbet">
+                            <BtnSelect>Country</BtnSelect>
+                            <BtnSelect>Dance</BtnSelect>
+                            <BtnSelect>Electronic</BtnSelect>
+                            <BtnSelect>Hip Hop</BtnSelect>
                         </div>
                     </div>
                 </section>

@@ -1,4 +1,10 @@
-//import $ from "jquery";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination } from "swiper/core";
+import "swiper/swiper.min.css";
+import 'swiper/components/navigation/navigation.min.css'
+import "swiper/components/pagination/pagination.min.css";
+SwiperCore.use([Navigation, Pagination]);
+
 export default function Task() {
 
     return (
@@ -35,56 +41,96 @@ export default function Task() {
                         </button>
                     </div>
                 </article>
+
                 <article className="card_line">
-                    <div className="the_card">
-                        <p className="delete">
-                            <img src="../resources/images/card_x.png" alt="delete" />
-                        </p>
-                        <dl className="card_dl">
-                            <dt>Create a Project</dt>
-                            <dd>
-                                First impressions really do count.
-                                A good Profile also helps get you found
-                            </dd>
-                        </dl>
-                    </div>
-                    <div className="the_card">
-                        <p className="delete">
-                            <img src="../resources/images/card_x.png" alt="delete" />
-                        </p>
-                        <dl className="card_dl">
-                            <dt>Create a Project</dt>
-                            <dd>
-                                Create your won project and collaboate with
-                                oher artists and professionals.
-                            </dd>
-                        </dl>
-                    </div>
-                    <div className="the_card">
-                        <p className="delete">
-                            <img src="../resources/images/card_x.png" alt="delete" />
-                        </p>
-                        <dl className="card_dl">
-                            <dt>Upload music</dt>
-                            <dd>
-                                Let's start with the basics and get soume tracks
-                                uploaded and metadata added.
-                            </dd>
-                        </dl>
-                    </div>
-                    <div className="the_card">
-                        <p className="delete">
-                            <img src="../resources/images/card_x.png" alt="delete" />
-                        </p>
-                        <dl className="card_dl">
-                            <dt>Add Song info</dt>
-                            <dd>
-                                Our Service needs essential song info search
-                                your music and get it submitted.
-                            </dd>
-                        </dl>
-                    </div>
+                    <Swiper slidesPerView={4} navigation={true} spaceBetween={5}>
+                        <SwiperSlide>
+                            <div className="the_card">
+                                <p className="delete">
+                                    <img src="../resources/images/card_x.png" alt="delete" />
+                                </p>
+                                <dl className="card_dl">
+                                    <dt>Create a Project</dt>
+                                    <dd>
+                                        Create your won project and collaboate with
+                                        oher artists and professionals.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="the_card">
+                                <p className="delete">
+                                    <img src="../resources/images/card_x.png" alt="delete" />
+                                </p>
+                                <dl className="card_dl">
+                                    <dt>Create a Project</dt>
+                                    <dd>
+                                        Create your won project and collaboate with
+                                        oher artists and professionals.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="the_card">
+                                <p className="delete">
+                                    <img src="../resources/images/card_x.png" alt="delete" />
+                                </p>
+                                <dl className="card_dl">
+                                    <dt>Create a Project</dt>
+                                    <dd>
+                                        Create your won project and collaboate with
+                                        oher artists and professionals.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="the_card">
+                                <p className="delete">
+                                    <img src="../resources/images/card_x.png" alt="delete" />
+                                </p>
+                                <dl className="card_dl">
+                                    <dt>Create a Project</dt>
+                                    <dd>
+                                        Create your won project and collaboate with
+                                        oher artists and professionals.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="the_card">
+                                <p className="delete">
+                                    <img src="../resources/images/card_x.png" alt="delete" />
+                                </p>
+                                <dl className="card_dl">
+                                    <dt>Create a Project</dt>
+                                    <dd>
+                                        Create your won project and collaboate with
+                                        oher artists and professionals.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="the_card">
+                                <p className="delete">
+                                    <img src="../resources/images/card_x.png" alt="delete" />
+                                </p>
+                                <dl className="card_dl">
+                                    <dt>Create a Project</dt>
+                                    <dd>
+                                        Create your won project and collaboate with
+                                        oher artists and professionals.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
                 </article>
+
             </section>
         </article>
     );

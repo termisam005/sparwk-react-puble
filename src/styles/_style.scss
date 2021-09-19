@@ -72,7 +72,8 @@ input{outline:none; border:none; font-family: 'Roboto', sans-serif; color: #fff;
 -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;}
-button{outline:none; border:none; cursor: pointer; font-family: 'Roboto', sans-serif; color: #fff;}
+button{outline:none; border:none; cursor: pointer; font-family: 'Roboto', sans-serif; color: #fff; overflow: hidden; white-space: nowrap;}
+select{outline:none; border:none; cursor: pointer; font-family: 'Roboto', sans-serif; color: #fff;}
 
 input[type=text]::-webkit-input-placeholder{color: rgba(255, 255, 255, 0.5);}
 input[type=text]::-moz-placeholder{color: rgba(255, 255, 255, 0.5);}
@@ -135,6 +136,9 @@ header{
     background-color: $bbg1;
     box-shadow: 0 10px 20px 0 rgba(15, 41, 107, 0.1);
     z-index:100;
+    &.trans{
+        background-color: transparent;
+    }
 }
 .header_line{
     position: relative;
@@ -161,6 +165,9 @@ header{
     a{
         display: block;
     }
+}
+.logo_none{
+    display: none;
 }
 .nav{
     @include dflx_ac;
@@ -200,7 +207,7 @@ header{
     position: relative;
     width: 280px;
     height: 32px;
-    padding: 0px 12px;
+    padding: 0px 14px;
     border-radius: 30px;
     background-color: #141e52;
     box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.9), 
@@ -212,6 +219,10 @@ header{
         background: transparent;
         padding: 0px 7px;
         font-size: 14px;
+    }
+    &.roles_search{
+        width: 600px;
+        margin: 0px 0px 25px;
     }
 }
 .btn_srch{
@@ -276,18 +287,24 @@ header{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 200;
-    //display: none;
+    display: none;
 }
-// .hcircle.on .hidd_dark{
-//     display: block;
-// }
+.hcircle.on .hidd_dark{
+    display: block;
+}
 .hidd_box{
     @include box4;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top:43px;
+    top:45px;
     z-index: 300;
+    &.nation{
+        left: auto;
+        transform: none;
+        right:5px;
+        top:37px;
+    }
 }
 .flag_top{
     width: 100%;
@@ -309,6 +326,9 @@ header{
     .flag_word{
         line-height: 1;
         @include fsl12;
+    }
+    &:hover .flag_word{
+        color: $col994;
     }
 }
 .prof_top{
@@ -353,19 +373,19 @@ header{
     z-index: 100;
 }
 .fixmenu_bar{
-    width: 100%;
-    padding: 10px;
     @include box2;
+    width: 100%;
+    padding: 10px 0px;
     border-radius: 0px 0px 5px 5px;
+    overflow: visible !important;
+    //transition: 0.3s all;
 }
 .fixmenu{
     width: 100%;
-    height: 60px;
+    padding: 0px 10px;
     margin: 0px 0px 10px;
     position: relative;
     cursor: pointer;
-    @include dflx_ac_jcent;
-    @include box1;
     img{
         width: 32px;
         height: 32px;
@@ -376,6 +396,12 @@ header{
     &:last-child{
         margin: 0px;
     }
+}
+.fix_nemo{
+    width: 100%;
+    height: 60px;
+    @include dflx_ac_jcent;
+    @include box1;
     &:hover{
         .icon_fix{
             display: none;
@@ -387,15 +413,15 @@ header{
 }
 .hidden_menu{
     position: absolute;
-    //width: 210px;
+    width:0px;
     left:72px;
     top:-25px;
     background-color: #141e52;
     border-radius:0px 10px 10px 0px;
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.2s all;
     overflow: hidden;
-    z-index: 200;
-    display: none;
+    z-index: 300;
     .top{
         @include dflx_ae;
         width: 210px;
@@ -424,6 +450,10 @@ header{
 
 .fixmenu.on .hidden_menu{
     display: block;
+}
+.fixmenu:hover .hidden_menu{
+    width: 210px;
+    //transition: 0.3s all;
 }
 
 .container{
@@ -663,9 +693,12 @@ header{
         top:14px;
         cursor: pointer;
     }
-    &:first-child{
-        border-left: 8px solid #ff2e4e;
-    }
+    // &:first-child{
+    //     border-left: 8px solid #ff2e4e;
+    // }
+}
+.swiper-slide .the_card{
+    width: 96%;
 }
 .card_dl{
     width: 100%;
@@ -778,7 +811,6 @@ header{
 .gr_message.see{
     right:0px;
 }
-
 .prof_c40{
     width: 40px;
     height: 40px;
@@ -790,7 +822,6 @@ header{
         @include ab_trans_center;
     }
 }
-
 .buttons{
     width:100%;
     height: 40px;
@@ -816,6 +847,128 @@ header{
     padding:15px 0px;
 }
 
+
+//Index
+.index_header{
+    position: fixed;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    height: 56px;
+    background-color: #101b50;
+    box-shadow: 0 10px 20px 0 rgba(15, 41, 107, 0.1);
+    z-index:100;
+    .header_left{
+        padding: 0px;
+    }
+    .hcircle{
+        margin: 0px 0px 0px 35px;
+        a{
+            font-size: 16px;
+        }
+    }
+    .btn_sm1{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+.index_conts{
+    width: 100%;
+    padding: 0px 30px;
+    @include dflx_jcent;
+    .the_title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mini_text{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+.foot_cookies{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 200;
+}
+.circle_x{
+    width: 40px;
+    height: 40px;
+    background-color: #06004f;
+    border-radius: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    @include dflx_ac_jcent;
+}
+.cookie_text{
+    width: 100%;
+    height: 100%;
+    padding: 25px 15px 10px;
+    position: relative;
+    p{
+        font-size: 14px;
+        margin: 4px 0px 0px;
+        .sp_viol{
+            text-decoration: underline;
+            font-weight: 500;
+        }
+    }
+    .circle_x{
+        position: absolute;
+        left: 50%;
+        top:-21px;
+        margin-left:-20px;
+        z-index: 250;
+    }
+}
+.footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    display: none;
+}
+.footer.show{
+    display: block;
+}
+.footer_text{
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 12px 0px 15px;
+    position: relative;
+    @include dflx_ac_jbet;
+}
+.footer_terms{
+    @include dflx_ac;
+    a{
+        color: #ff994a;
+        margin: 0px 40px 0px 0px;
+    }
+}
+.footer_copy{
+    padding: 0px 15px;
+}
+.footer_society{
+    @include dflx_ac;
+}
+.society_iconts{
+    @include dflx_ac;
+    a{
+        margin: 0px 6px;
+        &:last-child{
+            margin: 0px;
+        }
+    }
+}
+
 //로그인
 .wrap_login{
     width: 100%;
@@ -830,7 +983,7 @@ header{
 .zone_log{
     position: relative;
     width: 1278px;
-    @include dflx_ac_jbet;
+    @include dflx_jbet;
 }
 .log_box{
     @include box1;
@@ -850,7 +1003,7 @@ header{
 }
 .login_title{
     width: 100%;
-    height: 100px;
+    height: 70px;
     h1{
         @include fm_monst;
         @include dflx_ac;
@@ -885,7 +1038,7 @@ header{
 }
 .log_conts{
     width: 100%;
-    margin: 0px 0px 30px;
+    margin: 30px 0px;
 }
 .line_cont{
     padding: 24px 0px 26px;
@@ -909,15 +1062,17 @@ header{
     font-weight: 400;
 }
 .log_text{
-    width: calc(100% - 620px);
-    padding: 0px 30px 0px 0px;
+    width: calc(100% - 510px);
+    padding: 0px 80px 0px 0px;
+    //align-self: flex-start;
+    @include dflx_ac;
     .the_title{
         opacity: 0.5;
     }
 }
 .the_title{
     h1{
-        font-size: 57px;
+        font-size: 47px;
         font-weight: 300;
         margin: 0px 0px 8px;
         flex-wrap: wrap;
@@ -935,7 +1090,7 @@ header{
 .go_different{
     position: absolute;
     left:50%;
-    bottom:67px;
+    bottom:55px;
     transform: translateX(-50%);
     a{
         display: flex;
@@ -951,36 +1106,234 @@ header{
         }
     }
 }
+.login_profile{
+    width:100%;
+    .title{
+        font-size: 16px;
+        font-weight:500;
+        padding: 0px 0px 14px 8px;
+    }
+    .profile_zone{
+        width: 100%;
+        height:290px;
+        padding: 0px 15px 0px 8px;
+    }
+}
+.profile_zone{
+    .message_team{
+        margin:5px 0px 15px;
+        .message_box{
+            &:hover{
+                border: 1px solid #ff994a;
+            }
+        }
+    }
+}
 
-.swiper {
+//ResetPw
+.wrap_reset{
+    background: #111a48;
+    background: linear-gradient(to bottom, #111a48, #16225c);
+    position: relative;
     width: 100%;
     height: 100%;
-  }
-  
-  .swiper-slide {
+}
+.reset_box{
+    @include box1;
+    background: linear-gradient(to bottom, #141e52, #16225c);
+    width: 620px;
+    height: 630px;
+    border-radius: 10px;
+}
+.resetobx_in{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    position: relative;
+    @include dflx_ac_jcent;
+    .form_group{
+        width: 370px;
+        margin: 0 auto;
+    }
+    .login_title{
+        height: auto;
+        padding: 0px 0px 5px;
+    }
+}
+.reset_text{
+    p{
+        padding:2px 0px;
+    }
+}
+
+//회원가입
+.cent_btzone{
+    width: 100%;
+    height: 203px;
+    @include dflx_ac_jcent;
+    a{
+        display: block;
+        width: 100%;
+    }
+}
+.signup_conts{
+    align-self: flex-start;
+}
+.signup_title{
+    @include fm_monst;
+    @include dflx_ac;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin:40px 7px 50px;
+}
+.signup_texts{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    padding: 15px 10px;
+    .texts{
+        font-size: 18px;
+        color: #ff994a;
+    }
+}
+.signup_with{
+    width: 100%;
+    padding: 10px;
+    @include dflx_ac_jbet;
+    .with_img{
+        opacity: 0.5;
+    }
+}
+.signup_zone{
+    width: 378px;
+    height: 400px;
+    margin: 20px 0px 0px;
+    padding: 0px 8px 0px 0px;
+    .put_cont{
+        padding: 0px 0px 2px;
+    }
+    .putt_box{
+        margin: 0px 0px 15px;
+    }
+    .put_mess{
+        padding:3px 0px 8px;
+    }
+    .log_button_conts{
+        margin: 25px 0px 15px;
+    }
+}
+.selt_box{
+    width: 100%;
+    @include dflx_ac_jbet;
+    .btn_tab114{
+        width: 32%;
+    }
+}
+.agree_text{
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
+    line-height: 1.5;
+    a{
+        color: #ff994a;
+        display: block;
+        text-decoration: underline;
+    }
+}
+.rolse_box{
+    @include box1;
+    background: linear-gradient(to bottom, #141e52, #16225c);
+    width: 920px;
+    height: 680px;
+    padding: 40px;
+    border-radius: 10px;
+}
+.rolse_in{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
+    padding:0px;
+    position: relative;
+}
+.roles_step{
+    height: 85px;
+    display: flex;
+    .step_circle{
+        margin: 0px 20px 0px 0px;
+    }
+}
+.roles_title{
+    margin: 0px 0px 38px;
+    h1{
+        span{
+            display: block;
+            font-size: 24px;
+            font-weight: 500;
+            @include fm_monst;
+            &.big{
+                font-size: 32px;
+            }
+        }
+    }
+    .text{
+        font-size: 14px;
+        padding: 10px 0px 0px;
+    }
+}
+.roles_contain{
+    width: 102%;
+    &.sc_y{
+        height: 350px;
+    }
+    h5{
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px 0px 9px;
+        &.spec{
+            color: $col994;
+        }
+    }
+}
+.role_cont{
+    width: 100%;
+    margin: 0px 0px 10px;
+    .btn_md1{
+        width: 15%;
+        margin: 0px 1.6% 12px 0px;
+        transition: 0.3s all;
+        &.hidden{
+            display: none;
+        }
+    }
+}
+.btn_hidd{
+    display: none;
+    &.on{
+        display: inline;
+    }
+}
+.bottom_line{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    @include dflx_ae_jbet;
+}
+.bottom_txt{
+    padding: 0px 0px 2px;
+    a{
+        color: $col994;
+        text-decoration: underline;
+        margin: 0px 0px 0px 2px;
+    }
+}
+.roles_circle{
+    width: 260px;
+    height: 260px;
+    position: relative;
+    background: url('../resources/images/circle_bg_line.png') no-repeat center center;
+    img{
+        @include ab_trans_center;
+    }
+}
 
+
+  

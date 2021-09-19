@@ -1,20 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Switch = ({ isOn, handleToggle, colorOne, colorTwo }) => {
+const Switch = () => {
+    const [checked, setChecked] = useState(false);
+    const toggleSwitch = () => {
+        setChecked(!checked);
+    }
+
     return (
-        <div className="swith_room">
-            <input
-                checked={isOn}
-                onChange={handleToggle}
-                className="switch-checkbox"
-                id={`switch`}
-                type="checkbox"
+        <div onClick={toggleSwitch} className={checked ? "swith_room on" : "swith_room"}>
+            <input className="switch-checkbox" type="checkbox"
             />
-            <label
-                style={{ background: isOn ? colorOne : colorTwo }}
-                className="switch-label"
-                htmlFor={`switch`}
-            >
+            <label className="switch-label">
                 <span className={`switch-button`} />
             </label>
         </div>

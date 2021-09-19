@@ -28,7 +28,7 @@ button.disable{
 .btn_md1{
     width: 160px;
     height: 40px;
-    padding: 2px 8px 0px;
+    padding: 1px 8px 0px;
     font-size: 16px;
     font-weight: 500;
     border-radius: 5px;
@@ -455,7 +455,7 @@ button.disable{
 .put_title{
     font-size: 14px;
     font-weight: 500;
-    padding: 0px 0px 7px 2px;
+    padding: 0px 0px 6px 2px;
     @include dflx_ac;
     &.inner{
         padding: 0px 0px 7px 18px;
@@ -745,6 +745,16 @@ button.disable{
     &.dis{
         background-color: #7f7f7f;
     }
+    &.ing{
+        width: 16px;
+        height: 16px;
+        background-color: #ff994a;
+        border: none;
+        background-image: url('../resources/images/star_wh.png');
+        background-size: 10px auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
 }
 
 //Popup
@@ -822,10 +832,29 @@ button.disable{
 .pop_txt{
     font-size: 14px;
 }
+.pop_inner_txt{
+    @include dflx_ac_jbet;
+    padding: 16px 15px 12px;
+    background-color: #2b3a84;
+    border-radius: 5px;
+    .call{
+        font-size: 15px;
+        flex: 1;
+        padding: 0px 5px 0px 0px;
+    }
+    .email{
+        text-decoration: underline;
+    }
+}
 .pop_cent{
     text-align: center;
     padding: 24px 0px 22px;
     font-size: 14px;
+    .terms{
+        font-size: 15px;
+        color:$col994;
+        text-decoration: underline;
+    }
 }
 .line1{
     margin: 0px;
@@ -948,8 +977,9 @@ button.disable{
 }
 .message_box{
     padding:12px 12px 11px;
+    border-radius: 5px;
     cursor: pointer;
-    &:hover,&.on{
+    &.on{
         background-color: #182566;
     }
 }
@@ -994,13 +1024,12 @@ button.disable{
 .mess_tip
 {
     width: 100%;
-    padding: 1px 0px 0px;
     @include dflx_ac_jbet;
     .word{
         @include fsl13;
         @include txt_ellip;
         flex:1;
-        padding: 0px 5px 0px 0px;
+        padding: 1px 5px 0px 0px;
     }
     .bagde{
         display: inline-block;
@@ -1014,12 +1043,13 @@ button.disable{
     }
     &.bord{
         justify-content: flex-start;
+        flex-wrap: wrap;
     }
     .bord_tip{
         @include fsl12;
         display: inline-block;
         padding: 4px 9px 2px;
-        margin: 0px 1px;
+        margin: 2px 2px 0px;
         background:rgba(0, 0, 0, 0.3);
         border-radius: 10px;
     }
@@ -1027,6 +1057,13 @@ button.disable{
 
 
 /*Switch*/
+.switch_zone{
+    display: flex;
+    align-items: center;
+    .swith_room{
+        margin: 0px 8px 0px 0px;
+    }
+}
 .swith_room{
     width: 34px;
     height: 20px;
@@ -1044,7 +1081,7 @@ button.disable{
     cursor: pointer;
     width: 34px;
     height: 20px;
-    background: grey;
+    background: #fff;
     border-radius: 30px;
     position: relative;
     transition:.2s;
@@ -1062,8 +1099,86 @@ button.disable{
     background: #141e52;
     box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
   }
-  .switch-checkbox:checked + .switch-label .switch-button {
+//   .switch-checkbox:checked + .switch-label .switch-button {
+//     left: calc(100% - 2px);
+//     transform: translateX(-100%);
+//     background: linear-gradient(to bottom, #ff994a, #ff4f19);
+//   }
+  .swith_room.on .switch-label .switch-button{
     left: calc(100% - 2px);
     transform: translateX(-100%);
+    background: linear-gradient(to bottom, #ff994a, #ff4f19);
   }
   
+
+//Scroll 
+.scroll{
+	overflow: auto;
+}
+.scroll.sc_y{
+	overflow: hidden;
+	overflow-y: auto;
+}
+.scroll::-webkit-scrollbar{
+    width:2px;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: #6680ff;
+    border-radius: 5px;
+}
+.scroll::-webkit-scrollbar-track{
+    background-color: none;
+}
+.scroll::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+// .scroll::-webkit-scrollbar:horizontal{
+//     height:4px;
+// }
+
+
+//Select
+.selector{
+    width: 100%;
+    height: 48px;
+    padding:5px 24px 3px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #0f173d;
+    background-image: url('../resources/images/sv_select_wh.svg');
+    background-repeat: no-repeat;
+    background-position: 92% 54%;
+    background-size: 10px 6px;
+}
+
+
+//Step
+.step_circle{
+    @include dflx_ac_jcent;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    box-shadow: -1px -1px 3px rgb(119, 119, 255, 0.5), 1px 1px 3px 0 rgba(0, 0, 0, 0.6);
+    background: #141e52;
+    background: linear-gradient(136deg, #14205a, #1e3088);
+    overflow: hidden;
+    padding:3px 0px 0px;
+    &.on{
+        box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+        background: linear-gradient(135deg, #ff4f19, #ff994a);
+    }
+}
+
+
+//Swiper
+.swiper {
+    width: 100%;
+}
+.swiper-wrapper{
+    padding: 5px !important;
+    box-sizing: border-box !important;
+}

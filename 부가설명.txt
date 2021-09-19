@@ -3,11 +3,20 @@
 
 화면 확인시 설치필요 : npm i react-router / npm i jquery --save
 
+
+0919
+- Header 클래스 컴퍼넌트들 funtion 컴퍼넌트로 수정.
+- Header 의 header_right 부분 컴퍼넌트화 종료.
+- 로그인, 회원가입 종료.
+- HeaderTrans 는 로그인,회원가입에서 쓰임.
+- CircleNation 은 언어설정 국기모음 팝업.
+
+
 <ui-kit 폴더>
 - DemoLogin, DemoMain 페이지는 우선 참고용 입니다.
 - Kit~ 으로 이름된 페이지는 재사용을 위한 ui 모음입니다.
 
-<pages 폴더>
-- 로그인부터 사용자 디자인 퍼블리싱 하게되면 생성 예정.
-
- 
+- Index.jsx : 첫 대문 페이지
+- login 폴더 : 로그인 끝
+- signup 폴더 : 회원가입 끝
+- account 폴더 : 리셋,업데이트 패스워드, SelectRoles 4단계 끝

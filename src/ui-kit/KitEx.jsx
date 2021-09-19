@@ -57,7 +57,7 @@ export default function KitEx() {
                                             <div className="message_box on">
                                                 <dl className="message_dl">
                                                     <dt>
-                                                        <ProfComponent wrap_class="prof_wrap" comming_class="comming" prof_class="prof in norm c40"
+                                                        <ProfComponent wrap_class="prof_wrap" comming_class="comming ing" prof_class="prof in norm c40"
                                                             line_class="line_over" src="../resources/images/thumb_ex1.jpg" />
                                                     </dt>
                                                     <dd>

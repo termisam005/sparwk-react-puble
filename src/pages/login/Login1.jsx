@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import InputComponent from "../../components/common/InputComponent";
 import ButtonWith from "../../components/common/ButtonWith";
+import HeaderTrans from "../../components/header/HeaderTrans";
 
 export default function Login1() {
     const [toggleState, setToggleState] = useState(false);
@@ -12,6 +13,8 @@ export default function Login1() {
 
     return (
         <div className="wrap_login">
+
+            <HeaderTrans logo_class="logo_none" src="../resources/images/logo.png" />
 
             <article className="zone_log">
                 <section className="log_text">
@@ -29,7 +32,7 @@ export default function Login1() {
                             <div className="login_title">
                                 <h1>Sign in</h1>
                                 <p className="logtlt_p">
-                                    New user? <Link to="/">Sign up</Link>
+                                    New user? <Link to="/Signup1">Sign up</Link>
                                 </p>
                             </div>
                             <div className="log_conts">
@@ -43,7 +46,7 @@ export default function Login1() {
                                                 </p>
                                                 <span className="check_word">Remember ID</span>
                                             </div>
-                                            <Link to="/">
+                                            <Link to="/ResetPw">
                                                 <span className="sp_viol">
                                                     Forgot your Email Address?
                                                 </span>
