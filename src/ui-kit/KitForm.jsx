@@ -294,8 +294,19 @@ export default function KitForm() {
                     </div>
                 </section>
 
+                <div className="dpflx m-t-50">
+                    <div className="p-20 w-50">
+                        <textarea className="text_area" cols="30" rows="7" placeholder="Please enter a message to send">
+                        </textarea>
+                    </div>
+                    <div className="p-20 w-30">
+                        <textarea className="text_area bord" cols="30" rows="7" placeholder="Please enter the artist's bio.">
+                        </textarea>
+                    </div>
+                </div>
+
                 <div className="dpflx">
-                    <section className="m-t-30">
+                    <section className="m-t-30 w-50">
                         <h1 className="demo_mini_title">Checkbox</h1>
                         <div className="dpflx">
                             <div className="p-20 w350">
@@ -329,7 +340,7 @@ export default function KitForm() {
                         </div>
                     </section>
 
-                    <section className="m-l-100 m-t-30">
+                    <section className="m-t-30 w-50">
                         <h1 className="demo_mini_title">Radio Buttons</h1>
                         <div className="dpflx">
                             <div className="p-20 w350">
@@ -379,6 +390,12 @@ export default function KitForm() {
                             <div className="p-20">
                                 <SearchComponent srch_class="hd_search roles_search" btn_type="button"
                                     btn_class="btn_srch" input_class="hd_input" placeholder="Music Label, Creator, Artist name" />
+                            </div>
+                            <div className="p-20">
+                                <article className="search_trans">
+                                    <button type="button" className="btn_srch"></button>
+                                    <input type="text" className="hd_input" placeholder="Search" />
+                                </article>
                             </div>
                         </div>
                     </section>

@@ -36,7 +36,7 @@
 .modal .pop_body{
     width: 400px;
     margin:0 auto 30px;
-    animation: modal-show .7s;
+    animation: modal-show .3s;
     overflow: hidden;
     z-index: 300;
 }

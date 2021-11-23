@@ -4,6 +4,9 @@ import ButtonComponent from "../../components/common/ButtonComponent";
 import ProfComponent from "../../components/common/ProfComponent";
 import ImgComponent from "../../components/common/ImgComponent";
 import InputComponent from "../../components/common/InputComponent";
+import HeaderTrans from "../../components/header/HeaderTrans";
+import Select from 'react-select';
+import { gendOptions } from './data.ts';
 
 export default function Signup2() {
     const history = useHistory();
@@ -16,18 +19,41 @@ export default function Signup2() {
         setToggleState(!toggleState);
     }
 
-    const [btnState, btnSetState] = useState();
-    const btnTab = (index) => {
-        btnSetState(index);
+    // const [btnState, btnSetState] = useState();
+    // const btnTab = (index) => {
+    //     btnSetState(index);
+    //     let signZone = document.querySelector('.signup_zone');
+    //     signZone.scrollTo({
+    //         top: 300,
+    //         behavior: "smooth"
+    //     });
+    // }
+
+    const addSelector = () => {
         let signZone = document.querySelector('.signup_zone');
         signZone.scrollTo({
-            top: 300,
+            top: 500,
             behavior: "smooth"
         });
+
+        let seltor = document.querySelector(".add_selector");
+        let hiddPutt = document.querySelector('.hidd_putt_box');
+
+        if (seltor.value === "Custom") {
+            hiddPutt.classList.add('on');
+            signZone.scrollTo({
+                top: 1200,
+                behavior: "smooth"
+            });
+        } else {
+            hiddPutt.classList.remove('on');
+        }
     }
 
     return (
         <div className="wrap_login">
+
+            <HeaderTrans logo_class="logo_none" src="../resources/images/logo.png" />
 
             <article className="zone_log">
                 <section className="log_text">
@@ -121,7 +147,10 @@ export default function Signup2() {
                                 <div className="putt_box">
                                     <InputComponent type="text" class="wrput" placeholder="E-mail Address" />
                                 </div>
-                                <div className="putt_box">
+                                <div className="putt_box see">
+                                    <span className="put_mark">
+                                        <img src="../resources/images/eye_gray.png" alt="see" />
+                                    </span>
                                     <InputComponent type="password" class="wrput" placeholder="Password" />
                                 </div>
                                 <div className="putt_box">
@@ -154,7 +183,7 @@ export default function Signup2() {
                                 </div>
                                 <div className="put_cont">
                                     <p className="put_title">Gender</p>
-                                    <div className="putt_box selt_box">
+                                    {/* <div className="putt_box selt_box">
                                         <button className={btnState === 1 ? "btn_tab114 on" : "btn_tab114"} onClick={() => btnTab(1)}>
                                             Man
                                         </button>
@@ -164,10 +193,37 @@ export default function Signup2() {
                                         <button className={btnState === 3 ? "btn_tab114 on" : "btn_tab114"} onClick={() => btnTab(3)}>
                                             Private
                                         </button>
+                                    </div> */}
+                                    <div className="putt_box">
+                                        <select className="selector add_selector" onChange={addSelector}>
+                                            <option value="SelectGn">Select Gender</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Custom">Custom</option>
+                                        </select>
+                                    </div>
+                                    <div className="hidd_putt_box">
+                                        <Select
+                                            isMulti
+                                            name="genders"
+                                            options={gendOptions}
+                                            className="basic-multi-select"
+                                            classNamePrefix="select"
+                                            placeholder="Gender"
+                                            theme={(theme) => ({
+                                                ...theme,
+                                                colors: {
+                                                    ...theme.colors,
+                                                    neutral0: '#0f173d',
+                                                    primary25: '#778eff',
+                                                    primary: '#0f173d',
+                                                },
+                                            })}
+                                        />
                                     </div>
                                 </div>
                                 <div className="log_button_conts">
-                                    <Link to="/">
+                                    <Link to="/MainDashboard">
                                         <ButtonComponent type="submit" class="btn_lg1 cor" txt="Agree and sign up" />
                                     </Link>
                                 </div>

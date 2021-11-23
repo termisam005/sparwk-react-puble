@@ -3,7 +3,7 @@ import SlideToggle from "react-slide-toggle";
 export default function Fixmenu() {
 
     return (
-        <SlideToggle duration={200}
+        <SlideToggle duration={150}
             render={({ toggle, setCollapsibleElement }) => (
                 <section className="gr_fixmenu">
                     <p className="btn_menu" onClick={toggle}></p>

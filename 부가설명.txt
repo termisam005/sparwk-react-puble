@@ -3,6 +3,112 @@
 
 화면 확인시 설치필요 : npm i react-router / npm i jquery --save
 
+1123-1
+<ui-kit>
+- KitPopup 페이지 제일하단 팝업추가
+
+<list 폴더>
+- Connect 페이지 완료.
+
+
+1123
+<project 폴더>
+- ProjectDetailSongs 페이지 완료.
+
+
+1122
+<project 폴더>
+- RsvpInfo 페이지 완료
+- NewSong1 ~3 페이지 완료
+<song 폴더>
+- SongLyrics 페이지만 추가.
+
+* SongLyrics 부터 디자인이 업데이트 되지않아 진도를 나갈수없음. 
+2주전 디자인회의 때 CreateProject 와 함께 디자인팀에 요청했으나 업데이트 없었음.
+* https://osylsk.axshare.com/#id=1l7x5c&p=07_project___songs&g=1 는 가능.
+* Profile과 메인화면에 대량의 기획 추가,수정사항이 있어서 작업하겠습니다.(퍼블리싱 일정 의미 없어짐)
+
+
+1119
+<project 폴더>
+- ProjectDetailHome 페이지 완료.
+
+<layout 폴더>
+- SongsSwiper1 추가
+- ReferSwiper1 추가
+- Features1 추가
+
+
+1117
+<list 폴더>
+- 기존 RecommendView 페이지가 RecommendProject 로 바뀜.
+- RecommendCreator 페이지 추가
+- 기존 ListCreator 가 ListProducer 로 바뀜.
+- ListCreator 추가.
+
+
+1115
+<Project 폴더>
+- CreateProject 1~5 완료.
+
+
+1112
+<Main 폴더>
+- MainDashboard : 프로필인증 후 메인화면 완료.
+
+<list 폴더>
+- ListProject 추가
+
+
+1110
+<signup 폴더>
+- CreateOff3 : 팝업이 단일선택용으로 교체됨. (PopLocation)
+
+<Main 폴더>
+- VerProfile1 ~ 3 완료.
+- VerProfile1 : 팝업이 단일선택용으로 교체됨. (윤부장님 지시)
+- VerProfile2 : PopCompany ,PopRoles 호출
+
+<common 폴더>
+- PopLocation 추가
+
+
+1109
+<Main 폴더>
+- VerProfile1 : 셀렉트팝업 내용 단일선택으로 수정 (윤부장님 지시)
+
+<common 폴더>
+- PopCompany 추가
+- PopRoles 추가
+
+
+1108
+<Main 폴더>
+- MainNotVerified : 메인기본화면 완료(인증하기 전).
+- VerProfile1 : 프로필인증 1단계 퍼블리싱 시작.
+- Footer 는 layout 폴더에 분리.
+
+
+1105
+<signup 폴더>
+- CreateOff1~4 페이지 수정완료.
+- CreateOff3 페이지에서 팝업 PopTerritor, PopCountry 호출.
+- 팝업은 common 폴더에 있음. PopCountry 는 일단 윤부장님 지시대로 작업했음.
+- common에 있던 ListCreator 는 list폴더로 이동시켰습니다.
+
+
+1029
+<pages/project 폴더>
+- SongDetail 페이지 1차완료.
+
+<signp/CreateOff1 ~ 4 페이지>
+- Create a Official Page 1차완료.
+
+<ui-kit 폴더>
+- KitButton 페이지 : DropCont 추가
+- KitEx3 페이지 : ProgressBar 두가지스타일 추가
+
+
 
 0919
 - Header 클래스 컴퍼넌트들 funtion 컴퍼넌트로 수정.
@@ -20,3 +126,11 @@
 - login 폴더 : 로그인 끝
 - signup 폴더 : 회원가입 끝
 - account 폴더 : 리셋,업데이트 패스워드, SelectRoles 4단계 끝
+
+
+
+
+
+
+
+

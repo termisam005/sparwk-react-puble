@@ -37,7 +37,10 @@ export default function Login2() {
                             </div>
                             <div className="log_conts">
                                 <div className="put_cont m-b-25">
-                                    <div className="putt_box">
+                                    <div className="putt_box see">
+                                        <span className="put_mark">
+                                            <img src="../resources/images/eye_gray.png" alt="see" />
+                                        </span>
                                         <InputComponent type="password" class="wrput" placeholder="Password" />
                                         <div className="put_mess p-t-15">
                                             <div className="switch_zone">

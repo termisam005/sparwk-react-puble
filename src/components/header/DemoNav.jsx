@@ -19,7 +19,10 @@ export default function DemoNav() {
                 <Link to="/KitPopup">Popup</Link>
             </p>
             <p className="nav_menu">
-                <Link to="/KitEx">Ex</Link>
+                <Link to="/KitEx1">Ex1</Link>
+            </p>
+            <p className="nav_menu">
+                <Link to="/KitEx2">Ex2</Link>
             </p>
         </nav>
     );

@@ -1,5 +1,6 @@
 import ImgComponent from "../common/ImgComponent";
 import ProfComponent from "../common/ProfComponent";
+import WriteZone from "../common/WriteZone";
 
 export default function Feed() {
     return (
@@ -16,11 +17,10 @@ export default function Feed() {
             <section className="contain_body">
                 <article className="the_feed">
                     <div className="feed_top">
-                        <ProfComponent wrap_class="prof_wrap" prof_class="prof in c50"
-                            line_class="line_over" src="../resources/images/thumb_ex1.jpg" />
-                        <div className="write_zone">
-                            <input type="text" className="wirte_put"
-                                placeholder="Do you have a story you would like to share?" />
+                        <div className="write_line">
+                            <ProfComponent wrap_class="prof_wrap" prof_class="prof in c50"
+                                line_class="line_over" src="../resources/images/thumb_ex1.jpg" />
+                            <WriteZone zone_class="write_zone" type="text" class="wirte_put" placeholder="Do you have a story you would like to share?" />
                         </div>
                     </div>
                     <p className="line1"></p>

@@ -3,11 +3,14 @@ import ButtonWith from "../../components/common/ButtonWith";
 import ButtonComponent from "../../components/common/ButtonComponent";
 import ProfComponent from "../../components/common/ProfComponent";
 import ImgComponent from "../../components/common/ImgComponent";
+import HeaderTrans from "../../components/header/HeaderTrans";
 
 export default function Signup1() {
 
     return (
         <div className="wrap_login">
+
+            <HeaderTrans logo_class="logo_none" src="../resources/images/logo.png" />
 
             <article className="zone_log">
                 <section className="log_text">
@@ -94,9 +97,16 @@ export default function Signup1() {
                             </div>
                             <div className="log_button_conts">
                                 <div className="cent_btzone">
-                                    <Link to="/Signup2">
-                                        <ButtonComponent type="submit" class="btn_lg1 cor" txt="Sign up with your Email address" />
-                                    </Link>
+                                    <div className="m-t-20">
+                                        <Link to="/Signup2">
+                                            <ButtonComponent type="submit" class="btn_lg1 cor" txt="Sign up with your Email address" />
+                                        </Link>
+                                    </div>
+                                    <div className="m-t-20 div_official">
+                                        <Link to="/CreateOff1">
+                                            <ButtonComponent class="btn_lg1" txt="Create a Official Page for a Group or business" />
+                                        </Link>
+                                    </div>
                                 </div>
                                 <div className="line_cont">
                                     <span className="word">or</span>

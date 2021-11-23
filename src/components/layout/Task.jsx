@@ -23,34 +23,22 @@ export default function Task() {
             <p className="line1"></p>
             <section className="contain_body">
                 <article className="contact_line">
-
-                    <div className="tab_line">
+                    <div className="tab_line posab">
                         <p className="tab on">All</p>
                         <p className="tab">Rush</p>
                         <p className="tab">Urgent</p>
-                    </div>
-
-                    <div className="contact">
-                        <button className="btsq bt20">
-                            <img className="bticon" src="../resources/images/sv_arr20_left_wh.svg" alt="images" />
-                            <img className="bticon_on" src="../resources/images/sv_arr20_left_cor.svg" alt="images" />
-                        </button>
-                        <button className="btsq bt20">
-                            <img className="bticon" src="../resources/images/sv_arr20_right_wh.svg" alt="images" />
-                            <img className="bticon_on" src="../resources/images/sv_arr20_right_cor.svg" alt="images" />
-                        </button>
                     </div>
                 </article>
 
                 <article className="card_line">
                     <Swiper slidesPerView={4} navigation={true} spaceBetween={5}>
                         <SwiperSlide>
-                            <div className="the_card">
+                            <div className="the_card red">
                                 <p className="delete">
                                     <img src="../resources/images/card_x.png" alt="delete" />
                                 </p>
                                 <dl className="card_dl">
-                                    <dt>Create a Project</dt>
+                                    <dt>Me and you</dt>
                                     <dd>
                                         Create your won project and collaboate with
                                         oher artists and professionals.
@@ -59,12 +47,12 @@ export default function Task() {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className="the_card">
+                            <div className="the_card orange">
                                 <p className="delete">
                                     <img src="../resources/images/card_x.png" alt="delete" />
                                 </p>
                                 <dl className="card_dl">
-                                    <dt>Create a Project</dt>
+                                    <dt>Exodus</dt>
                                     <dd>
                                         Create your won project and collaboate with
                                         oher artists and professionals.
@@ -73,7 +61,7 @@ export default function Task() {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className="the_card">
+                            <div className="the_card yellow">
                                 <p className="delete">
                                     <img src="../resources/images/card_x.png" alt="delete" />
                                 </p>

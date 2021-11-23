@@ -31,6 +31,14 @@ export default function KitProfile() {
                     </div>
                     <div className="p-30 m-r-30">
                         <div className="prof_wrap">
+                            <p className="prof in c24">
+                                <span className="line_over"></span>
+                                <img src="../resources/images/thumb_ex1.jpg" alt="image" />
+                            </p>
+                        </div>
+                    </div>
+                    <div className="p-30 m-r-30">
+                        <div className="prof_wrap">
                             <p className="prof in c50">
                                 <span className="line_over"></span>
                                 <img src="../resources/images/thumb_ex1.jpg" alt="image" />
@@ -60,6 +68,10 @@ export default function KitProfile() {
                 <section className="dflx_ac_jcent">
                     <div className="p-30 m-r-30">
                         <ProfComponent wrap_class="prof_wrap" prof_class="prof in c120 prof_shadow"
+                            line_class="line_over" src="../resources/images/thumb_ex1.jpg" />
+                    </div>
+                    <div className="p-30 m-r-30">
+                        <ProfComponent wrap_class="prof_wrap" prof_class="prof in c24"
                             line_class="line_over" src="../resources/images/thumb_ex1.jpg" />
                     </div>
                     <div className="p-30 m-r-30">

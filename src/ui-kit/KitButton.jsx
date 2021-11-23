@@ -3,6 +3,8 @@ import ImgComponent from "../components/common/ImgComponent";
 import ButtonComponent from "../components/common/ButtonComponent";
 import ButtonWith from "../components/common/ButtonWith";
 import BtnSelect from "../components/common/BtnSelect";
+import Switch from "../components/common/Switch";
+import DropCont from "../components/common/DropCont";
 
 export default function DemoButton() {
     return (
@@ -65,6 +67,19 @@ export default function DemoButton() {
                     <div className="p-20">
                         <ButtonComponent class="btn_lg1 cor" txt="Login" />
                     </div>
+                    <div className="p-20">
+                        <DropCont btn_class="btn_sm1 w120 btn_drop" spant="Joined" >
+                            <li>Owner change</li>
+                            <li>Completed</li>
+                            <li>Leave</li>
+                        </DropCont>
+                    </div>
+                    <div className="p-20">
+                        <DropCont btn_class="btn_sm1 w120 cor btn_drop" spant="Invite" >
+                            <li>Invite</li>
+                            <li>Recommend</li>
+                        </DropCont>
+                    </div>
                 </section>
 
                 <section className="demo_line">
@@ -112,6 +127,66 @@ export default function DemoButton() {
                     <div className="p-20">
                         <ButtonWith class="btn_c60 cor" src="../resources/images/mu_disp_wh.png" />
                     </div>
+                    <div className="p-20">
+                        <button className="btn_c32 cor">
+                            <span className="btcor_inner p-l-5">
+                                <img src="../resources/images/play_wh32.png" alt="image" />
+                            </span>
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btn_c32 cor">
+                            <span className="btcor_inner">
+                                <img src="../resources/images/stop_wh32.png" alt="image" />
+                            </span>
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btn_c44 cor">
+                            <span className="btcor_inner p-l-5">
+                                <img src="../resources/images/play_wh44.png" alt="image" />
+                            </span>
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btn_c44 cor">
+                            <span className="btcor_inner">
+                                <img src="../resources/images/stop_wh44.png" alt="image" />
+                            </span>
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btn_c44 cor">
+                            <span className="btcor_inner">
+                                <img src="../resources/images/off_wh44.png" alt="image" />
+                            </span>
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btn_c44 cor">
+                            <span className="btcor_inner">
+                                <img src="../resources/images/mic_wh44.png" alt="image" />
+                            </span>
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btn_hrt32">
+                            <span className="hrt"></span>
+                        </button>
+                        <p className="p-5"></p>
+                        <button className="btn_hrt32 cor">
+                            <span className="hrt"></span>
+                        </button>
+                    </div>
+                    <div className="p-20">
+                        <button className="btn_hrt32">
+                            <span className="hrt"></span>
+                        </button>
+                        <p className="p-5"></p>
+                        <button className="btn_hrt32 on">
+                            <span className="hrt"></span>
+                        </button>
+                    </div>
                 </section>
 
                 <section className="demo_line">
@@ -136,6 +211,36 @@ export default function DemoButton() {
                             <ImgComponent class="sv2424" src="../resources/images/sv_mail_wh.svg" />
                             <span className="word">Send</span>
                         </p>
+                        <div className="p-10 p-l-50">
+                            <p class="bord_comp">
+                                <span class="word">Agender</span>
+                                <span class="delete">X</span>
+                            </p>
+                        </div>
+                        <div className="p-10">
+                            <p class="bord_comp">
+                                <span class="word">Cis</span>
+                                <span class="delete">X</span>
+                            </p>
+                        </div>
+                        <div className="p-10">
+                            <p class="bord_comp">
+                                <span class="word">Cis male</span>
+                                <span class="delete">X</span>
+                            </p>
+                        </div>
+                        <div className="p-10">
+                            <p class="bord_comp trans">
+                                <span class="del_x"></span>
+                                <span class="word">Seoul</span>
+                            </p>
+                        </div>
+                        <div className="p-10">
+                            <p class="bord_comp trans">
+                                <span class="del_x"></span>
+                                <span class="word">Jay Kim</span>
+                            </p>
+                        </div>
                     </div>
                 </section>
 
@@ -152,69 +257,155 @@ export default function DemoButton() {
                 </section>
 
                 <section className="demo_line">
-                    <div className="p-20">
-                        <button className="btsq bt36">
-                            <img className="bticon" src="../resources/images/sv_arr36_down_wh.svg" alt="images" />
-                            <img className="bticon_on" src="../resources/images/sv_arr36_down_cor.svg" alt="images" />
-                        </button>
-                        <p className="p-10"></p>
-                        <button className="btsq bt36">
-                            <img className="bticon" src="../resources/images/sv_arr36_up_wh.svg" alt="images" />
-                            <img className="bticon_on" src="../resources/images/sv_arr36_up_cor.svg" alt="images" />
-                        </button>
+                    <div className="p-10 dpflx">
+                        <div className="p-10">
+                            <button className="btsq bt36">
+                                <img className="bticon" src="../resources/images/arr36_down_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/arr36_down_cor.png" alt="image" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btsq bt36">
+                                <img className="bticon" src="../resources/images/arr36_up_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/arr36_up_cor.png" alt="image" />
+                            </button>
+                        </div>
+                        <div className="p-10">
+                            <button className="btsq bt36 left">
+                                <img className="bticon" src="../resources/images/arr36_left_wh.png" alt="images" />
+                                <img className="bticon_on" src="../resources/images/arr36_left_cor.png" alt="images" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btsq bt36">
+                                <img className="bticon" src="../resources/images/arr36_right_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/arr36_right_cor.png" alt="image" />
+                            </button>
+                        </div>
+                        <div className="p-10">
+                            <button className="btsq bt36">
+                                <img className="bticon" src="../resources/images/arr36_plus_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/arr36_plus_cor.png" alt="image" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btsq bt36">
+                                <img className="bticon" src="../resources/images/arr36_calen_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/arr36_calen_cor.png" alt="image" />
+                            </button>
+                        </div>
+                        <div className="p-10">
+                            <button className="btsq bt36 norm">
+                                <img className="bticon" src="../resources/images/arr36_down_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/arr36_down_cor.png" alt="image" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btsq bt36 norm">
+                                <img className="bticon" src="../resources/images/arr36_up_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/arr36_up_cor.png" alt="image" />
+                            </button>
+                        </div>
                     </div>
-                    <div className="p-20">
-                        <button className="btsq bt36 norm">
-                            <img src="../resources/images/sv_arr36_down_wh.svg" alt="images" />
-                        </button>
-                        <p className="p-10"></p>
-                        <button className="btsq bt36 norm">
-                            <img src="../resources/images/sv_arr36_up_wh.svg" alt="images" />
-                        </button>
-                    </div>
-                    <div className="p-20">
-                        <button className="btsq bt20">
-                            <img className="bticon" src="../resources/images/sv_arr20_left_wh.svg" alt="images" />
-                            <img className="bticon_on" src="../resources/images/sv_arr20_left_cor.svg" alt="images" />
-                        </button>
-                        <p className="p-10"></p>
-                        <button className="btsq bt20">
-                            <img className="bticon" src="../resources/images/sv_arr20_right_wh.svg" alt="images" />
-                            <img className="bticon_on" src="../resources/images/sv_arr20_right_cor.svg" alt="images" />
-                        </button>
-                    </div>
-                    <div className="p-20">
-                        <button className="btsq bt20 norm">
-                            <img src="../resources/images/sv_arr20_down_wh.svg" alt="images" />
-                        </button>
-                        <p className="p-10"></p>
-                        <button className="btsq bt20 norm">
-                            <img src="../resources/images/sv_arr20_minus_wh.svg" alt="images" />
-                        </button>
-                    </div>
-                    <div className="p-20">
-                        <button className="btsq bt16">
-                            <img className="bticon" src="../resources/images/sv_arr16_down_wh.svg" alt="images" />
-                            <img className="bticon_on" src="../resources/images/sv_arr16_down_cor.svg" alt="images" />
-                        </button>
-                    </div>
-                    <div className="p-20">
-                        <button className="btn_c32">
-                            <img src="../resources/images/sv_playprev_cor.svg" alt="images" />
-                        </button>
-                        <p className="p-10"></p>
-                        <button className="btn_c32 on">
-                            <img src="../resources/images/sv_playprev_cor.svg" alt="images" />
-                        </button>
-                    </div>
-                    <div className="p-20">
-                        <button className="btn_c32">
-                            <img src="../resources/images/sv_playnext_cor.svg" alt="images" />
-                        </button>
-                        <p className="p-10"></p>
-                        <button className="btn_c32 on">
-                            <img src="../resources/images/sv_playnext_cor.svg" alt="images" />
-                        </button>
+
+                    <div className="p-10 dpflx">
+                        <div className="p-10">
+                            <button className="btsq bt20">
+                                <img className="bticon" src="../resources/images/sv_arr20_left_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/sv_arr20_left_cor.png" alt="image" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btsq bt20">
+                                <img className="bticon" src="../resources/images/sv_arr20_right_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/sv_arr20_right_cor.png" alt="image" />
+                            </button>
+                        </div>
+                        <div className="p-10">
+                            <button className="btsq bt20">
+                                <img className="bticon" src="../resources/images/sv_arr20_down_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/sv_arr20_down_cor.png" alt="image" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btsq bt20">
+                                <img className="bticon" src="../resources/images/sv_arr20_up_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/sv_arr20_up_cor.png" alt="image" />
+                            </button>
+                        </div>
+                        <div className="p-10">
+                            <button className="btsq bt20">
+                                <img className="bticon" src="../resources/images/sv_arr20_plus_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/sv_arr20_plus_cor.png" alt="image" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btsq bt20">
+                                <img className="bticon" src="../resources/images/sv_arr20_minus_wh.png" alt="image" />
+                                <img className="bticon_on" src="../resources/images/sv_arr20_minus_cor.png" alt="image" />
+                            </button>
+                        </div>
+
+                        <div className="p-10 p-l-30">
+                            <button className="btsq bt20 norm">
+                                <img src="../resources/images/sv_arr20_down_wh.png" alt="image" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btsq bt20 norm">
+                                <img src="../resources/images/sv_arr20_up_wh.png" alt="image" />
+                            </button>
+                        </div>
+                        <div className="p-10">
+                            <button className="btsq bt20 norm">
+                                <img src="../resources/images/sv_arr20_plus_wh.png" alt="images" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btsq bt20 norm">
+                                <img src="../resources/images/sv_arr20_minus_wh.png" alt="images" />
+                            </button>
+                        </div>
+                        <div className="p-10">
+                            <button className="btsq bt20 norm">
+                                <img src="../resources/images/sv_arr20_x_wh.png" alt="images" />
+                            </button>
+                        </div>
+                        <div className="p-10">
+                            <button className="btsq bt16">
+                                <img className="bticon" src="../resources/images/sv_arr16_down_wh.svg" alt="images" />
+                                <img className="bticon_on" src="../resources/images/sv_arr16_down_cor.svg" alt="images" />
+                            </button>
+                        </div>
+
+                        <div className="p-10 p-l-30">
+                            <button className="btn_c32">
+                                <img src="../resources/images/sv_playprev_cor.svg" alt="images" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btn_c32 on">
+                                <img src="../resources/images/sv_playprev_cor.svg" alt="images" />
+                            </button>
+                        </div>
+                        <div className="p-10">
+                            <button className="btn_c32">
+                                <img src="../resources/images/sv_playnext_cor.svg" alt="images" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btn_c32 on">
+                                <img src="../resources/images/sv_playnext_cor.svg" alt="images" />
+                            </button>
+                        </div>
+
+                        <div className="p-10 p-l-30">
+                            <button className="btn_c24">
+                                <img src="../resources/images/sv_playprev_cor24.svg" alt="images" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btn_c24 on">
+                                <img src="../resources/images/sv_playprev_cor24.svg" alt="images" />
+                            </button>
+                        </div>
+                        <div className="p-10">
+                            <button className="btn_c24">
+                                <img src="../resources/images/sv_playnext_cor24.svg" alt="images" />
+                            </button>
+                            <p className="p-10"></p>
+                            <button className="btn_c24 on">
+                                <img src="../resources/images/sv_playnext_cor24.svg" alt="images" />
+                            </button>
+                        </div>
                     </div>
                 </section>
 
@@ -232,6 +423,15 @@ export default function DemoButton() {
                             <ButtonComponent class="btn_tab114" txt="Woman" />
                             <ButtonComponent class="btn_tab114" txt="Private" />
                         </div>
+                    </div>
+                    <div className="p-20">
+                        <Switch label_class="switch-label" />
+                    </div>
+                    <div className="p-20">
+                        <Switch label_class="switch-label norm" />
+                    </div>
+                    <div className="p-20">
+                        <Switch label_class="switch-label light" />
                     </div>
                 </section>
 

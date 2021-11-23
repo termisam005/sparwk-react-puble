@@ -61,7 +61,7 @@ export default function NewProfile() {
                                             <span className="check_word">Use my band, company, or stage name</span>
                                         </div>
                                     </div>
-                                    <InputComponent type="text" class="wrput" placeholder="Full name" />
+                                    <InputComponent type="password" class="wrput" placeholder="Password" />
                                 </div>
                                 <div className="put_cont">
                                     <p className="put_title">Date of Birth</p>

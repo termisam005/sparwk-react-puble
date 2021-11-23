@@ -10,7 +10,7 @@ export default function Login2() {
     };
 
     const loginClick = () => {
-        window.location.href = "/"
+        window.location.href = "/MainDashboard"
     };
 
     return (

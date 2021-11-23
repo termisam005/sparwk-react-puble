@@ -7,10 +7,10 @@ import ProfComponent from "../common/ProfComponent";
 import CircleCont from "../common/CircleCont";
 
 export default function Header() {
-    const [isMessage, setMessage] = useState(false);
-    const onMess = () => {
-        setMessage(!isMessage);
-    }
+    // const [isMessage, setMessage] = useState(false);
+    // const onMess = () => {
+    //     setMessage(!isMessage);
+    // }
 
     const [circleCont, setCircleCont] = useState(false);
     const circleOn = () => {
@@ -31,21 +31,21 @@ export default function Header() {
                             <img src="../resources/images/logo.png" alt="Sparwk" />
                         </Link>
                     </h1>
-                    <DemoNav />
+                    {/* <DemoNav /> */}
                 </section>
 
-                <section className="header_center">
+                {/* <section className="header_center">
                     <article className="hd_search">
                         <button type="button" className="btn_srch"></button>
                         <input type="text" className="hd_input" placeholder="Search" />
                     </article>
-                </section>
+                </section> */}
 
                 <section className="header_right">
                     <article className="hd_icline">
                         <CircleCont src="../resources/images/clock.png"></CircleCont>
                         <div className="hroom">
-                            <div onClick={onMess} className="circle_p btn_message">
+                            <div className="circle_p btn_message">
                                 <span className="hc_cout">2</span>
                                 <img src="../resources/images/talk.png" alt="message" />
                             </div>
@@ -53,12 +53,12 @@ export default function Header() {
                         <CircleCont src="../resources/images/bell.png"></CircleCont>
                         <div className={circleCont ? "hcircle on" : "hcircle"}>
                             <div className="circle_p" onClick={circleOn}>
-                                <ProfComponent wrap_class="prof_wrap" prof_class="prof in c32"
-                                    line_class="line_over" src="../resources/images/thumb_ex1.jpg" />
+                                <ProfComponent wrap_class="prof_wrap" comming_class="comming" prof_class="prof none c32"
+                                    line_class="line_over" src="../resources/images/prof_head_32.png" />
                             </div>
                             <section className="hidd_zone">
                                 <div className="hidd_dark" onClick={circleOff}></div>
-                                <article className="hidd_box">
+                                <article className="hidd_box rilast">
                                     <div className="prof_top">
                                         <div className="view">
                                             View Profile
@@ -78,11 +78,11 @@ export default function Header() {
                                 </article>
                             </section>
                         </div>
-                        <div className="hroom">
+                        {/* <div className="hroom">
                             <div className="circle_light">
                                 <img src="../resources/images/img_btn_dark.png" alt="light button" />
                             </div>
-                        </div>
+                        </div> */}
                     </article>
                 </section>
 
@@ -90,9 +90,9 @@ export default function Header() {
 
             <Fixmenu />
 
-            <section className={isMessage ? "gr_message see" : "gr_message"}>
+            {/* <section className={isMessage ? "gr_message see" : "gr_message"}>
                 <Grmessage />
-            </section>
+            </section> */}
 
         </header>
     );

@@ -33,7 +33,7 @@ export default function SelectRoles3() {
                         <SearchComponent srch_class="hd_search roles_search" btn_type="button"
                             btn_class="btn_srch" input_class="hd_input" placeholder="Music Label, Creator, Artist name" />
 
-                        <article className="roles_contain scroll sc_y h290">
+                        <article className="roles_contain scroll sc_y h300">
                             <h5>A</h5>
                             <div className="role_cont">
                                 <BtnSelect>Label name</BtnSelect>
