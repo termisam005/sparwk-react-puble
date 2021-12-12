@@ -222,6 +222,7 @@ export default function Signup2() {
                                         />
                                     </div>
                                 </div>
+
                                 <div className="log_button_conts">
                                     <Link to="/MainDashboard">
                                         <ButtonComponent type="submit" class="btn_lg1 cor" txt="Agree and sign up" />
