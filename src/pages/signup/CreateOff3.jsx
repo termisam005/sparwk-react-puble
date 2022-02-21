@@ -3,10 +3,11 @@ import { useHistory } from "react-router";
 import { useState } from "react";
 import ButtonComponent from "../../components/common/ButtonComponent";
 import ButtonWith from "../../components/common/ButtonWith";
-import ImgComponent from "../../components/common/ImgComponent";
 import HeaderTrans from "../../components/header/HeaderTrans";
 import InputComponent from "../../components/common/InputComponent";
 import PopLocation from "../../components/common/PopLocation";
+import Select from 'react-select';
+import { compOptions } from './data.ts';
 
 export default function CreateOff3() {
     const history = useHistory();
@@ -30,6 +31,15 @@ export default function CreateOff3() {
         setpopUpsPh(false);
     }
 
+    //drop_box
+    const [upload, setUpload] = useState(false);
+    const onUpload = () => {
+        setUpload(true);
+    }
+    const offUpload = () => {
+        setUpload(false);
+    }
+
     return (
         <div className="wrap_login">
 
@@ -42,51 +52,89 @@ export default function CreateOff3() {
                             <span onClick={goBack} className="go_back">
                                 <img src="../resources/images/arr_back_wh.png" alt="link back" />
                             </span>
-                            <span className="big">Create a Official Page</span>
+                            <span className="big">Create a Official Company Page</span>
                         </h1>
+                        <p className="text">
+                            To have a business account, Please upload the information of the business license document.
+                        </p>
                     </article>
 
                     <article className="official_contain">
                         <section className="off_contain50">
                             <div>
                                 <dl className="dl_title">
-                                    <dt>Enter company account info</dt>
+                                    <dt>Enter Company Account info</dt>
                                     <dd></dd>
                                 </dl>
                                 <div className="putt_box">
-                                    <select className="selector wh">
-                                        <option value="">Select Company Type</option>
-                                        <option value="">Record Label</option>
-                                        <option value="">Music Publisher</option>
-                                    </select>
+                                    <p className="put_title p-t-5">
+                                        <span>Select Company Type</span>
+                                        <span className="ess">*</span>
+                                    </p>
+                                    <div className="create_select">
+                                        <Select
+                                            isMulti
+                                            name="genders"
+                                            options={compOptions}
+                                            className="basic-multi-select"
+                                            classNamePrefix="select"
+                                            placeholder="Music Publisher"
+                                            theme={(theme) => ({
+                                                ...theme,
+                                                colors: {
+                                                    ...theme.colors,
+                                                    neutral0: '#0f173d',
+                                                    primary25: '#778eff',
+                                                    primary: '#0f173d',
+                                                },
+                                            })}
+                                        />
+                                    </div>
                                 </div>
                                 <div className="putt_box">
-                                    <InputComponent type="text" class="wrput" placeholder="Company name (Certificate for Business Proprietor Registration)" />
-                                </div>
-                                <div className="putt_box">
-                                    <InputComponent type="text" class="wrput" placeholder="Company VAT number" />
+                                    <InputComponent type="text" class="wrput" placeholder="*Company name (Certificate for Business Proprietor Registration)" />
                                 </div>
                             </div>
+
+                            <div className="drop_box">
+                                <div className="drop_zone">
+                                    <div onClick={onUpload} className={upload ? "file_col hidd" : "file_col"}>
+                                        <p className="m-b-10">
+                                            A business license document
+                                        </p>
+                                        <div>
+                                            <ButtonComponent class="btn_sm1" txt="File upload" />
+                                        </div>
+                                    </div>
+                                    <div className={upload ? "dp_play_line" : "dp_play_line hidd"}>
+                                        <p className="file_naming">
+                                            registered data.doc
+                                        </p>
+                                        <span onClick={offUpload} className="del_x"></span>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div className="half_putt">
                                 <div className="dflx_ac_jbet">
                                     <div className="putt_box see">
                                         <ButtonWith onClick={openLoct} class="btsq bt20 norm" src="../resources/images/sv_arr20_plus_wh.png" />
-                                        <InputComponent type="text" class="wrput" placeholder="Business Location" />
+                                        <InputComponent type="text" class="wrput" placeholder="*Business Location" />
                                     </div>
                                     <div className="putt_box">
-                                        <InputComponent type="text" class="wrput" placeholder="Zip/Postal code" />
+                                        <InputComponent type="text" class="wrput" placeholder="*Zip/Postal code" />
                                     </div>
                                 </div>
                                 <div className="dflx_ac_jbet">
                                     <div className="putt_box">
-                                        <InputComponent type="text" class="wrput" placeholder="State/Region" />
+                                        <InputComponent type="text" class="wrput" placeholder="*State/Region" />
                                     </div>
                                     <div className="putt_box">
-                                        <InputComponent type="text" class="wrput" placeholder="Business Location" />
+                                        <InputComponent type="text" class="wrput" placeholder="*Business Location" />
                                     </div>
                                 </div>
                                 <div className="putt_box w-100">
-                                    <InputComponent type="text" class="wrput" placeholder="Address Line1" />
+                                    <InputComponent type="text" class="wrput" placeholder="*Address Line1" />
                                 </div>
                                 <div className="putt_box w-100">
                                     <InputComponent type="text" class="wrput" placeholder="Address Line2" />
@@ -101,9 +149,6 @@ export default function CreateOff3() {
                             </dl>
                             <dl className="natdial_dl dflx_as">
                                 <dt>
-                                    {/* <select className="selector wh m-0">
-                                        <option value="">US (+1)</option>
-                                    </select> */}
                                     <div className="putt_box see">
                                         <ButtonWith onClick={openLoct} class="btsq bt20" src="../resources/images/sv_arr20_plus_wh.png" />
                                         <InputComponent type="text" class="wrput wh m-0" value="US (+1)" />
@@ -112,7 +157,7 @@ export default function CreateOff3() {
                                 <dd>
                                     <div className="putt_box verify">
                                         <ButtonComponent onClick={openPopPh} class="btn_add" txt="Verification" />
-                                        <InputComponent type="text" class="wrput m-0" placeholder="Phone number" />
+                                        <InputComponent type="text" class="wrput m-0" placeholder="*Phone number" />
                                         <div className="put_verify">
                                             <span className="shield m-r-5"></span>
                                             <span>Verified</span>
@@ -121,19 +166,18 @@ export default function CreateOff3() {
                                 </dd>
                             </dl>
                             <div className="putt_box dflx_jbet">
-                                <InputComponent type="text" class="wrput w-32" placeholder="First name" />
+                                <InputComponent type="text" class="wrput w-32" placeholder="*First name" />
                                 <InputComponent type="text" class="wrput w-32" placeholder="Middle name" />
-                                <InputComponent type="text" class="wrput w-32" placeholder="Last name" />
+                                <InputComponent type="text" class="wrput w-32" placeholder="*Last name" />
                             </div>
                             <div className="putt_box w-100">
-                                <InputComponent type="text" class="wrput" placeholder="Primary Contact person Email" />
+                                <InputComponent type="text" class="wrput" placeholder="*Primary Contact person Email" />
                             </div>
-                            <div>
+                            {/* <div>
                                 <article className="file_space">
-                                    {/* <button type="button" className="btn_add">Add</button> */}
                                     <input type="file" className="fileput" />
                                 </article>
-                            </div>
+                            </div> */}
                         </section>
                     </article>
 

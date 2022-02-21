@@ -1,16 +1,30 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Header from "../../components/header/Header";
 import Blueline from "../../components/layout/Blueline";
 import ProfComponent from "../../components/common/ProfComponent";
 import ButtonComponent from "../../components/common/ButtonComponent";
 import Footer from "../../components/layout/Footer";
-import DropCont from "../../components/common/DropCont";
+import DropComponent from "../../components/common/DropComponent";
 
 import SongsSwiper1 from "../../components/layout/SongsSwiper1";
 import ReferSwiper1 from "../../components/layout/ReferSwiper1";
 import Features1 from "../../components/layout/Features1";
 
 export default function ProjectDetailHome() {
+
+    const goHome = () => {
+        window.location.href = "/ProjectDetailHome"
+    }
+    const goSongs = () => {
+        window.location.href = "/ProjectDetailSongs"
+    };
+    const goRefer = () => {
+        window.location.href = "/ProjectDetailRefer"
+    };
+    const goWriter = () => {
+        window.location.href = "/ProjectDetailWriter"
+    };
 
     const recommend = () => {
         window.location.href = "/RecommendCreator"
@@ -20,9 +34,33 @@ export default function ProjectDetailHome() {
         window.location.href = "/RsvpInfo"
     };
 
-    const goSongs = () => {
-        window.location.href = "/ProjectDetailSongs"
-    };
+
+    //tostPop
+    const [tostPop, setTostPop] = useState(true);
+    const tostOff = () => {
+        setTostPop(false);
+    }
+
+    const TostComponent = (props) => {
+        const { open, close } = props;
+        return (
+            <div className={open ? 'openModal modal' : 'modal'}>
+                <div onClick={close} className="modal_bg"></div>
+                <article className="tost_cont posfix">
+                    <div className="tost_title">
+                        <div className="dflx_ac">
+                            <img className="m-r-7" src="../resources/images/logo_w.png" alt="logo" />
+                            <h3>SPARWK</h3>
+                        </div>
+                        <span className="time">now</span>
+                    </div>
+                    <div className="tost_text">
+                        The project application has been approved.
+                    </div>
+                </article>
+            </div>
+        )
+    }
 
     return (
         <div className="wrap">
@@ -45,7 +83,8 @@ export default function ProjectDetailHome() {
                                             <span>Cowrite</span>
                                         </p>
                                         <div className="nemo_prof">
-                                            <img src="../resources/images/nemo_prof_ex1.jpg" alt="photo" />
+                                            {/* <img src="../resources/images/nemo_prof_ex1.jpg" alt="photo" /> */}
+                                            <img src="../resources/images/trans_sparwk60.png" alt="logo" />
                                         </div>
                                         <p className="prof_name_big cor913">
                                             <span>PROJECT NOEASY</span>
@@ -146,6 +185,7 @@ export default function ProjectDetailHome() {
                     </section>
 
                     <main className="the_main">
+                        <TostComponent open={tostPop} close={tostOff} />
 
                         <article className="contain hidd on">
                             <div className="top_ct">
@@ -172,30 +212,16 @@ export default function ProjectDetailHome() {
                                 <div className="cttop_left">
                                     <h1 className="top_title">PROJECT NOEASY</h1>
                                 </div>
-                                <div className="dflx_ac_jbet w250">
-                                    <DropCont btn_class="btn_sm1 w120 btn_drop" spant="Joined" >
-                                        <li>Owner change</li>
-                                        <li>
-                                            <span className="m-r-2 cor994">5</span>
-                                            <span>Applicants</span>
-                                        </li>
-                                        <li>Leave</li>
-                                    </DropCont>
-                                    <DropCont btn_class="btn_sm1 w120 cor btn_drop" spant="Invite" >
-                                        <li>RSVP info</li>
-                                        <li>Send RSVP</li>
-                                        <li>Recommend</li>
-                                    </DropCont>
-                                </div>
+                                <DropComponent wclass="dflx_ac_jbet w250" />
                             </section>
                             <p className="line1"></p>
                             <section className="contain_list">
                                 <article className="contact_line">
                                     <div className="tab_line">
-                                        <p className="tab on">Home</p>
+                                        <p onClick={goHome} className="tab on">Home</p>
                                         <p onClick={goSongs} className="tab">Songs</p>
-                                        <p className="tab">Reference Files</p>
-                                        <p className="tab">Co-Writers</p>
+                                        <p onClick={goRefer} className="tab">Reference</p>
+                                        <p onClick={goWriter} className="tab">Co-Writers</p>
                                     </div>
                                 </article>
                                 <SongsSwiper1 />

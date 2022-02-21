@@ -5,7 +5,7 @@ import ButtonComponent from "../../components/common/ButtonComponent";
 import ImgComponent from "../../components/common/ImgComponent";
 import EtcCont from "../../components/common/EtcCont";
 import HeaderTrans from "../../components/header/HeaderTrans";
-import BordComp from "../../components/common/BordComp";
+
 
 export default function CreateProject3() {
     const history = useHistory();
@@ -13,9 +13,27 @@ export default function CreateProject3() {
         history.goBack();
     };
 
-    const [toggleState, setToggleState] = useState(1);
-    const toggleTab = (index) => {
-        setToggleState(index);
+    const addSelector = () => {
+        let seltor = document.querySelector(".add_selector");
+        let drBox = document.querySelector('.drop_box');
+        let urBox = document.querySelector('.url_box');
+
+        if (seltor.value === "url") {
+            drBox.classList.add('hidd');
+            urBox.classList.remove('hidd');
+        } else {
+            drBox.classList.remove('hidd');
+            urBox.classList.add('hidd');
+        }
+    }
+
+    //drop_box
+    const [upload, setUpload] = useState(false);
+    const onUpload = () => {
+        setUpload(true);
+    }
+    const offUpload = () => {
+        setUpload(false);
     }
 
 
@@ -56,41 +74,38 @@ export default function CreateProject3() {
                             <dl className="dl_title">
                                 <dt>STEP 3</dt>
                                 <dd>Add Reference Files</dd>
+                                <p className="sync_txt m-t-10">
+                                    ⓘ All information about the project should be registered here to help other members understand what they need.
+                                </p>
                             </dl>
                             <div className="form_verify">
-                                <article className="file_contact">
-                                    <div className="tact_line">
-                                        <p className={toggleState === 1 ? "tact on" : "tact"} onClick={() => toggleTab(1)}>Upload File</p>
-                                        <p className={toggleState === 2 ? "tact on" : "tact"} onClick={() => toggleTab(2)}>Add Youtube Video</p>
-                                        <p className={toggleState === 3 ? "tact on" : "tact"} onClick={() => toggleTab(3)}>Add Vimeo Video</p>
-                                        <p className={toggleState === 4 ? "tact on" : "tact"} onClick={() => toggleTab(4)}>Add Share URL</p>
-                                    </div>
-                                    <div className={toggleState === 1 ? "tact_file on" : "tact_file"}>
-                                        <div className="putt_box add">
-                                            <ButtonComponent class="btn_add" txt="+ Add" />
-                                            <InputComponent type="file" class="wrput" placeholder="" />
+                                <div className="putt_box m-b-30">
+                                    <select className="selector add_selector" onChange={addSelector}>
+                                        <option value="file">Upload File</option>
+                                        <option value="url">Add Youtube Video URL</option>
+                                    </select>
+                                    <div className="drop_box">
+                                        <div className="drop_zone">
+                                            <div onClick={onUpload} className={upload ? "file_col hidd" : "file_col"}>
+                                                <p className="m-b-10">
+                                                    Guidelines (txt, doc, pdf, xlxs, pptx)
+                                                </p>
+                                                <div>
+                                                    <ButtonComponent class="btn_sm1" txt="File upload" />
+                                                </div>
+                                            </div>
+                                            <div className={upload ? "dp_play_line" : "dp_play_line hidd"}>
+                                                <p className="file_naming">
+                                                    registered data.doc
+                                                </p>
+                                                <span onClick={offUpload} className="del_x"></span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className={toggleState === 2 ? "tact_file on" : "tact_file"}>
-                                        <div className="putt_box add">
-                                            <ButtonComponent class="btn_add" txt="+ Add" />
-                                            <InputComponent type="text" class="wrput" placeholder="https://youtu.be/4yjTWZexFLI" />
-                                        </div>
+                                    <div className="putt_box url_box hidd">
+                                        <InputComponent type="text" class="wrput" placeholder="Enter URL ex) youtube.com/watch?v=A1b2C3d4E5fG" />
                                     </div>
-                                    <div className={toggleState === 3 ? "tact_file on" : "tact_file"}>
-                                        <div className="putt_box add">
-                                            <ButtonComponent class="btn_add" txt="+ Add" />
-                                            <InputComponent type="file" class="wrput" placeholder="" />
-                                        </div>
-                                    </div>
-                                    <div className={toggleState === 4 ? "tact_file on" : "tact_file"}>
-                                        <div className="putt_box add">
-                                            <ButtonComponent class="btn_add" txt="+ Add" />
-                                            <InputComponent type="text" class="wrput" placeholder="Enter URL" />
-                                        </div>
-                                    </div>
-                                </article>
-
+                                </div>
                                 <article className="file_container">
                                     <section className="bordnemo_188">
                                         <EtcCont wrap_class="wrap_etc sm posab" btn_class="btn_hor_etc" delli="Delete">

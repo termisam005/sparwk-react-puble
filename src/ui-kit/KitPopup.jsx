@@ -307,9 +307,12 @@ export default function DemoPop() {
                             </div>
                             <p className="line1"></p>
                             <div className="pop_conts">
-                                <p className="mid_title">
-                                    Please select territories (Choose at least one)
-                                </p>
+                                <div className="dflx_ac_jbet">
+                                    <p></p>
+                                    <p className="mid_title">
+                                        Selected Territories  (Choose at least one)
+                                    </p>
+                                </div>
                                 <div className="selPop_wrap">
                                     <section className="selpp_content">
                                         <article className="selpp_top">
@@ -325,9 +328,7 @@ export default function DemoPop() {
                                                         </dt>
                                                         <dd>
                                                             <div className="selpp_tact">
-                                                                <p className="bord_pp">
-                                                                    Worldwide
-                                                                </p>
+                                                                <BordTact txt="Worldwide" />
                                                                 <span className="word">
                                                                     +279(countries)
                                                                 </span>
@@ -341,11 +342,12 @@ export default function DemoPop() {
                                                             </dt>
                                                             <dd>
                                                                 <div className="selpp_tact">
-                                                                    <p className="bord_pp">
-                                                                        Africa
-                                                                    </p>
+                                                                    <BordTact txt="Africa" />
                                                                     <span className="word">
                                                                         +52(countries)
+                                                                    </span>
+                                                                    <span className="selpp_sign">
+                                                                        25
                                                                     </span>
                                                                 </div>
                                                             </dd>
@@ -358,11 +360,12 @@ export default function DemoPop() {
                                                             </dt>
                                                             <dd>
                                                                 <div className="selpp_tact">
-                                                                    <p className="bord_pp">
-                                                                        America
-                                                                    </p>
+                                                                    <BordTact txt="America" />
                                                                     <span className="word">
                                                                         +52(countries)
+                                                                    </span>
+                                                                    <span className="selpp_sign">
+                                                                        50
                                                                     </span>
                                                                 </div>
                                                             </dd>
@@ -374,9 +377,7 @@ export default function DemoPop() {
                                                                 </dt>
                                                                 <dd>
                                                                     <div className="selpp_tact">
-                                                                        <p className="bord_pp">
-                                                                            America Countinent
-                                                                        </p>
+                                                                        <BordTact txt="America Countinent" />
                                                                         <span className="word">
                                                                             +43(countries)
                                                                         </span>
@@ -390,9 +391,7 @@ export default function DemoPop() {
                                                                     </dt>
                                                                     <dd>
                                                                         <div className="selpp_tact">
-                                                                            <p className="bord_pp">
-                                                                                Antilles
-                                                                            </p>
+                                                                            <BordTact txt="Antilles" />
                                                                             <span className="word">
                                                                                 +13(countries)
                                                                             </span>
@@ -491,9 +490,12 @@ export default function DemoPop() {
                             <p className="line1"></p>
 
                             <div className="pop_conts">
-                                <p className="mid_title">
-                                    Please select territories (Choose at least one)
-                                </p>
+                                <div className="dflx_ac_jbet">
+                                    <p></p>
+                                    <p className="mid_title">
+                                        Selected Territories  (Choose at least one)
+                                    </p>
+                                </div>
 
                                 <div className="selPop_wrap">
                                     <section className="selpp_content">
@@ -501,10 +503,8 @@ export default function DemoPop() {
                                             <h3>Apply territory preset</h3>
                                             <p className="line1"></p>
                                         </article>
-
                                         <article className="selpp_cont">
                                             <div className="selpp_contin scroll sc_y">
-
                                                 <div className="selpp_group">
                                                     <dl onClick={selpOn1} className="selpp_dl">
                                                         <dt>
@@ -512,16 +512,13 @@ export default function DemoPop() {
                                                         </dt>
                                                         <dd>
                                                             <div className="selpp_tact">
-                                                                <p className="bord_pp">
-                                                                    Worldwide
-                                                                </p>
+                                                                <BordTact txt="Worldwide" />
                                                                 <span className="word">
                                                                     +279(countries)
                                                                 </span>
                                                             </div>
                                                         </dd>
                                                     </dl>
-
                                                     <div className={selpLine1 ? "selpp_group hidd on" : "selpp_group hidd"}>
                                                         <dl onClick={selpOn02} className="selpp_dl">
                                                             <dt>
@@ -529,17 +526,17 @@ export default function DemoPop() {
                                                             </dt>
                                                             <dd>
                                                                 <div className="selpp_tact">
-                                                                    <p className="bord_pp">
-                                                                        Africa
-                                                                    </p>
+                                                                    <BordTact txt="Africa" />
                                                                     <span className="word">
                                                                         +52(countries)
+                                                                    </span>
+                                                                    <span className="selpp_sign">
+                                                                        25
                                                                     </span>
                                                                 </div>
                                                             </dd>
                                                         </dl>
                                                     </div>
-
                                                     <div className={selpLine1 ? "selpp_group hidd on" : "selpp_group hidd"}>
                                                         <dl onClick={selpOn2} className="selpp_dl">
                                                             <dt>
@@ -547,11 +544,12 @@ export default function DemoPop() {
                                                             </dt>
                                                             <dd>
                                                                 <div className="selpp_tact">
-                                                                    <p className="bord_pp">
-                                                                        America
-                                                                    </p>
+                                                                    <BordTact txt="America" />
                                                                     <span className="word">
                                                                         +52(countries)
+                                                                    </span>
+                                                                    <span className="selpp_sign">
+                                                                        50
                                                                     </span>
                                                                 </div>
                                                             </dd>
@@ -563,9 +561,7 @@ export default function DemoPop() {
                                                                 </dt>
                                                                 <dd>
                                                                     <div className="selpp_tact">
-                                                                        <p className="bord_pp">
-                                                                            America Countinent
-                                                                        </p>
+                                                                        <BordTact txt="America Countinent" />
                                                                         <span className="word">
                                                                             +43(countries)
                                                                         </span>
@@ -579,9 +575,7 @@ export default function DemoPop() {
                                                                     </dt>
                                                                     <dd>
                                                                         <div className="selpp_tact">
-                                                                            <p className="bord_pp">
-                                                                                Antilles
-                                                                            </p>
+                                                                            <BordTact txt="Antilles" />
                                                                             <span className="word">
                                                                                 +13(countries)
                                                                             </span>
@@ -631,9 +625,7 @@ export default function DemoPop() {
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                 </div>
-
                                             </div>
                                         </article>
                                     </section>
@@ -748,14 +740,30 @@ export default function DemoPop() {
                                             <div className="selpp_contin scroll sc_y">
                                                 <section className="selrole_wrap">
                                                     <div className="popular">
-                                                        <p className="popul_kind">Producer</p>
-                                                        <p className="popul_kind">Topliner</p>
-                                                        <p className="popul_kind">Avertsing</p>
-                                                        <p className="popul_kind">Compiler</p>
-                                                        <p className="popul_kind">Lyricist</p>
-                                                        <p className="popul_kind">Translator</p>
-                                                        <p className="popul_kind">MusicPublisher</p>
-                                                        <p className="popul_kind">CopyrightHolder</p>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Producer" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Topliner" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Avertsing" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Compiler" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Lyricist" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Translator" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="MusicPublisher" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="CopyrightHolder" />
+                                                        </div>
                                                     </div>
                                                     <div className="alphab">
                                                         <div className="alphab_line">
@@ -878,6 +886,204 @@ export default function DemoPop() {
                                                 <BordComp word="Binder" />
                                                 <BordComp word="Author" />
                                                 <BordComp word="Arranger" />
+                                            </div>
+                                        </article>
+                                    </section>
+                                </div>
+                            </div>
+                            <p className="line1"></p>
+                            <div className="pop_foot">
+                                <ButtonComponent class="btn_md2" txt="Cancel" />
+                                <ButtonComponent class="btn_md2 cor" txt="Select" />
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section className="dpflx">
+                    <div className="p-20">
+
+                        <div className="pop_body selectPop">
+                            <div className="pop_top">
+                                <div className="ptop_txt">
+                                    <h1 className="ptop_title">
+                                        Select Genres
+                                    </h1>
+                                </div>
+                                <p className="ptop_x"></p>
+                            </div>
+                            <p className="line1"></p>
+                            <div className="pop_conts">
+                                <div className="dflx_ac_jbet">
+                                    <SearchComponent srch_class="hd_search" btn_type="button"
+                                        btn_class="btn_srch" input_class="hd_input" placeholder="Search Genres" />
+                                    <p className="mid_title">
+                                        Please select a Genres (Choose at least one)
+                                    </p>
+                                </div>
+
+                                <div className="selPop_wrap">
+                                    <section className="selpp_content">
+                                        <article className="selpp_top">
+                                            <h3 className="w140">Popular</h3>
+                                            <h3>Alphabetical</h3>
+                                            <p className="line1"></p>
+                                        </article>
+
+                                        <article className="selpp_cont p-0">
+                                            <div className="selpp_contin scroll sc_y">
+
+                                                <section className="selrole_wrap">
+                                                    <div className="popular">
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Avertsing" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Avertsing" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Avertsing" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Avertsing" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Avertsing" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Avertsing" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Avertsing" />
+                                                        </div>
+                                                        <div className="popul_kind">
+                                                            <BordTact txt="Avertsing" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="alphab">
+                                                        <div className="alphab_line">
+                                                            <div className="line">
+                                                                <span className="alp">#</span>
+                                                                <span className="alp on">A</span>
+                                                                <span className="alp">B</span>
+                                                                <span className="alp">C</span>
+                                                                <span className="alp">D</span>
+                                                                <span className="alp">E</span>
+                                                                <span className="alp">F</span>
+                                                                <span className="alp">G</span>
+                                                                <span className="alp">H</span>
+                                                                <span className="alp">I</span>
+                                                            </div>
+                                                        </div>
+                                                        <div className="alphab_share">
+                                                            <div className="share3">
+                                                                <BordTact txt="Accent" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Allemande" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Anthem" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="alphab_line">
+                                                            <div className="line">
+                                                                <span className="alp">#</span>
+                                                                <span className="alp">A</span>
+                                                                <span className="alp on">B</span>
+                                                                <span className="alp">C</span>
+                                                                <span className="alp">D</span>
+                                                                <span className="alp">E</span>
+                                                                <span className="alp">F</span>
+                                                                <span className="alp">G</span>
+                                                                <span className="alp">H</span>
+                                                                <span className="alp">I</span>
+                                                            </div>
+                                                        </div>
+                                                        <div className="alphab_share">
+                                                            <div className="share3">
+                                                                <BordTact txt="Ballad" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Ballet" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Ballroom (Nonthing go wanna)" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Barn Dance" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Bed / Underscore" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Black Bottom" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Bolero" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Bop" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Bossa Nova" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Bouree" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Build" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Bumper" />
+                                                            </div>
+                                                            <div className="share3">
+                                                                <BordTact txt="Business" />
+                                                            </div>
+
+                                                            <div className="share3">
+                                                                <BordTact txt="Architect" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="alphab_line">
+                                                            <div className="line">
+                                                                <span className="alp">#</span>
+                                                                <span className="alp">A</span>
+                                                                <span className="alp">B</span>
+                                                                <span className="alp on">C</span>
+                                                                <span className="alp">D</span>
+                                                                <span className="alp">E</span>
+                                                                <span className="alp">F</span>
+                                                                <span className="alp">G</span>
+                                                                <span className="alp">H</span>
+                                                                <span className="alp">I</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                            </div>
+                                        </article>
+                                    </section>
+                                    <section className="selpp_select">
+                                        <article className="selpp_top">
+                                            <h3 className="dflx_ac">
+                                                <span>Selected</span>
+                                                <span className="hc_cout">56</span>
+                                            </h3>
+                                            <p className="clear">
+                                                Clear all
+                                            </p>
+                                            <p className="line1"></p>
+                                        </article>
+                                        <article className="selpp_bords">
+                                            <div className="selpp_vert_wrap scroll sc_y">
+                                                <BordComp word="Barn Dance" />
+                                                <BordComp word="Build" />
+                                                <BordComp word="Bumper" />
+                                                <BordComp word="Allemande" />
+                                                <BordComp word="Bumper" />
                                             </div>
                                         </article>
                                     </section>
@@ -1456,6 +1662,200 @@ export default function DemoPop() {
                                                     </dl>
                                                 </div>
 
+                                            </div>
+                                        </article>
+                                    </section>
+                                </div>
+                            </div>
+                            <p className="line1"></p>
+                            <div className="pop_foot">
+                                <ButtonComponent class="btn_md2" txt="Cancel" />
+                                <ButtonComponent class="btn_md2 cor" txt="Select" />
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section className="dpflx">
+                    <div className="p-20">
+
+                        <div className="pop_body middlePop">
+                            <div className="pop_top">
+                                <div className="ptop_txt">
+                                    <h1 className="ptop_title">
+                                        Select Original Publisher
+                                    </h1>
+                                </div>
+                                <p className="ptop_x"></p>
+                            </div>
+                            <p className="line1"></p>
+                            <div className="pop_conts">
+                                <div className="selPop_wrap">
+                                    <section className="selpp_content norm">
+                                        <article className="selpp_top h60">
+                                            <SearchComponent srch_class="hd_search m-t-10 box" btn_type="button"
+                                                btn_class="btn_srch" input_class="hd_input" placeholder="Try searching for Project Member list" />
+                                        </article>
+                                        <article className="selpp_cont">
+                                            <div className="selpp_contin scroll sc_y">
+                                                <section className="company_group">
+                                                    <div className="company_line">
+                                                        <div className="check_line on">
+                                                            <p className="checkbox circ_norm">
+                                                                <span className="circle"></span>
+                                                            </p>
+                                                        </div>
+                                                        <dl className="company_dl">
+                                                            <dt>
+                                                                <p className="simbol40">
+                                                                    <ImgComponent src="../resources/images/simb_sm40.png" />
+                                                                </p>
+                                                            </dt>
+                                                            <dd>
+                                                                <div className="prof_from">
+                                                                    <p className="prof_company">
+                                                                        OP.Name
+                                                                    </p>
+                                                                    <div className="tip_line">
+                                                                        <p className="tip_word">
+                                                                            <span className="jum"></span>
+                                                                            <span>City</span>
+                                                                        </p>
+                                                                        <p className="tip_word">
+                                                                            <span className="jum"></span>
+                                                                            <span>Country</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div className="company_line">
+                                                        <div className="check_line">
+                                                            <p className="checkbox circ_norm">
+                                                                <span className="circle"></span>
+                                                            </p>
+                                                        </div>
+                                                        <dl className="company_dl">
+                                                            <dt>
+                                                                <p className="simbol40">
+                                                                    <ImgComponent src="../resources/images/simb_sm40.png" />
+                                                                </p>
+                                                            </dt>
+                                                            <dd>
+                                                                <div className="prof_from">
+                                                                    <p className="prof_company">
+                                                                        OP.Name
+                                                                    </p>
+                                                                    <div className="tip_line">
+                                                                        <p className="tip_word">
+                                                                            <span className="jum"></span>
+                                                                            <span>City</span>
+                                                                        </p>
+                                                                        <p className="tip_word">
+                                                                            <span className="jum"></span>
+                                                                            <span>Country</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div className="company_line">
+                                                        <div className="check_line">
+                                                            <p className="checkbox circ_norm">
+                                                                <span className="circle"></span>
+                                                            </p>
+                                                        </div>
+                                                        <dl className="company_dl">
+                                                            <dt>
+                                                                <p className="simbol40">
+                                                                    <ImgComponent src="../resources/images/simb_tono40.png" />
+                                                                </p>
+                                                            </dt>
+                                                            <dd>
+                                                                <div className="prof_from">
+                                                                    <p className="prof_company">
+                                                                        OP.Name
+                                                                    </p>
+                                                                    <div className="tip_line">
+                                                                        <p className="tip_word">
+                                                                            <span className="jum"></span>
+                                                                            <span>City</span>
+                                                                        </p>
+                                                                        <p className="tip_word">
+                                                                            <span className="jum"></span>
+                                                                            <span>Country</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div className="company_line">
+                                                        <div className="check_line">
+                                                            <p className="checkbox circ_norm">
+                                                                <span className="circle"></span>
+                                                            </p>
+                                                        </div>
+                                                        <dl className="company_dl">
+                                                            <dt>
+                                                                <p className="simbol40">
+                                                                    <ImgComponent src="../resources/images/simb_tono40.png" />
+                                                                </p>
+                                                            </dt>
+                                                            <dd>
+                                                                <div className="prof_from">
+                                                                    <p className="prof_company">
+                                                                        OP.Name
+                                                                    </p>
+                                                                    <div className="tip_line">
+                                                                        <p className="tip_word">
+                                                                            <span className="jum"></span>
+                                                                            <span>City</span>
+                                                                        </p>
+                                                                        <p className="tip_word">
+                                                                            <span className="jum"></span>
+                                                                            <span>Country</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div className="company_line">
+                                                        <div className="check_line">
+                                                            <p className="checkbox circ_norm">
+                                                                <span className="circle"></span>
+                                                            </p>
+                                                        </div>
+                                                        <dl className="company_dl">
+                                                            <dt>
+                                                                <p className="simbol40">
+                                                                    <ImgComponent src="../resources/images/simb_tono40.png" />
+                                                                </p>
+                                                            </dt>
+                                                            <dd>
+                                                                <div className="prof_from">
+                                                                    <p className="prof_company">
+                                                                        OP.Name
+                                                                    </p>
+                                                                    <div className="tip_line">
+                                                                        <p className="tip_word">
+                                                                            <span className="jum"></span>
+                                                                            <span>City</span>
+                                                                        </p>
+                                                                        <p className="tip_word">
+                                                                            <span className="jum"></span>
+                                                                            <span>Country</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                </section>
                                             </div>
                                         </article>
                                     </section>

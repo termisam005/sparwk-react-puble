@@ -7,6 +7,10 @@ import KitPopup from "./ui-kit/KitPopup";
 import KitEx1 from "./ui-kit/KitEx1";
 import KitEx2 from "./ui-kit/KitEx2";
 import KitEx3 from "./ui-kit/KitEx3";
+import ProfilePanel from "./ui-kit/ProfilePanel";
+import KitAddPop from "./ui-kit/KitAddPop";
+import KitEvalPop from "./ui-kit/KitEvalPop";
+
 import Index from "./pages/Index";
 import Login1 from "./pages/login/Login1";
 import Login2 from "./pages/login/Login2";
@@ -30,6 +34,7 @@ import MainDashboard from "./pages/Main/MainDashboard";
 import VerProfile1 from "./pages/Main/VerProfile1";
 import VerProfile2 from "./pages/Main/VerProfile2";
 import VerProfile3 from "./pages/Main/VerProfile3";
+import MainVisitHome from "./pages/Main/MainVisitHome";
 import RecommendCreator from "./pages/list/RecommendCreator";
 import RecommendProject from "./pages/list/RecommendProject";
 import Connect from "./pages/list/Connect";
@@ -40,11 +45,47 @@ import CreateProject4 from "./pages/project/CreateProject4";
 import CreateProject5 from "./pages/project/CreateProject5";
 import ProjectDetailHome from "./pages/project/ProjectDetailHome";
 import ProjectDetailSongs from "./pages/project/ProjectDetailSongs";
+import ProjectDetailRefer from "./pages/project/ProjectDetailRefer";
+import ProjectDetailWriter from "./pages/project/ProjectDetailWriter";
 import RsvpInfo from "./pages/project/RsvpInfo";
 import NewSong1 from "./pages/project/NewSong1";
 import NewSong2 from "./pages/project/NewSong2";
 import NewSong3 from "./pages/project/NewSong3";
 import SongLyrics from "./pages/song/SongLyrics";
+import SongPitchList from "./pages/song/SongPitchList";
+import SongPitchSong from "./pages/song/SongPitchSong";
+import SongPitchResult from "./pages/song/SongPitchResult";
+import SongPitchWriter from "./pages/song/SongPitchWriter";
+import SetEval1 from "./pages/a&r/SetEval1";
+import SetEval2 from "./pages/a&r/SetEval2";
+import SetEval3 from "./pages/a&r/SetEval3";
+import AnrDashboard from "./pages/a&r/AnrDashboard";
+import AnrVisit from "./pages/a&r/AnrVisit";
+import AnrPitchRecomm from "./pages/a&r/AnrPitchRecomm";
+import AnrPitchDetail from "./pages/a&r/AnrPitchDetail";
+import AnrEval from "./pages/a&r/AnrEval";
+import AnrEvalDetail from "./pages/a&r/AnrEvalDetail";
+import AnrRevalDetail from "./pages/a&r/AnrRevalDetail";
+import NewPitch1 from "./pages/song/NewPitch1";
+import NewPitch2 from "./pages/song/NewPitch2";
+import NewPitch3 from "./pages/song/NewPitch3";
+import NewPitch4 from "./pages/song/NewPitch4";
+import DetailPitch from "./pages/song/DetailPitch";
+import DetailSong from "./pages/song/DetailSong";
+import CreateProfile1 from "./pages/profile/CreateProfile1";
+import CreateProfile2 from "./pages/profile/CreateProfile2";
+import CreateProfile3 from "./pages/profile/CreateProfile3";
+import CreateProfile4 from "./pages/profile/CreateProfile4";
+import SettingsAccount from "./pages/profile/SettingsAccount";
+import SettingsAvail from "./pages/profile/SettingsAvail";
+import SettingsProfile from "./pages/profile/SettingsProfile";
+import SettingsID from "./pages/profile/SettingsID";
+import CompanyHome from "./pages/company/CompanyHome";
+import CompanyRos from "./pages/company/CompanyRos";
+import CompanyPart from "./pages/company/CompanyPart";
+import BoardNews from "./pages/board/BoardNews";
+import BoardNewsDetail from "./pages/board/BoardNewsDetail";
+import BoardFaq from "./pages/board/BoardFaq";
 
 
 export default [
@@ -141,6 +182,10 @@ export default [
         component: MainDashboard
     },
     {
+        path: '/MainVisitHome',
+        component: MainVisitHome
+    },
+    {
         path: '/VerProfile1',
         component: VerProfile1
     },
@@ -181,6 +226,14 @@ export default [
         component: ProjectDetailSongs
     },
     {
+        path: '/ProjectDetailRefer',
+        component: ProjectDetailRefer
+    },
+    {
+        path: '/ProjectDetailWriter',
+        component: ProjectDetailWriter
+    },
+    {
         path: '/RsvpInfo',
         component: RsvpInfo
     },
@@ -200,6 +253,143 @@ export default [
         path: '/SongLyrics',
         component: SongLyrics
     },
+    {
+        path: '/SongPitchList',
+        component: SongPitchList
+    },
+    {
+        path: '/SongPitchSong',
+        component: SongPitchSong
+    },
+    {
+        path: '/SongPitchResult',
+        component: SongPitchResult
+    },
+    {
+        path: '/SongPitchWriter',
+        component: SongPitchWriter
+    },
+    {
+        path: '/SetEval1',
+        component: SetEval1
+    },
+    {
+        path: '/SetEval2',
+        component: SetEval2
+    },
+    {
+        path: '/SetEval3',
+        component: SetEval3
+    },
+    {
+        path: '/AnrDashboard',
+        component: AnrDashboard
+    },
+    {
+        path: '/AnrVisit',
+        component: AnrVisit
+    },
+    {
+        path: '/AnrPitchRecomm',
+        component: AnrPitchRecomm
+    },
+    {
+        path: '/AnrPitchDetail',
+        component: AnrPitchDetail
+    },
+    {
+        path: '/AnrEval',
+        component: AnrEval
+    },
+    {
+        path: '/AnrEvalDetail',
+        component: AnrEvalDetail
+    },
+    {
+        path: '/AnrRevalDetail',
+        component: AnrRevalDetail
+    },
+    {
+        path: '/NewPitch1',
+        component: NewPitch1
+    },
+    {
+        path: '/NewPitch2',
+        component: NewPitch2
+    },
+    {
+        path: '/NewPitch3',
+        component: NewPitch3
+    },
+    {
+        path: '/NewPitch4',
+        component: NewPitch4
+    },
+    {
+        path: '/DetailPitch',
+        component: DetailPitch
+    },
+    {
+        path: '/DetailSong',
+        component: DetailSong
+    },
+    {
+        path: '/CreateProfile1',
+        component: CreateProfile1
+    },
+    {
+        path: '/CreateProfile2',
+        component: CreateProfile2
+    },
+    {
+        path: '/CreateProfile3',
+        component: CreateProfile3
+    },
+    {
+        path: '/CreateProfile4',
+        component: CreateProfile4
+    },
+    {
+        path: '/SettingsAccount',
+        component: SettingsAccount
+    },
+    {
+        path: '/SettingsAvail',
+        component: SettingsAvail
+    },
+    {
+        path: '/SettingsProfile',
+        component: SettingsProfile
+    },
+    {
+        path: '/SettingsID',
+        component: SettingsID
+    },
+    {
+        path: '/CompanyHome',
+        component: CompanyHome
+    },
+    {
+        path: '/CompanyRos',
+        component: CompanyRos
+    },
+    {
+        path: '/CompanyPart',
+        component: CompanyPart
+    },
+    {
+        path: '/BoardNews',
+        component: BoardNews
+    },
+    {
+        path: '/BoardNewsDetail',
+        component: BoardNewsDetail
+    },
+    {
+        path: '/BoardFaq',
+        component: BoardFaq
+    },
+
 
     //여기부터 데모페이지
     {
@@ -237,5 +427,17 @@ export default [
     {
         path: '/KitEx3',
         component: KitEx3
+    },
+    {
+        path: '/KitAddPop',
+        component: KitAddPop
+    },
+    {
+        path: '/KitEvalPop',
+        component: KitEvalPop
+    },
+    {
+        path: '/ProfilePanel',
+        component: ProfilePanel
     },
 ];

@@ -39,6 +39,14 @@ button.disable{
         inset -2px -2px 4px rgba(119, 119, 255, 0.5);
         color: #ff994a;
     }
+    &.with{
+        @include dflx_ac_jcent;
+        padding: 1px 8px 0px 3px;
+        font-size: 14px;
+        img{
+            margin: 0px 6px 0px 0px;
+        }
+    }
 }
 
 .btn_md1.cor{
@@ -107,6 +115,15 @@ button.disable{
         inset -2px -2px 4px rgba(119, 119, 255, 0.5);
         color: #ff994a;
     }
+    &.verify{
+        padding: 2px 15px 0px;
+        text-align: left;
+        .sheild{
+            width: 14px;
+            height: 17px;
+            margin: 0px 8px 0px 0px;
+        }
+    }
 }
 
 .btn_lg1.cor{
@@ -115,6 +132,48 @@ button.disable{
     &:hover,&.on{
         background: linear-gradient(to bottom, #f53b02, #ff994a);
         color: #fff;
+    }
+}
+
+.pipe{
+    display: inline-block;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.bn_lg{
+    width: 100%;
+    height: 48px;
+    padding:2px 17px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #91a3ff;
+    border-radius: 5px;
+    margin: 0px 0px 10px;
+    @include dflx_ac_jbet;
+    @include box1;
+    &.needed{
+        color: #ec808d;;
+    }
+    .shield{
+        margin: 0px 9px 0px 0px;
+    }
+    .crown{
+        margin: 2px 9px 0px 0px;
+    }
+    .curpt{
+        padding: 0px 5px;
+        text-align: center;
+        .word{
+            display: inline-block;
+        }
+    }
+    .pipe{
+        opacity: 0.5;
+        font-size: 24px;
+    }
+    .person14{
+        margin: 0px 9px 0px 0px;
     }
 }
 
@@ -296,22 +355,23 @@ button.disable{
     }
 }
 
+.bt30 {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+}
+.bt30.norm{
+    background: #21338a;
+    box-shadow:none;
+}
 .bt20 {
     width: 20px;
     height: 20px;
     padding: 0px;
-    // img{
-    //     width: 4px;
-    //     height: 7px;
-    // }
 }
 .bt20.norm{
     background: #21338a;
     box-shadow:none;
-    // img{
-    //     width: auto;
-    //     height: auto;
-    // }
 }
 
 .bt16 {
@@ -332,10 +392,24 @@ button.disable{
         box-shadow: inset 2px 2px 8px 2px rgba(0, 0, 0, 0.8), 
         inset -2px -2px 8px 2px rgba(119, 119, 255, 0.8);
     }
+    &.norm{
+        background: #21338a;
+        box-shadow: none;
+        &.vol{
+            background: #91a3ff;
+            font-size: 21px;
+            font-weight: 400;
+            color: #0d1436;
+        }
+    }
     img{
         width: 14px;
         height: 14px;
         margin: 2px 0px 0px 0px;
+        &.img_auto{
+            width: auto;
+            height: auto;
+        }
     }
 }
 .btn_c32 {
@@ -364,6 +438,9 @@ button.disable{
             background: linear-gradient(to top, #ff994a, #ff4f19);
         }
     }
+    &.hidd{
+        display: none;
+    }
 }
 .btn_c44 {
     @include dflx_ac_jcent;
@@ -390,6 +467,9 @@ button.disable{
             border-radius: 100%;
             background: linear-gradient(to top, #ff994a, #ff4f19);
         }
+    }
+    &.hidd{
+        display: none;
     }
 }
 
@@ -488,11 +568,24 @@ button.disable{
         padding: 1px 0px 0px 0px;
         cursor: pointer;
     }
+    .plus{
+        font-size: 14px;
+        line-height: 1;
+        margin: 0px 0px 0px 1px;
+    }
     &.trans{
         background: transparent;
     }
     &.del{
         display: none;
+    }
+    &.add{
+        padding: 4px 8px 0px;
+        color: #91a3ff;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.7;
+        }
     }
 }
 .del_x{
@@ -524,12 +617,16 @@ button.disable{
     border-radius: 5px;
     cursor: pointer;
     @include dflx_ac_jbet;
+    justify-content: flex-end;
     .call{
         @include fsm14;
+        @include txt_ellip;
+        flex: 1;
     }
     .time{
         @include fsl12;
         @include dflx_ae;
+        justify-content: flex-end;
         span{
             font: inherit;
             padding: 0px 0px 0px 3px;
@@ -581,6 +678,9 @@ button.disable{
 //Form
 .put_cont{
     width: 100%;
+    &.set{
+        margin: 0px 0px 15px;
+    }
 }
 .put_title{
     font-size: 14px;
@@ -598,6 +698,12 @@ button.disable{
         margin: 7px 0px 0px 2px;
         align-items: flex-end;
     }
+    // .bt20{
+    //     position: absolute;
+    //     right: 10px;
+    //     top:50%;
+    //     margin-top:-10px;
+    // }
 }
 .hidd_putt_box{
     display: none;
@@ -627,11 +733,16 @@ button.disable{
     &.wh{
         background-color: #16225c;
         border: 1px solid #fff;
+        border: 1px solid rgba(255, 255, 255, 0.5);
     }
     &.mid{
         height: 40px;
         font-size: 14px;
         padding: 4px 15px 3px;
+    }
+    &.did{
+        background-color: #fff;
+        color: #0c1333;
     }
 }
 .wrbg{
@@ -655,6 +766,62 @@ button.disable{
 }
 .react-datepicker__triangle{
     transform: translate(122px, 0px) !important;
+}
+.react-datepicker__day--selected{
+    border-radius: 100% !important;
+    background-color: #778eff !important;
+}
+.react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range{
+    border-radius: 100% !important;
+    background-color: transparent !important;
+}
+.react-datepicker__current-month{
+    margin: 7px 0px 9px !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    @include fm_monst;
+}
+.react-datepicker__navigation-icon::before{
+    top: 14px !important;
+    width: 7px !important;
+    height: 7px !important;
+    border-width: 2px 2px 0 0 !important;
+    //border-color: #778efe !important;
+}
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::after{
+    border-bottom-color: #182566 !important;
+}
+.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle::after{
+    border-top-color: #182566 !important;
+}
+.react-datepicker{
+    background-color: #182566 !important;
+    border: solid 1px rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.react-datepicker__header{
+    background-color: #182566 !important;
+    border: none !important;
+}
+.react-datepicker__day-names{
+    margin-bottom: -12px !important;
+}
+.react-datepicker__day-name{
+    font-size: 13px;
+    font-weight: 700;
+    color: #778efe !important;
+}
+.react-datepicker__day{
+    color:#fff !important;
+    font-size: 11px;
+    &:hover{
+        border-radius: 100% !important;
+        background: #778eff !important;
+    }
+}
+.react-datepicker__day--keyboard-selected{
+    border-radius: 100% !important;
+    background-color: #778eff !important;
 }
 //DatePicker End
 
@@ -734,9 +901,24 @@ button.disable{
 }
 .putt_box.see .wrput{
     padding: 5px 45px 3px 20px;
+    &.mid{
+        padding: 4px 40px 3px 15px;
+    }
 }
 .putt_box.verify .wrput{
     padding: 5px 95px 3px 20px;
+}
+.putt_box.reset .wrput{
+    padding: 4px 28px 3px 20px;
+}
+.putt_box.reset .wrput.mid{
+    padding: 4px 28px 3px 15px;
+}
+.putt_box.reset .del_x{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -6px;
 }
 .put_timer {
     position: absolute;
@@ -828,6 +1010,15 @@ button.disable{
         border: solid 1px #21338a;
     }
 }
+.accomp_area{
+    padding: 0px;
+    width: 100%;
+    height: 220px;
+    //border: 1px solid #2a377a;
+    &.hidd{
+        display: none;
+    }
+}
 .checkbox{
     @include dflx_ac_jcent;
     width: 20px;
@@ -868,7 +1059,7 @@ button.disable{
 .checkbox.circ_norm{
     border-radius: 100%;
     box-shadow: none;
-    background: #21338a;
+    background: #2e3f94;
     .circle{
         width: 10px;
         height: 10px;
@@ -907,7 +1098,7 @@ button.disable{
         flex:1;
         height: 100%;
         background: transparent;
-        padding: 0px 7px;
+        padding: 0px 10px;
         font-size: 14px;
     }
     &.roles_search{
@@ -968,6 +1159,20 @@ button.disable{
     position: relative;
     @include dflx_ac;
 }
+.prof_wrap40{
+    width: 40px;
+    height: 40px;
+    flex-direction: column;
+    position: relative;
+    @include dflx_ac;
+    .comming{
+        position: absolute;
+        display: inline-block;
+        right: 1px;
+        bottom: 0px;
+        z-index: 20;
+    }
+}
 .prof{
     background-color: #06004f;
     border-radius: 100%;
@@ -977,6 +1182,18 @@ button.disable{
     @include dflx_ac_jcent;
     .line_over{
         @include overlay_bd2;
+        &.cut{
+            border: 2px solid #54e392 !important;
+        }
+        &.hold{
+            border: 2px solid #ffe940 !important;
+        }
+        &.pass{
+            border: 2px solid #ec808d !important;
+        }
+    }
+    .line_vl2{
+        @include overlay_vl2;
     }
     &.none{
         border: 2px solid #778eff;
@@ -988,13 +1205,94 @@ button.disable{
         img{
             width: 100%;
         }
+        .imgauto{
+            width: auto;
+            height: auto;
+        }
     }
+    .photo_cont{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 50;
+        display: none;
+    }
+    &:hover{
+        .photo_cont{
+            display: block;
+        }
+    }
+    .imgw100{
+        @include ab_trans_center;
+        width: 100%;
+        height: auto;
+    }
+}
+.photo_cont{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.photo_wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 8px 0px 0px;
+    background-color: rgba(225, 225, 225, 0.3);
+    flex-direction: column;
+    @include dflx_ac_jcent;
+    p{
+        font-weight: 500;
+        font-size: 15px;
+        margin: 2px 0px;
+    }
+    .img_thumb{
+        width: auto !important;
+    }
+    .file_put{
+        @include ab_trans_center;
+        z-index: 100;
+        cursor: pointer;
+        height: 40px;
+        opacity: 0;
+    }
+    .ptop_x{
+        position: absolute;
+        right: 15px;
+        top:8px;
+    }
+    .ptop_x16{
+        position: absolute;
+        right: 11px;
+        top:10px;
+        &.in{
+            right: 14px;
+            top:19px;
+        }
+    }
+}
+.pr_record_wrap{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    @include dflx_ac_jcent;
+    background-color:rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+.record_num{
+    font-size: 20px;
+    font-weight: 700;
 }
 .prof.c120{
     width: 120px;
     height: 120px;
     .line_over{
-        border: 4px solid #fff;
+        border: 4px solid #778eff;
+    }
+    .line_vl2{
+        border: 4px solid #778eff;
     }
     &.none{
         border: 4px solid #778eff;
@@ -1022,6 +1320,7 @@ button.disable{
 .prof.c50{
     width: 50px;
     height: 50px;
+    //@include shadow2;
 }
 .prof.c32{
     width: 32px;
@@ -1040,17 +1339,12 @@ button.disable{
 .prof.norm.line{
     border: 2px solid #54e392;
 }
-.prof_wrap .comming{
-    position: absolute;
-    display: inline-block;
-    right: 1px;
-    bottom: 0px;
-    width: 10px;
-    height: 10px;
+.comming{
+    width: 12px;
+    height: 12px;
     border: solid 1px #fff;
     background-color: #54e392;
     border-radius: 100%;
-    z-index: 20;
     &.dis{
         background-color: #7f7f7f;
     }
@@ -1064,6 +1358,43 @@ button.disable{
         background-position: center center;
         background-repeat: no-repeat;
     }
+    &.check{
+        width: 16px;
+        height: 16px;
+        background-color: #54e392;
+        border: none;
+        background-image: url('../resources/images/check_blue.png');
+        background-size: 10px auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &.stop{
+        width: 16px;
+        height: 16px;
+        background-color: #ffe250;
+        border: none;
+        background-image: url('../resources/images/stop_yellow.png');
+        background-size: 6px auto;
+        background-position: 50% 51%;
+        background-repeat: no-repeat;
+    }
+    &.cancel{
+        width: 16px;
+        height: 16px;
+        background-color: #ff3853;
+        border: none;
+        background-image: url('../resources/images/cancel_red.png');
+        background-size: 9px auto;
+        background-position: 58% 52%;
+        background-repeat: no-repeat;
+    }
+}
+.prof_wrap .comming{
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    bottom: 0px;
+    z-index: 20;
 }
 
 //Popup
@@ -1071,7 +1402,13 @@ button.disable{
     display: none;
 }
 .pop_contents.active{
-    display: block;
+    display: flex;
+}
+.pop_swipe{
+    visibility: hidden;
+}
+.pop_swipe.active{
+    visibility: visible;
 }
 .pop_bg{
     position: fixed;
@@ -1082,6 +1419,9 @@ button.disable{
     overflow: hidden;
     z-index: 250;
     background-color: rgba(0, 0, 0, 0.7);
+    .pop_bg{
+        z-index: 280;
+    }
 }
 .pop_body{
     width: 400px;
@@ -1093,18 +1433,34 @@ button.disable{
     &.pop_dial{
         width: 480px;
     }
+    .pop_top + .line1{
+        position: relative;
+    }
 }
 .pop_ab_cent{
     position: fixed;
     left:50%;
-    top:45%;
-    transform: translate(-50%, -40%);
+    top:50%;
+    transform: translate(-50%, -50%);
     z-index: 300;
+}
+.pop_contents{
+    .pop_contents{
+        .pop_bg{
+            z-index: 400;
+        }
+        .pop_ab_cent{
+            z-index: 500;
+        }
+    }
 }
 .pop_top{
     width: 100%;
     padding: 16px 16px 14px;
     display: flex;
+}
+.pop_top + .pf_txt{
+    padding: 0px 15px 15px;
 }
 .selectPop .pop_top{
     padding: 16px 20px 14px;
@@ -1142,9 +1498,22 @@ button.disable{
     background: url('../resources/images/close_wh.png') no-repeat center center;
     cursor: pointer;
 }
+.ptop_x16{
+    width: 16px;
+    height: 16px;
+    background: url('../resources/images/close_wh16.png') no-repeat center center;
+    cursor: pointer;
+}
 .pop_conts{
     width: 100%;
     padding: 13px 16px 16px;
+    &.h460{
+        height: auto !important;
+        min-height: 460px !important;
+    }
+    .split_box{
+        padding: 12px 0px 12px 25px;
+    }
 }
 .pop_txt{
     font-size: 14px;
@@ -1165,7 +1534,7 @@ button.disable{
 }
 .pop_cent{
     text-align: center;
-    padding: 24px 0px 22px;
+    padding: 24px 0px 18px;
     font-size: 14px;
     line-height: 1.4;
     .terms{
@@ -1176,6 +1545,14 @@ button.disable{
     h5{
         font-size: 15px;
         line-height: 1.6;
+    }
+}
+.pop_version{
+    width: 290px;
+    margin: 20px auto;
+    .dl_company{
+        padding: 0px 0px 15px;
+        cursor: default;
     }
 }
 .line1{
@@ -1199,6 +1576,9 @@ button.disable{
     width: 100%;
     padding: 14px 16px 15px;
     @include dflx_ac_jbet;
+    &.result{
+        flex-direction: column;
+    }
 }
 .selectPop .pop_foot{
     padding: 14px 20px 15px;
@@ -1256,6 +1636,10 @@ button.disable{
         flex:1;
         margin: 0px 15px 0px 0px;
     }
+}
+.pop_formzone{
+    width: 100%;
+    padding: 20px 15px 10px;
 }
 
 //Message
@@ -1331,6 +1715,7 @@ button.disable{
     dt{
         width: 40px;
         height:40px;
+        padding: 0px;
         position: relative;
         .coming{
             position: absolute;
@@ -1359,6 +1744,17 @@ button.disable{
         flex:1;
         padding: 0px 7px 0px 0px;
     }
+    .owner{
+        @include fsm14;
+        padding: 0px 6px 3px 0px;
+    }
+    .list_who{
+        @include fsm15;
+        @include txt_ellip;
+        flex:1;
+        color: #91a3ff;
+        margin: 0px 0px 1px 0px;
+    }
     .who12{
         @include fsm12;
         @include txt_ellip;
@@ -1385,10 +1781,13 @@ button.disable{
     width: 100%;
     @include dflx_ac_jbet;
     .word{
-        @include fsl13;
+        @include fsl12;
         @include txt_ellip;
         flex:1;
-        padding: 1px 5px 0px 0px;
+        padding: 2px 5px 0px 0px;
+        &.on{
+            color: #54e392;
+        }
     }
     .bagde{
         display: inline-block;
@@ -1408,10 +1807,14 @@ button.disable{
 .bord_tip{
     @include fsl12;
     display: inline-block;
+    height: 21px;
     padding: 4px 9px 2px;
     margin: 2px 2px 0px;
-    background:rgba(0, 0, 0, 0.3);
+    background:#0c1333;
     border-radius: 10px;
+}
+.comp_name{
+    font-weight: 300;
 }
 
 
@@ -1420,10 +1823,17 @@ button.disable{
     display: flex;
     align-items: center;
     .swith_room{
-        margin: 0px 8px 0px 0px;
+        margin: 0px 7px 0px 0px;
+    }
+    .auto_room{
+        margin: 0px 7px 0px 0px;
     }
 }
 .swith_room{
+    width: 34px;
+    height: 20px;
+}
+.auto_room{
     width: 34px;
     height: 20px;
 }
@@ -1465,6 +1875,11 @@ button.disable{
 //     background: linear-gradient(to bottom, #ff994a, #ff4f19);
 //   }
   .swith_room.on .switch-label .switch-button{
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+    background: linear-gradient(to bottom, #ff994a, #ff4f19);
+  }
+  .auto_room.on .switch-label .switch-button{
     left: calc(100% - 2px);
     transform: translateX(-100%);
     background: linear-gradient(to bottom, #ff994a, #ff4f19);
@@ -1514,7 +1929,13 @@ button.disable{
   }
   
 
-//Scroll 
+//Scroll
+.mx_h800{
+    max-height: 800px;
+}
+.mx_h400{
+    max-height: 400px;
+}
 .scroll{
 	overflow: auto;
 }
@@ -1554,8 +1975,19 @@ button.disable{
     background-color: #0f173d;
     background-image: url('../resources/images/sv_select_wh.svg');
     background-repeat: no-repeat;
-    background-position: 95% 54%;
+    background-position: 97% 54%;
     background-size: 10px 6px;
+    &.mini{
+        height: 32px;
+        padding: 3px 24px 2px 15px;
+        background-image: url('../resources/images/sv_down_wh8.svg');
+        background-size:8px 5px;
+        background-position: 95% 52%;
+        font-size: 14px;
+    }
+    &.w-32{
+        background-position: 92% 54%;
+    }
     &.wh{
         background-color: #16225c;
         background-image: url('../resources/images/sv_select_sort.png');
@@ -1569,6 +2001,17 @@ button.disable{
             background-size:8px 5px;
             background-position: 95% 52%;
             font-size: 14px;
+        }
+        &.mid{
+            height: 40px;
+            padding: 3px 22px 2px 12px;
+            background-image: url('../resources/images/sv_down_wh8.svg');
+            background-size:8px 5px;
+            background-position: 97% 52%;
+            font-size: 14px;
+            &.w90{
+                background-position: 92% 52%;
+            }
         }
     }
 }
@@ -1609,7 +2052,7 @@ button.disable{
 //     padding: 5px 10px !important;
 // }
 .swiper-container{
-    padding: 40px 0px 0px !important;
+    padding: 50px 0px 0px !important;
     .creator{
         margin: 0px 0px 20px;
     }
@@ -1643,13 +2086,13 @@ button.disable{
     display: none;
   }
   .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
-      top:37px !important;
+      top:38px !important;
       right: 37px !important;
   }
   .swiper-button-next, .swiper-rtl .swiper-button-prev {
     outline: none;
     right: 9px !important;
-    top: 37px !important;
+    top: 38px !important;
     width: 18px !important;
     height: 18px !important;
     border-radius: 5px;
@@ -1673,7 +2116,7 @@ button.disable{
     content:none !important;
   }
   .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-    opacity: 1 !important;
+    //opacity: 1 !important;
   }
 
 
@@ -1770,6 +2213,18 @@ button.disable{
     height: 20px;
     background: url('../resources/images/sv_speaker_wh.svg') no-repeat center center;
     background-size: 20px 20px;
+}
+.speaker32{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('../resources/images/speaker_wh32.png') no-repeat center center;
+    background-size: 32px auto;
+    cursor: pointer;
+    &.off{
+        background: url('../resources/images/speaker_off_wh32.png') no-repeat center center;
+        background-size: 32px auto;
+    }
 }
 .player_set{
     width: 100%;
@@ -1908,6 +2363,11 @@ button.disable{
         margin: 12px 0px 0px;
     }
 }
+.nemo_under{
+    width: 100%;
+    height: 67px;
+    overflow: hidden;
+}
 .wrap_etc{
     position: relative;
     width: 20px;
@@ -1943,7 +2403,7 @@ button.disable{
     top:20px;
     z-index: 200;
     border-radius: 5px;
-    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.6);
     border: solid 1px rgba(255, 255, 255, 0.2);
     background: linear-gradient(to bottom, #16225c, #182566);
     ul{
@@ -1951,6 +2411,7 @@ button.disable{
         padding: 2px 12px 0px;
         li{
             font-size: 14px;
+            color: #fff;
             padding:8px 0px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             cursor: pointer;
@@ -1959,6 +2420,14 @@ button.disable{
             }
             &:hover{
                 color: #ff994a;
+            }
+        }
+    }
+    &.sm{
+        width: 100px;
+        ul{
+            li{
+                font-size: 12px;
             }
         }
     }
@@ -2111,8 +2580,8 @@ button.disable{
     background: none !important;
 }
 .css-g1d714-ValueContainer{
-    padding: 4px 8px 0px !important;
-    min-height: 48px;
+    //padding: 4px 8px 0px !important;
+    height: 48px;
 }
 .css-319lph-ValueContainer{
     padding: 4px 8px 0px 20px !important;
@@ -2170,81 +2639,86 @@ button.disable{
 }
 .css-71ehg0-control{
     border: none !important;
-    //min-height: 48px !important;
-    padding: 0px 4px;
+    height: 48px !important;
+    //padding: 0px 4px;
     cursor: pointer !important;
 }
 .css-tlfecz-indicatorContainer{
     cursor: pointer !important;
+    padding: 8px 4px !important;
+}
+.css-zkmkag-control{
+    height: 48px !important;
 }
 
 
 //Table
 .table{
     width: 100%;
+    &.hidd{
+        display: none;
+    }
 }
 .table thead th{
     text-align: center;
     background-color: #21338a;
-    padding: 13px 15px 10px;
+    background-color: rgba(33, 51, 138, 0.6);
+    padding: 13px 17px 10px;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
 }
-.table_refer{
-    width: 100%;
-    thead th{
-        display: none;
-    }
-}
 .table tbody tr td{
-    vertical-align: middle;
-    background-color: #0c1333;
-    border-right: 1px solid #152159;
+    background-color: #0f1841;
+    //background-color: rgba(12, 19, 51, 0.6);
+    border: 1px solid #0f1841 !important;
+    border-right: 1px solid #152159 !important;
     padding: 18px 17px 15px;
     font-size: 14px;
     color: #fff;
-    // &:first-child{
-    //     text-align: center;
-    // }
     &:last-child{
         border-right: none;
     }
 }
-.table tbody tr:nth-child(even)  td{
-    background-color: rgba(12, 19, 50, 0.5);
-}
-.up_arrow{
-    width: 20px;
-    height: 20px;
-    background: url('../resources/images/arr_upwh20.png') no-repeat center center;
-    cursor: pointer;
-    transform: rotate(180deg);
-    transition: transform 0.4s;
-    &.on{
-        transform: rotate(0deg);
-    }
-}
-.tablein_norm{
-    width: 100%;
-    height: 0px;
-    &.on{
-        height: auto;
-        min-height: 200px;
-    }
+.table tbody tr:nth-child(even) td{
+    //background-color: rgba(12, 19, 51, 0.4);
+    background-color: #121b49;
 }
 
 .creator{
-    width: 214px;
+    width: 204px;
     height: 260px;
     @include box3;
-    //background: linear-gradient(to bottom, #141e52, #16225c);
     border-radius: 10px;
-    margin: 0px 8px 20px;
+    margin: 0px 11px 20px;
+    .etc_cont{
+        top: auto !important;
+        right: 0px !important;
+        bottom: 7px !important;
+    }
 }
 .ctr_wrap{
     width: 100%;
     height: 215px;
     position: relative;
+    .pitch_call{
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+        padding: 0px 15px;
+        z-index: 50;
+        .down_vol{
+            font-size: 15px;
+            font-weight: 500;
+            margin: 0px 0px 3px;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+.disable{
+    .ctr_wrap{
+        opacity: 0.3;
+    }
 }
 .ctr_top_ab{
     position: absolute;
@@ -2265,6 +2739,11 @@ button.disable{
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    .img_norm{
+        @include ab_trans_center;
+        width: auto;
+        height: auto;
+    }
     .over{
         display: flex;
         flex-direction: column;
@@ -2285,13 +2764,14 @@ button.disable{
         }
     }
     .mark_favorite{
-        top:18px;
-        right:17px;
+        top:17px;
+        right:13px;
         display: none;
     }
     .prj_img{
         @include ab_trans_center;
-        max-width: unset;
+        width: auto;
+        max-width: inherit;
         height: 100%;
         z-index: 1;
     }
@@ -2302,6 +2782,28 @@ button.disable{
         padding: 0px 15px;
         z-index: 50;
     }
+    .pitch_call{
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+        padding: 0px 15px;
+        z-index: 50;
+        .down_vol{
+            font-size: 15px;
+            font-weight: 500;
+            margin: 0px 0px 3px;
+            letter-spacing: 0.5px;
+        }
+    }
+    .pitch_top{
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        padding: 0px 10px 0px 12px;
+        z-index: 30;
+    }
     .prj_dark{
         position: absolute;
         left: 0px;
@@ -2309,7 +2811,7 @@ button.disable{
         z-index: 20;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
     }
     .bord_tip{
         position: absolute;
@@ -2317,6 +2819,50 @@ button.disable{
         top:10px;
         z-index: 30;
         background: rgba(0, 0, 0, 1);
+        &.posrel{
+            top: auto;
+            right: auto;
+            margin: 0px 13px 0px 0px;
+        }
+    }
+}
+.note20{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../resources/images/note20_wh.png') no-repeat left top;
+}
+.addvl{
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    background: url('../resources/images/add_vl20.png') no-repeat center center;
+}
+.addwh30{
+    display: inline-block;
+    width: 30px;
+    height: 21px;
+    background: url('../resources/images/add_wh30.png') no-repeat center center;
+}
+.btn_copy{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../resources/images/copy_wh24.png') no-repeat center center;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.btn_other{
+    padding: 5px 12px;
+    font-size: 13px;
+    color: #ff994a;
+    background: transparent;
+    border: 1px solid #ff994a;
+    border-radius: 30px;
+    &:hover{
+        opacity: 0.7;
     }
 }
 .record{
@@ -2340,10 +2886,19 @@ button.disable{
                 padding: 0px 0px 0px 6px;
             }
         }
+        &.title{
+            color: #fff;
+            font-size: 14px;
+        }
     }
     .down_title{
         padding: 0px;
         max-width:100%;
+    }
+    .down_vol{
+        padding: 0px;
+        max-width: 100%;
+        font-size: 15px;
     }
     .lock12{
         margin: 0px 6px 0px 0px;
@@ -2368,6 +2923,31 @@ button.disable{
     height: 17px;
     background: url('../resources/images/sv_shield.svg') no-repeat center center;
     background-size: 14px 17px;
+    &.red{
+        width: 16px;
+        height: 16px;
+        background: url('../resources/images/sv_shield_red.svg') no-repeat center center;
+        background-size: 16px 16px;
+    }
+}
+.spec_vl{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('../resources/images/spec_vl14.png') no-repeat center center;
+}
+.person14{
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background: url('../resources/images/sv_person14.svg') no-repeat center center;
+    background-size: 14px 14px;
+    &.check{
+        width: 20px;
+        height: 20px;
+        background: url('../resources/images/checkman_vl20.png') no-repeat center center;
+        background-size:20px auto;
+    }
 }
 .bag{
     display: inline-block;
@@ -2525,7 +3105,7 @@ button.disable{
     @include dflx_ac;
     @include txt_ellip;
     p{
-        font-size: 12px;
+        font-size: 13px;
         padding: 0px 8px 0px 0px;
         .minute{
             margin: 0px 2px 0px 0px;
@@ -2626,6 +3206,7 @@ button.disable{
 }
 .word_num{
     font-size: 13px;
+    font-weight: 300;
     opacity: 0.6;
 }
 .line_edit{
@@ -2662,12 +3243,25 @@ button.disable{
     background-size: 25px 22px;
     cursor: pointer;
 }
+.btline{
+    @include dflx_ac_jbet;
+    min-width: 50px;
+}
 .save_btline{
-    @include dflx_ac;
+    @include dflx_ac_jend;
+    width: 100%;
+    &.edit{
+        align-items: flex-end;
+        padding: 3px 0px 0px;
+    }
+    &.hidd{
+        display: none;
+    }
 }
 .btn_sav{
-    background-color: #0f173d;
-    padding:3px 8px 2px;
+    height: 20px;
+    background: transparent;
+    padding:0px 8px;
     color: #ff994a;
     &.cancel{
         color: #778efe;
@@ -2700,7 +3294,7 @@ button.disable{
 }
 .btn_drop{
     span{
-        vertical-align: middle;
+        vertical-align: middle !important;
     }
     .arr_down10{
         margin: 0px 0px 0px 8px;
@@ -2725,6 +3319,12 @@ button.disable{
         height: 320px;
         padding: 0px 10px 0px 0px;
         margin: 20px 0px 10px;
+    }
+    .repop_zone{
+        width: 100%;
+        height: 320px;
+        padding: 0px 0px 0px 0px;
+        margin: 20px 0px;
     }
 }
 
@@ -2778,6 +3378,11 @@ button.disable{
     margin: 0 auto;
     position: relative;
     background: url('../resources/images/bg_rgslider.png') no-repeat center top;
+    background-size: 100% auto;
+    &.midd{
+        width: 300px;
+        height: 58px;
+    }
 }
 .the_ranger{
     position: absolute;
@@ -2817,9 +3422,12 @@ button.disable{
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 15px 15px 10px;
+    padding: 15px 30px 10px;
     background: #182566;
     box-shadow: 0 -10px 20px 0 rgba(0, 0, 0, 0.3);
+    .play_set_cent{
+        @include ab_trans_center;
+    }
 }
 .fplay_progress{
     position: absolute;
@@ -2827,6 +3435,7 @@ button.disable{
     top:0px;
     width: 100%;
     z-index: 200;
+    cursor: pointer;
     .rc-slider-rail{
         background: transparent !important;
         box-shadow: none !important;
@@ -2855,6 +3464,14 @@ button.disable{
             opacity: 0.6;
         }
     }
+    .link{
+        display: block;
+        font-size: 16px;
+        flex: 1;
+        &.on{
+            color: #ff994a;
+        }
+    }
 }
 .ic_thunder{
     display: inline-block;
@@ -2867,11 +3484,18 @@ button.disable{
     padding: 5px 0px 15px;
     display: flex;
     flex-wrap: wrap;
+    &.dark{
+        background-color: #111a48;
+        border-radius: 10px;
+        padding: 20px 12px 0px;
+        justify-content: space-between;
+    }
 }
 .mark_talk{
     width: 17px;
     height: 15px;
     position: relative;
+    cursor: pointer;
 }
 .circ_company{
     display: inline-block;
@@ -2895,6 +3519,12 @@ button.disable{
     .pop_conts{
         padding: 15px 20px 16px;
     }
+    .pop_map_conts{
+        padding: 20px 25px 25px;
+    }
+}
+.referPop{
+    width: 700px;
 }
 .selPop_wrap{
     width: 100%;
@@ -2957,6 +3587,19 @@ button.disable{
 .selpp_contin{
     width: 100%;
     height: 100%;
+    .prof_company{
+        @include txt_ellip;
+        width: 100%;
+        display: block;
+    }
+    // .company_group .company_dl dd{
+    //     width: calc(100% - 40px);
+    // }
+    .prof_from .word{
+        @include txt_ellip;
+        width: 100%;
+        display: block;
+    }
 }
 .selpp_group{
     width: 100%;
@@ -3033,6 +3676,9 @@ button.disable{
     .bord_pp{
         margin: 0px 12px 0px 0px;
     }
+    .selpp_sign{
+        margin: 0px 0px 0px 10px;
+    }
 }
 .bord_pp{
     display: inline-block;
@@ -3043,7 +3689,7 @@ button.disable{
     font-size: 14px;
     &.tact{
         color: rgba(255, 255, 255, 0.8);
-        font-weight: 300;
+        font-weight: 400;
         word-break: break-all;
         max-width: 100%;
         @include txt_ellip;
@@ -3051,9 +3697,17 @@ button.disable{
         &:hover,&.on{
             background-color: #778efe;
             color: #0c1333;
-            font-weight: 500;
+            // font-weight: 500;
         }
     }
+}
+.selpp_sign{
+    display: inline-block;
+    padding:3px 10px 1px;
+    background-color: #778efe;
+    color: #0c1333;
+    border-radius: 30px;
+    font-size: 14px;
 }
 .selpp_share{
     width: 102%;
@@ -3078,6 +3732,17 @@ button.disable{
     background: transparent;
     .selpp_top{
         @include dflx_ac_jbet;
+    }
+    .company_dl{
+        overflow: hidden;
+        dd{
+            width: calc(100% - 40px);
+        }
+    }
+    .prof_company{
+        @include txt_ellip;
+        width: calc(100% - 20px);
+        display: block;
     }
 }
 .selpp_bords{
@@ -3122,6 +3787,14 @@ button.disable{
             top: 10px;
         }
     }
+    .checkbox{
+        &.circ_norm{
+            margin: 0px 8px 0px 0px;
+        }
+    }
+    .company_dl{
+        width: calc(100% - 28px);
+    }
 }
 .company_dl{
     @include dflx_ac;
@@ -3130,8 +3803,24 @@ button.disable{
 }
 .company_dl dd{
     padding: 2px 0px 0px 8px;
+    width: calc(100% - 40px);
     .prof_from{
         align-items: flex-start;
+        .tip_line{
+            width: 100%;
+            height: 18px;
+            overflow: hidden;
+        }
+    }
+}
+.company_cent{
+    padding: 2px 10px 0px 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    @include dflx_ac_jcent;
+    dd{
+        margin: 2px 10px 0px 10px;
     }
 }
 
@@ -3154,7 +3843,13 @@ button.disable{
 .popul_kind{
     @include dflx_ac;
     height: 36px;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 5px;
+    .bord_pp.tact{
+        color: #fff;
+        &.on,&:hover{
+            color: #0c1333;
+        }
+    }
 }
 .alphab_share{
     width: 100%;
@@ -3187,6 +3882,20 @@ button.disable{
 }
 .middlePop{
     width: 600px;
+}
+.addPop{
+    width: 560px;
+}
+.privatePop{
+    @include box4;
+    width: 540px;
+    padding: 23px 0px;
+    border: none;
+    border-radius: 10px;
+    .log_conts{
+        width: 330px;
+        margin: 30px auto 0px;
+    }
 }
 .selpp_srch{
     width:100%;
@@ -3251,6 +3960,17 @@ button.disable{
         margin: 1px 3px 0px 0px;
         //opacity: 1;
     }
+    &.spec{
+        margin: 0px 4px;
+        color: #ff994a;
+        span{
+            font-weight: 500;
+            opacity: 1;
+        }
+        .jum{
+            background-color: #ff994a;
+        }
+    }
 }
 .vl_hidd{
     position: absolute;
@@ -3289,6 +4009,19 @@ button.disable{
     }
     dd{
         width: calc(100% - 32px);
+        padding: 3px 0px 0px 6px;
+        .pit_call{
+            @include txt_ellip;
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: -1px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.35);
+            flex: 1;
+            line-height: 1.1;
+            &.fav{
+                padding: 0px 15px 0px 0px;
+            }
+        }
     }
 }
 .tip_sm{
@@ -3303,13 +4036,23 @@ button.disable{
     }
     dd{
         width: calc(100% - 24px);
-        padding: 3px 0px 0px 5px;
+        padding: 2px 0px 0px 5px;
+        .pit_call{
+            @include txt_ellip;
+            font-weight: 500;
+            font-size: 14px;
+        }
     }
 }
 .co_writers{
     @include dflx_ac;
     font-size: 11px;
     padding: 1px 0px 0px 10px;
+}
+.co_pitched{
+    @include dflx_ac;
+    font-size: 12px;
+    padding: 4px 0px 0px 7px;
 }
 .ctr_imtxt{
     position: absolute;
@@ -3330,4 +4073,83 @@ button.disable{
             display: block;
         }
     }
+}
+.sball{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #ff994a;
+    border-radius: 100%;
+}
+.txt_avail{
+    color: #ff994a !important;
+    .sball{
+        background-color: #ff994a;
+    }
+}
+.txt_unavail{
+    color: #999 !important;
+    .sball{
+        background-color: #999;
+    }
+}
+.txt_pass{
+    color: #ec808d !important;
+    .sball{
+        background-color: #ec808d;
+    }
+}
+.txt_pitch{
+    color: #fff !important;
+    .sball{
+        background-color: #fff;
+    }
+}
+.txt_cut{
+    color: #54e392 !important;
+    .sball{
+        background-color: #54e392;
+    }
+}
+.txt_hold{
+    color: #ffe940 !important;
+    .sball{
+        background-color: #ffe940;
+    }
+}
+.pitch_creator{
+    .ctr_info{
+        .mark_favorite{
+            display: block;
+            z-index: 50;
+        }
+    }
+    .prof{
+        background-color: #b5c1ff;
+        .line_over{
+            border: 2px solid #b5c1ff;
+        }
+    }
+}
+
+//DateSet
+.date_set{
+    @include dflx_ac_jcent;
+    flex-direction: column;
+    .react-calendar{
+        width: 260px;
+        max-width: inherit;
+        background-color: #182566 !important;
+        border: solid 1px rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.4);
+    }
+}
+.date_result{
+    margin: 20px 0px 0px;
+    width: 240px;
+    padding: 12px 10px 10px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #4759b3;
+    border-radius: 5px;
 }

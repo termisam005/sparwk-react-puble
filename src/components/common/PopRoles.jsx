@@ -3,7 +3,6 @@ import ButtonComponent from "./ButtonComponent";
 import BordComp from "./BordComp";
 import ImgComponent from "./ImgComponent";
 import SearchComponent from "./SearchComponent";
-import ToggleCheck from "./ToggleCheck";
 import BordTact from "./BordTact";
 
 const PopRoles = (props) => {
@@ -47,16 +46,31 @@ const PopRoles = (props) => {
 
                                     <section className="selrole_wrap">
                                         <div className="popular">
-                                            <p className="popul_kind">Producer</p>
-                                            <p className="popul_kind">Topliner</p>
-                                            <p className="popul_kind">Avertsing</p>
-                                            <p className="popul_kind">Compiler</p>
-                                            <p className="popul_kind">Lyricist</p>
-                                            <p className="popul_kind">Translator</p>
-                                            <p className="popul_kind">MusicPublisher</p>
-                                            <p className="popul_kind">CopyrightHolder</p>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Producer" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Topliner" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Avertsing" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Compiler" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Lyricist" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Translator" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="MusicPublisher" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="CopyrightHolder" />
+                                            </div>
                                         </div>
-
                                         <div className="alphab">
                                             <div className="alphab_line">
                                                 <div className="line">

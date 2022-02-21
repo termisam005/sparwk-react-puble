@@ -34,11 +34,7 @@ export default function CreateOff4() {
                             <div className="final_text m-b-20">
                                 {/* <h1>Finalize</h1> */}
                                 <p>
-                                    오피셜 계정 페이지를 승인 받기 위해서는<br />
-                                    SPARWK 관리자의 승인이 필요합니다.<br />
-                                    3~7일 내외로 소요되며,<br />
-                                    이메일을 통해 인증 후<br />
-                                    오피셜 페이지를 이용하실 수 있습니다.
+                                    A review has been requested. The review takes<br /> 1-3 business days.
                                 </p>
                                 <Link to="/MainNotVerified">
                                     <ButtonComponent class="btn_md2 cor" txt="Start Now" />

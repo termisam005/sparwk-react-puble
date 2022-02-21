@@ -5,7 +5,7 @@ import Blueline from "../../components/layout/Blueline";
 import ImgComponent from "../../components/common/ImgComponent";
 import ProfComponent from "../../components/common/ProfComponent";
 import ButtonComponent from "../../components/common/ButtonComponent";
-import InputComponent from "../../components/common/InputComponent";
+import ButtonWith from "../../components/common/ButtonWith";
 import WriteZone from "../../components/common/WriteZone";
 import Footer from "../../components/layout/Footer";
 import ListStart from "../list/ListStart";
@@ -24,6 +24,13 @@ export default function MainNotVerified() {
         window.location.href = "/VerProfile1"
     };
 
+    const [recruit, setRecruit] = useState(true);
+    const toggleRec = () => {
+        setRecruit(!recruit);
+        let switRoom = document.querySelector('.swith_room');
+        switRoom.classList.toggle('on');
+    };
+
     return (
         <div className="wrap">
             <Header />
@@ -35,6 +42,7 @@ export default function MainNotVerified() {
                     <article className="banner_text">
                         <div className="bann_text">
                             <ImgComponent src="../resources/images/thumb_bann.png" />
+                            <input type="file" />
                             <span className="word m-l-8">Add a banner image</span>
                         </div>
                         <p>Optimal dimensions 1920 x 320px</p>
@@ -49,45 +57,117 @@ export default function MainNotVerified() {
                     <aside className="the_aside norm">
                         <div>
                             <section className="aside_top">
-                                <div className="prof_zone norm">
+                                <div className="prof_zone">
                                     <p className="project_call">
                                         <span>Individual</span>
                                     </p>
                                     <ProfComponent wrap_class="prof_wrap" prof_class="prof none c120 prof_shadow"
-                                        src="../resources/images/prof_j_120.png" />
+                                        src="../resources/images/prof_j_120.png">
+                                        <div className="photo_cont">
+                                            <div className="photo_wrap">
+                                                <input type="file" className="file_put" />
+                                                <img className="img_thumb" src="../resources/images/photo_photo.png" alt="photo" />
+                                                <p>200 x 200</p>
+                                                <span className="word">Pixel</span>
+                                            </div>
+                                        </div>
+                                    </ProfComponent>
                                     <p className="prof_name_big">
                                         <span>Jin suk Choi</span>
                                     </p>
                                     <div className="prof_from">
-                                        <p className="prof_company">
-                                            <span>Creator</span>
-                                        </p>
-                                        <p className="prof_location">
-                                            <span>Seoul, Republic of Korea</span>
+                                        <p className="prof_location m-t-30">
+                                            <span className="cor913">Seoul, Republic of Korea</span>
                                         </p>
                                     </div>
                                 </div>
                             </section>
+                            <div className="aside_desc">
+                                <div className="hire_wrap m-b-40">
+                                    <div className="avail_line">
+                                        <div className="recru_line">
+                                            <div className="avail_cont">
+                                                <img className="ic" src="../resources/images/thunder_off.png" />
+                                                <img className="ic_on" src="../resources/images/thunder.png" />
+                                                <span className="m-l-2 word">Hire Me</span>
+                                            </div>
+                                            <div className="switch_zone">
+                                                <div className="swith_room">
+                                                    <input className="switch-checkbox" type="checkbox" />
+                                                    <label className="switch-label">
+                                                        <span className="swt_sun"></span>
+                                                        <span className="swt_moon"></span>
+                                                        <span className="switch-button" />
+                                                    </label>
+                                                </div>
+                                                <span className="circ_feel"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="company_aside">
+                                    <p className="top">
+                                        ON THE WEB
+                                    </p>
+                                    <div className="society_iconts">
+                                        <ButtonComponent class="btn_c24 norm vol" txt="+" />
+                                    </div>
+                                </div>
+                                <div className="company_aside">
+                                    <p className="top">
+                                        COMPANY & GROUP
+                                    </p>
+                                    <dl className="dl_company aside">
+                                        <dt>
+                                            <div className="co_plus co40">
+                                                {/* <img src="../resources/images/plus_wh17.png" alt="img" /> */}
+                                                <span className="plus">+</span>
+                                            </div>
+                                        </dt>
+                                        <dd>
+                                            <div className="prof_from">
+                                                <p className="prof_company">
+                                                    <span className="cor913">Select Company</span>
+                                                </p>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
                         </div>
                         <div>
                             <p className="line1"></p>
                             <div className="aside_desc">
                                 <div className="feat_content p-t-0">
-                                    <div className="dflx_ac_jbet">
+                                    <div className="dflx_ac_jbet m-b-8">
                                         <p className="title">BIO</p>
-                                        <p className="cor994 curpt">Save</p>
+                                        <p className="cor913 curpt f-s-13">Edit</p>
                                     </div>
-                                    <textarea className="text_area">
-                                    </textarea>
-                                    <p className="word_num tar">
-                                        <span>0</span><span className="m-l-3 m-r-3">/</span><span>200</span>
-                                    </p>
+                                    <section className="area_set hauto">
+                                        <article className="area_result">
+                                            <p className="rslt">"Multi-platinum selling producer😎✨"</p>
+                                        </article>
+                                    </section>
+                                </div>
+                                <div className="feat_content m-t-30">
+                                    <div className="dflx_ac_jbet m-b-8">
+                                        <p className="title">VERIFICATION</p>
+                                        <p></p>
+                                    </div>
+                                    <div className="bn_lg needed">
+                                        <div className="curpt">
+                                            <span className="shield red"></span>
+                                            <span className="word">Verification needed</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <p className="line1"></p>
-                            <div className="aside_last">
+                            <div className="aside_last dflx_ac_jbet p-t-10">
                                 <p className="aslast_text">
-                                    Project since : May, 28, 2022
+                                    Member since : 13 Aug 2022
+                                </p>
+                                <p className="report">
+                                    <span>Report</span>
                                 </p>
                             </div>
                         </div>

@@ -3,7 +3,7 @@ import Header from "../../components/header/Header";
 import Blueline from "../../components/layout/Blueline";
 import ProfComponent from "../../components/common/ProfComponent";
 import Footer from "../../components/layout/Footer";
-import DropCont from "../../components/common/DropCont";
+import DropComponent from "../../components/common/DropComponent";
 
 import ListStart from "../../pages/list/ListStart";
 import ListSong from "../../pages/list/ListSong";
@@ -11,17 +11,23 @@ import ListSong from "../../pages/list/ListSong";
 
 export default function ProjectDetailSongs() {
 
+    const goHome = () => {
+        window.location.href = "/ProjectDetailHome"
+    }
     const goSongs = () => {
         window.location.href = "/ProjectDetailSongs"
+    };
+    const goRefer = () => {
+        window.location.href = "/ProjectDetailRefer"
+    };
+    const goWriter = () => {
+        window.location.href = "/ProjectDetailWriter"
     };
 
     const creAte = () => {
         window.location.href = "/NewSong1"
     };
 
-    const goHome = () => {
-        window.location.href = "/ProjectDetailHome"
-    }
 
     return (
         <div className="wrap">
@@ -151,21 +157,7 @@ export default function ProjectDetailSongs() {
                                 <div className="cttop_left">
                                     <h1 className="top_title">PROJECT NOEASY</h1>
                                 </div>
-                                <div className="dflx_ac_jbet w250">
-                                    <DropCont btn_class="btn_sm1 w120 btn_drop" spant="Joined" >
-                                        <li>Owner change</li>
-                                        <li>
-                                            <span className="m-r-2 cor994">5</span>
-                                            <span>Applicants</span>
-                                        </li>
-                                        <li>Leave</li>
-                                    </DropCont>
-                                    <DropCont btn_class="btn_sm1 w120 cor btn_drop" spant="Invite" >
-                                        <li>RSVP info</li>
-                                        <li>Send RSVP</li>
-                                        <li>Recommend</li>
-                                    </DropCont>
-                                </div>
+                                <DropComponent wclass="dflx_ac_jbet w250" />
                             </section>
                             <p className="line1"></p>
                             <section className="contain_body">
@@ -173,8 +165,8 @@ export default function ProjectDetailSongs() {
                                     <div className="tab_line">
                                         <p onClick={goHome} className="tab">Home</p>
                                         <p onClick={goSongs} className="tab on">Songs</p>
-                                        <p className="tab">Reference Files</p>
-                                        <p className="tab">Co-Writers</p>
+                                        <p onClick={goRefer} className="tab">Reference</p>
+                                        <p onClick={goWriter} className="tab">Co-Writers</p>
                                     </div>
                                 </article>
 
@@ -196,13 +188,13 @@ export default function ProjectDetailSongs() {
                                                     <p className="art">
                                                         Available
                                                     </p>
-                                                    <p className="art">
-                                                        Available(Pass)
+                                                    <p className="art disble">
+                                                        Pass
                                                     </p>
-                                                    <p className="art">
+                                                    <p className="art disble">
                                                         Hold
                                                     </p>
-                                                    <p className="art">
+                                                    <p className="art disble">
                                                         Cut
                                                     </p>
                                                 </div>

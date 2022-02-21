@@ -81,8 +81,11 @@ export default function CreateProject4() {
                                     </dl>
                                     <div className="putt_box prj_box">
                                         <section className="cover_cont">
-                                            <img className="img_cover" src="../resources/images/nemo_prof_ex1.jpg" alt="coverimg" />
+                                            {/* <img className="img_cover" src="../resources/images/nemo_prof_ex1.jpg" alt="coverimg" /> */}
                                             <div className="cover_cam">
+                                                <p className="p-b-5">
+                                                    <img src="../resources/images/trans_sparwk70.png" alt="simbol" />
+                                                </p>
                                                 <span>
                                                     Optimal dimensions<br />248 x 248px
                                                 </span>

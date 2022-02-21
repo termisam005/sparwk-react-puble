@@ -7,12 +7,25 @@
 // });
 
 /*tab*/
-// $(function () {
-//     $(".tab").click(function () {
-//         $(".tab").removeClass("on");
-//         $(this).addClass("on");
-//     });
-// });
+$(function () {
+    $(".tab").click(function () {
+        $(".tab").removeClass("on");
+        $(this).addClass("on");
+    });
+});
+
+$(function () {
+    $(".verstab").click(function () {
+        $(".verstab").removeClass("on");
+        $(this).addClass("on");
+    });
+});
+
+$(function () {
+    $(".btbox").click(function () {
+        $(this).toggleClass("on");
+    });
+});
 
 /*art*/
 $(function () {
@@ -20,6 +33,13 @@ $(function () {
         $(".art").removeClass("on");
         $(this).addClass("on");
     });
+});
+
+$(function () {
+    $(".go").click(function () {
+        $(".go").removeClass("on");
+        $(this).addClass("on");
+    })
 });
 
 /*gr_fixmenu*/

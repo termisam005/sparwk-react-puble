@@ -16,7 +16,7 @@ const EtcCont = (props) => {
                 <p onClick={etcOn} className={props.btn_class}></p>
                 <div className={etcContain ? "etc_sets on" : "etc_sets"}>
                     <div onClick={etcOff} className="etc_back"></div>
-                    <div className={"etc_cont"}>
+                    <div onClick={etcOff} className="etc_cont">
                         <ul>
                             {props.children}
                             {/* <li onClick={etcOff} className="del">

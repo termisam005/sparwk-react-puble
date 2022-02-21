@@ -19,6 +19,11 @@ export default function NewSong1() {
         setPlaying(!playing);
     };
 
+    const [deletor, setDeletor] = useState(false);
+    const clickDel = () => {
+        setDeletor(true);
+    };
+
 
     return (
         <div className="wrap_login">
@@ -62,15 +67,14 @@ export default function NewSong1() {
                                 <article className="new_drop">
                                     <div className="drop_box">
                                         <div className="drop_zone">
-                                            <img src="../resources/images/sv_drop.svg" alt="drop" />
-                                            <span className="word mini">
-                                                Drag and Drop New Songs Here
-                                            </span>
+                                            <div className="dflx_ac_jcent">
+                                                <img className="img_note" src="../resources/images/sv_drop.svg" alt="note" />
+                                                <span className="word mini">
+                                                    Drop recordings here Drag and drop files<br /> below or browse files
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </article>
-
-                                <article className="new_drop">
                                     <div className="drop_player">
                                         <div className="dp_play_line">
                                             <section className="dp_play">

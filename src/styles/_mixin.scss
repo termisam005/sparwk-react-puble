@@ -256,8 +256,8 @@ $fs18:28px;
     height: 100%;
     border-radius: 100%;
     background: transparent;
-    border: 4px solid #fff;
-    mix-blend-mode: overlay;
+    border: 4px solid #778eff;
+    mix-blend-mode: normal;
     z-index: 10;
 }
 @mixin overlay_bd2{
@@ -268,8 +268,20 @@ $fs18:28px;
     height: 100%;
     border-radius: 100%;
     background: transparent;
-    border: 2px solid #fff;
-    mix-blend-mode: overlay;
+    border: 2px solid #778eff;
+    mix-blend-mode: normal;
+    z-index: 10;
+}
+@mixin overlay_vl2{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: transparent;
+    border: 2px solid #778eff;
+    mix-blend-mode: normal;
     z-index: 10;
 }
 

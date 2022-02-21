@@ -11,14 +11,14 @@ const DropCont = (props) => {
     }
 
     return (
-        <div className="posrel">
+        <div className={props.pos_class}>
             <button onClick={dropOn} className={props.btn_class}>
                 <span>{props.spant}</span>
                 <span className="arr_down10"></span>
             </button>
             <div className={dropContain ? "etc_sets on" : "etc_sets"}>
                 <div onClick={dropOff} className="etc_back"></div>
-                <div className={"etc_cont etc_drop"}>
+                <div onClick={dropOff} className="etc_cont etc_drop">
                     <ul>
                         {props.children}
                     </ul>

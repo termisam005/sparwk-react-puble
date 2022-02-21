@@ -10,47 +10,24 @@ export default function Fixmenu() {
                     <div className="fixmenu_bar" ref={setCollapsibleElement}>
                         <div className="fixmenu">
                             <div className="fix_nemo">
-                                <img className="icon_fix" src="../resources/images/sv_fix_note.svg" alt="icon note" />
-                                <img className="icon_fix_on" src="../resources/images/sv_fix_note_on.svg" alt="icon note" />
+                                <img className="icon_fix" src="../resources/images/sv_fix_share.svg" alt="icon" />
+                                <img className="icon_fix_on" src="../resources/images/sv_fix_share_on.svg" alt="icon" />
                             </div>
                             <section className="hidden_menu">
                                 <div className="top">
-                                    <h1>Project</h1>
+                                    <h1>Recommend</h1>
                                 </div>
                                 <p className="line1"></p>
                                 <div className="menus">
-                                    <a>Create Project</a>
+                                    <a>Projects List</a>
                                 </div>
                                 <p className="line1"></p>
                                 <div className="menus">
-                                    <a>Project List</a>
+                                    <a>A&R List</a>
                                 </div>
                                 <p className="line1"></p>
                                 <div className="menus">
-                                    <a>Timeline View</a>
-                                </div>
-                                <p className="line1"></p>
-                                <div className="menus">
-                                    <a>Project Recommendation</a>
-                                </div>
-                            </section>
-                        </div>
-                        <div className="fixmenu">
-                            <div className="fix_nemo">
-                                <img className="icon_fix" src="../resources/images/sv_fix_music.svg" alt="icon music" />
-                                <img className="icon_fix_on" src="../resources/images/sv_fix_music_on.svg" alt="icon music" />
-                            </div>
-                            <section className="hidden_menu">
-                                <div className="top">
-                                    <h1>Catalog</h1>
-                                </div>
-                                <p className="line1"></p>
-                                <div className="menus">
-                                    <a>Song library</a>
-                                </div>
-                                <p className="line1"></p>
-                                <div className="menus">
-                                    <a>Resistration</a>
+                                    <a>Pitch List (A&R Only)</a>
                                 </div>
                             </section>
                         </div>
@@ -61,15 +38,50 @@ export default function Fixmenu() {
                             </div>
                             <section className="hidden_menu">
                                 <div className="top">
-                                    <h1>Artist</h1>
+                                    <h1>Creator</h1>
                                 </div>
                                 <p className="line1"></p>
                                 <div className="menus">
-                                    <a>List</a>
+                                    <a>Home</a>
                                 </div>
                                 <p className="line1"></p>
                                 <div className="menus">
-                                    <a>Resistration</a>
+                                    <a>Project</a>
+                                </div>
+                                <p className="line1"></p>
+                                <div className="menus">
+                                    <a>Song Library</a>
+                                </div>
+                            </section>
+                        </div>
+                        <div className="fixmenu">
+                            <div className="fix_nemo">
+                                <img className="icon_fix" src="../resources/images/sv_fix_music.svg" alt="icon music" />
+                                <img className="icon_fix_on" src="../resources/images/sv_fix_music_on.svg" alt="icon music" />
+                            </div>
+                            <section className="hidden_menu">
+                                <div className="top">
+                                    <h1>A&R <span className="dpinblock f-s-13 m-t-3">(A&R only)</span></h1>
+                                </div>
+                                <p className="line1"></p>
+                                <div className="menus">
+                                    <a>Song library</a>
+                                </div>
+                                <p className="line1"></p>
+                                <div className="menus">
+                                    <a>Home</a>
+                                </div>
+                                <p className="line1"></p>
+                                <div className="menus">
+                                    <a>Pitched List</a>
+                                </div>
+                                <p className="line1"></p>
+                                <div className="menus">
+                                    <a>Catalog</a>
+                                </div>
+                                <p className="line1"></p>
+                                <div className="menus">
+                                    <a>Evaluation</a>
                                 </div>
                             </section>
                         </div>
@@ -80,19 +92,11 @@ export default function Fixmenu() {
                             </div>
                             <section className="hidden_menu">
                                 <div className="top">
-                                    <h1>Reports</h1>
+                                    <h1>Report</h1>
                                 </div>
                                 <p className="line1"></p>
                                 <div className="menus">
-                                    <a>Detailed</a>
-                                </div>
-                                <p className="line1"></p>
-                                <div className="menus">
-                                    <a>Reaal-time </a>
-                                </div>
-                                <p className="line1"></p>
-                                <div className="menus">
-                                    <a>Industry database</a>
+                                    <a>List</a>
                                 </div>
                             </section>
                         </div>
@@ -118,15 +122,11 @@ export default function Fixmenu() {
                             </div>
                             <section className="hidden_menu">
                                 <div className="top">
-                                    <h1>Education</h1>
+                                    <h1>SPARWK class 101</h1>
                                 </div>
                                 <p className="line1"></p>
                                 <div className="menus">
                                     <a>List</a>
-                                </div>
-                                <p className="line1"></p>
-                                <div className="menus">
-                                    <a>Registration</a>
                                 </div>
                             </section>
                         </div>
@@ -137,15 +137,11 @@ export default function Fixmenu() {
                             </div>
                             <section className="hidden_menu">
                                 <div className="top">
-                                    <h1>News Feed</h1>
+                                    <h1>News & Post</h1>
                                 </div>
                                 <p className="line1"></p>
                                 <div className="menus">
                                     <a>List</a>
-                                </div>
-                                <p className="line1"></p>
-                                <div className="menus">
-                                    <a>Resistration</a>
                                 </div>
                             </section>
                         </div>
@@ -156,15 +152,11 @@ export default function Fixmenu() {
                             </div>
                             <section className="hidden_menu">
                                 <div className="top">
-                                    <h1>Service Center</h1>
+                                    <h1>Help</h1>
                                 </div>
                                 <p className="line1"></p>
                                 <div className="menus">
-                                    <a>List</a>
-                                </div>
-                                <p className="line1"></p>
-                                <div className="menus">
-                                    <a>Resistration</a>
+                                    <a>1:1 Inquiry</a>
                                 </div>
                             </section>
                         </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ImgComponent from "../common/ImgComponent";
 import EtcCont from "../common/EtcCont";
+import PopAddrefer from "../common/PopAddrefer";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper/core";
@@ -12,12 +13,21 @@ SwiperCore.use([Navigation, Pagination]);
 
 export default function ReferSwiper1() {
 
+    //Pop Add Reference
+    const [referPop, setReferPop] = useState(false);
+    const addRefer = () => {
+        setReferPop(true);
+    };
+    const closeRefer = () => {
+        setReferPop(false);
+    }
+
     return (
-        <article className="contain inner_contain m-0">
+        <article className="contain inner_contain">
             <section className="mini_top">
                 <h1>Reference File</h1>
             </section>
-            {/* <p className="line1"></p> */}
+            <p className="line1"></p>
             <section className="contain_body">
                 <div className="inner_contact_line posab">
                     <select className="selector wh mini w220">
@@ -49,7 +59,7 @@ export default function ReferSwiper1() {
                             <section className="bordnemo_188">
                                 <div className="bordnemo_movie posrel">
                                     <div className="cover_cam">
-                                        <p className="circle_add">
+                                        <p onClick={addRefer} className="circle_add">
                                             <ImgComponent src="../resources/images/plus_wh17.png" />
                                         </p>
                                         <span className="f-s-16">File Upload</span>
@@ -160,9 +170,13 @@ export default function ReferSwiper1() {
                                 </div>
                             </section>
                         </SwiperSlide>
+                        <p className="see_view">
+                            <a>View all</a>
+                        </p>
                     </Swiper>
                 </article>
             </section>
+            <PopAddrefer open={referPop} close={closeRefer} />
         </article>
     );
 }

@@ -69,9 +69,7 @@ const PopTerritor = (props) => {
                                             </dt>
                                             <dd>
                                                 <div className="selpp_tact">
-                                                    <p className="bord_pp">
-                                                        Worldwide
-                                                    </p>
+                                                    <BordTact txt="Worldwide" />
                                                     <span className="word">
                                                         +279(countries)
                                                     </span>
@@ -86,11 +84,12 @@ const PopTerritor = (props) => {
                                                 </dt>
                                                 <dd>
                                                     <div className="selpp_tact">
-                                                        <p className="bord_pp">
-                                                            Africa
-                                                        </p>
+                                                        <BordTact txt="Africa" />
                                                         <span className="word">
                                                             +52(countries)
+                                                        </span>
+                                                        <span className="selpp_sign">
+                                                            25
                                                         </span>
                                                     </div>
                                                 </dd>
@@ -104,11 +103,12 @@ const PopTerritor = (props) => {
                                                 </dt>
                                                 <dd>
                                                     <div className="selpp_tact">
-                                                        <p className="bord_pp">
-                                                            America
-                                                        </p>
+                                                        <BordTact txt="America" />
                                                         <span className="word">
                                                             +52(countries)
+                                                        </span>
+                                                        <span className="selpp_sign">
+                                                            50
                                                         </span>
                                                     </div>
                                                 </dd>
@@ -120,9 +120,7 @@ const PopTerritor = (props) => {
                                                     </dt>
                                                     <dd>
                                                         <div className="selpp_tact">
-                                                            <p className="bord_pp">
-                                                                America Countinent
-                                                            </p>
+                                                            <BordTact txt="America Countinent" />
                                                             <span className="word">
                                                                 +43(countries)
                                                             </span>
@@ -136,9 +134,7 @@ const PopTerritor = (props) => {
                                                         </dt>
                                                         <dd>
                                                             <div className="selpp_tact">
-                                                                <p className="bord_pp">
-                                                                    Antilles
-                                                                </p>
+                                                                <BordTact txt="Antilles" />
                                                                 <span className="word">
                                                                     +13(countries)
                                                                 </span>

@@ -45,14 +45,30 @@ const PopGenres = (props) => {
 
                                     <section className="selrole_wrap">
                                         <div className="popular">
-                                            <p className="popul_kind">Avertsing</p>
-                                            <p className="popul_kind">Avertsing</p>
-                                            <p className="popul_kind">Avertsing</p>
-                                            <p className="popul_kind">Avertsing</p>
-                                            <p className="popul_kind">Avertsing</p>
-                                            <p className="popul_kind">Avertsing</p>
-                                            <p className="popul_kind">Avertsing</p>
-                                            <p className="popul_kind">Avertsing</p>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Avertsing" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Avertsing" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Avertsing" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Avertsing" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Avertsing" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Avertsing" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Avertsing" />
+                                            </div>
+                                            <div className="popul_kind">
+                                                <BordTact txt="Avertsing" />
+                                            </div>
                                         </div>
                                         <div className="alphab">
                                             <div className="alphab_line">

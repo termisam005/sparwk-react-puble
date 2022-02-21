@@ -218,6 +218,7 @@ export default function Connect() {
                                                             <span className="crown"></span>
                                                         </section>
                                                         <div className="dpflx ctr_mark">
+                                                            <span className="bord_tip cor994 posrel">A&R</span>
                                                             <p data-tip data-for="Chat" className="mark_talk m-t-1 m-r-15">
                                                                 <ImgComponent src="../resources/images/mark_talk.png" />
                                                             </p>
@@ -398,6 +399,7 @@ export default function Connect() {
                                                             <span className="crown"></span>
                                                         </section>
                                                         <div className="dpflx ctr_mark">
+                                                            <span className="bord_tip cor994 posrel">Creator</span>
                                                             <p data-tip data-for="Chat" className="mark_talk m-t-1 m-r-15">
                                                                 <ImgComponent src="../resources/images/mark_talk.png" />
                                                             </p>

@@ -3,8 +3,252 @@
 
 화면 확인시 설치필요 : npm i react-router / npm i jquery --save
 
-1123-1
+
+0216
+<ui-kit 폴더>
+- KitEvalPop 페이지 완료.
+
+
+0211
+<song 폴더>
+- SongLyrics 페이지 탭작업 완료.
+
+<common 폴더>
+- VersTab 추가완료.
+
+
+0210
+<a&r 폴더>
+- AnrRevalDetail 페이지 완료.
+
+<song 폴더>
+- SongLyrics 페이지 탭작업 진행중.
+
+
+0209
+<layout 폴더>
+- AsideDashAnr 클릭이벤트 작업.
+
+<ui-kit폴더>
+- KitEvalPop 페이지 1차완료.
+
+<a&r 폴더>
+- AnrRevalDetail 페이지 작업중.
+
+
+0207
+<a&r 폴더>
+- AnrEval, AnrEvalDetail 페이지 완료.
+
+
+0203
+<a&r 폴더>
+- AnrDashboard 에 있는 리스트에 북마크 추가완료.
+- AnrPitchDetail, AnrPitchRecomm 페이지 추가완료. 
+
+
+0128
+<a&r 폴더>
+- AnrDashboard 페이지 완료. (추후에 기획수정 될 가능성 있음)
+- AnrVisit 페이지 완료. (Aside 때문에 작업)
+
+<layout 폴더>
+- AnrSwiper ~ 들 추가.
+
+<list 폴더>
+- List ~ 들 추가.
+
+
+0124
+<a&r 폴더>
+- SetEval 1 ~ 3 페이지 완료.
+
+
+0120
+<song 폴더>
+PitchList 완료.
+- SongPitchResult, SongPitchSong, SongPitchWriter 페이지 완료.
+
+<list 폴더>
+- SongList4, SongList5 추가
+
+<common 폴더>
+- PopSongList 추가
+
+
+0119
+<song 폴더>
+- DetailPitch 페이지 완료.
+- DetailSong 페이지 완료.
+- SongList2 수정, SongList3 추가.
+
+
+0118
+<song 폴더>
+- NewPitch1 ~ 4 페이지 완료.
+
+
+0117
+<song 폴더>
+- SongPitchList 페이지 완료.
+- PitchSwiper1 는 layout폴더에 추가.
+- SongList2 는 list 폴더에 추가.
+- PopAddPitch 는 common 폴더에 추가.
+(팝업 감싸는 클래스 다르니까 주의하세요. 개발시 Mac 에서 팝업안의 Swiper 안깨지는지 확인요망)
+
+
+
+0113
+<project 폴더>
+ProjectDetailHome 페이지수정
+- scss 수정, 태그의 클래스 일부수정.
+
+<song 폴더>
+SongPitchList 페이지 작업중
+
+
+
+0111
+<project 폴더>
+- ProjectDetailWriter 완료
+
+<list 폴더>
+- TheList3, SongList1 완료
+
+
+
+0107
+<common 폴더>
+- DropCont 수정. 
+- 확장버전 DropComponent 추가, 기존 ProjectDetail~ 페이지들에도 반영.
+- PopChange 추가 완료.
+
+
+0105
 <ui-kit>
+- KitAddPop 페이지 완료.
+
+
+0104
+<company 폴더>
+- CompanyRos 페이지 완료.
+- CompanyPart 페이지 완료.
+
+<list 폴더>
+- TheList1, TheList2 추가.
+
+<ui-kit>
+- KitAddPop 페이지추가, AddMore 팝업 작업중.
+
+
+1231
+<company 폴더>
+- CompanyHome 페이지 완료.
+
+<layout 폴더>
+- AsideCompany 추가.
+- Featured, FeatureName, FeatureSkill 는 layout 폴더로 이동.
+
+
+1225
+<Main 폴더>
+- MainDashboard (추가작업) 페이지 완료.
+
+<common 폴더>
+- PopEduc, PopCareer 추가
+- DateTrans 추가
+
+
+1222
+<Main 폴더>
+- MainVisitHome 페이지 완료.
+- Featured, FeatureName, FeatureSkill 추가.
+- Aside1 은 layout폴더에 분리.
+
+
+1216
+<header 폴더>
+- Fixmenu 아이콘 교체.
+- header_right 부분 Time Zone 팝업추가 완료.
+- header_right 부분 프로필박스 추가 완료.
+
+
+1215-1
+<profile 폴더>
+- SettingsID 페이지 완료. (Profile Settings 완료)
+
+
+1215
+<profile 폴더>
+- SettingsProfile 페이지 완료.
+- SettingsAccount 쪼금 수정.
+
+
+1214-1
+<profile 폴더>
+- SettingsAvail 페이지 완료
+- SettingsProfile 작업중
+
+
+1214
+<profile 폴더>
+- SettingsAccount 페이지 완료
+
+
+1213
+<profile 폴더>
+- CreateProfile 1 ~ 4 수정 완료.
+- SettingsAccount 작업중
+
+
+1210
+<profile 폴더>
+- CreateProfile 1 ~ 4 완료.
+
+
+1207-1
+<song 폴더>
+- SongInformation 탭 Timeline 완료.
+- 탭 Split sheet, Credits 의 일부팝업 수정.
+
+
+1206-1
+<song 폴더>
+- SongInformation 탭 Credits 완료.
+
+
+1206
+<song 폴더>
+- SongInformation 탭 Split sheet 완료. (차트는 협의?)
+- TheSeet 추가
+<common 폴더>
+- PopPublisher 추가
+
+
+1202
+<song 폴더>
+- SongInformation 의 탭 Music metadata 완료.
+
+
+1201
+<song 폴더>
+- SongLyrics 페이지는 완료
+- SongInformation 같은 폴더에 분리, 첫번째 탭 Song & Lyrics 는 완료.
+- 탭 내용은 추가예정.
+- FootPlay, FootSongLine 추가
+
+
+1125
+<ui-kit 폴더>
+- ProfilePanel 페이지 완료.
+
+<common 폴더>
+- ProfCompHover 추가
+- SwitchOn 추가
+
+
+1123-1
+<ui-kit 폴더>
 - KitPopup 페이지 제일하단 팝업추가
 
 <list 폴더>

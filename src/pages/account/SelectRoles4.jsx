@@ -12,7 +12,7 @@ export default function SelectRoles4() {
             <div className="dflx_ac_jcent w-100 h-100">
                 <section className="rolse_box">
                     <div className="rolse_in">
-                        <article className="roles_step">
+                        <article className="roles_step h30">
                         </article>
                         <article className="roles_title">
                             <h1>

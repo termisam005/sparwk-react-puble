@@ -75,7 +75,7 @@ export default function Features1(props) {
             render={({ toggle, setCollapsibleElement }) => (
 
                 <article className={props.contain_class}>
-                    <section className="mini_top p-l-20 p-r-25">
+                    <section className="mini_top p-r-25">
                         <div className="dflx_ac_jbet">
                             <h1>Features</h1>
                             <p className={isToggle ? "up_arrow on" : "up_arrow"} onClick={clickToggle}>
@@ -83,7 +83,7 @@ export default function Features1(props) {
                             </p>
                         </div>
                     </section>
-                    {/* <p className="line1"></p> */}
+                    <p className="line1"></p>
                     <section className="contain_body">
                         <div className="bodyin" ref={setCollapsibleElement}>
                             <table {...getTableProps()} className="table table_refer">
